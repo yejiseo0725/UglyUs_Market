@@ -1,1 +1,145 @@
-header {}
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 1920px;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+header .header-inner {
+  /* background-color: dodgerblue; */
+  display: flex;
+  align-items: center;
+}
+header #logo {
+  width: 130px;
+  height: 41.6px;
+  margin-left: 50px;
+  margin-right: 228px;
+}
+/* header - gnb list */
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav .gnb {
+  display: flex;
+}
+
+header nav .gnb li {
+  width: 120px;
+  height: 25px;
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+}
+header nav .gnb li#li-last {
+  margin-right: 0;
+}
+header nav .gnb li a {
+  color: white;
+  transition: 0.2s;
+}
+header nav .gnb li a:hover {
+  color: #ff6741;
+}
+
+/* header - icons */
+header nav .gnb-icons {
+  display: flex;
+  margin-right: 50px;
+}
+header nav .gnb-icons li a .basket_icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 227px;
+}
+header nav .gnb-icons li a .user_icon {
+  width: 30px;
+  height: 31px;
+  margin-left: 35px;
+  margin-top: 9px;
+}
+
+/* Main */
+main {
+  position: relative;
+}
+
+/* Visual */
+
+/* Main - video-area */
+.visual .video-area {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+}
+.visual .video-area video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+/* Main - title area */
+.visual .video-area #play_btn {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.visual .video-area .title-area {
+  color: white;
+}
+
+/* main-title */
+.visual .video-area .title-area .main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+.visual .video-area .title-area h1 {
+  font-family: "Leferi";
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 60px;
+}
+.visual .video-area .title-area h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+/* main-btn */
+.visual .video-area .title-area .main-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 50px;
+  background: #ff6741;
+  font-size: 20px;
+  font-weight: 500;
+}
+.visual .video-area .title-area .main-btn a {
+  color: white;
+}
+
+/* Point area */

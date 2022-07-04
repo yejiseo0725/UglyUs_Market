@@ -1,50 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/main.css">
-    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+
     <title>어글리어스 마켓 | 못난이 농산물 정기배송 서비스</title>
 </head>
+
 <body>
 
+    <!-- Header -->
     <header class="header">
-        <img src="../img/components/uglyus_logo.png">
+        <div class="header-inner">
+            <a href="01_main.html">
+                <img id="logo" src="../img/components/uglyus_logo.png" />
+            </a>
 
-        <ul class="gnb">
-            <li><a href="02_mission.html">미션</a></li>
-            <li><a href="03_howToUse.html">이용방법</a></li>
-            <li><a href="04_uglyStore.html">못난이상점</a></li>
-            <li><a href="05_review.html">이용후기</a></li>
-        </ul>
+            <!-- gnb list -->
+            <nav>
+                <ul class="gnb">
+                    <li><a href="02_mission.html">미션</a></li>
+                    <li><a href="03_howToUse.html">이용방법</a></li>
+                    <li><a href="04_uglyStore.html">못난이상점</a></li>
+                    <li id="li-last"><a href="05_review.html">이용후기</id=a>
+                    </li>
+                </ul>
 
-        <ul class="gnb-icons">
-            <li>
-                <a href="06_basket.html">
-                    <img src="../img/components/bag_btn.png" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="07_user.html">
-                    <img src="../img/components/user_btn.png" alt="">
-                </a>
-            </li>
-        </ul>
+                <!-- gnb icons -->
+                <ul class="gnb-icons">
+                    <li>
+                        <a href="06_basket.html">
+                            <img class="basket_icon" src="../img/components/bag_btn.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="07_user.html">
+                            <img class="user_icon" src="../img/components/user_btn.png" alt="" />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Visual Section -->
+        <section class="visual">
+            <!-- Video area -->
+            <div class="video-area">
+                <video src="../video/uglyus.mp4" autoplay muted loop playsinline></video>
+
+                <!-- Title area -->
+                <img id="play_btn" src="../img/components/video_start.png" alt="">
+
+                <div class="title-area">
+                    <div class="main-title">
+                        <h1>못생겨도 맛있다<br>친환경 못난이 채소박스</h1>
+                        <h2>조금씩 다양하게, 불필요한 낭비 없이</h2>
+
+                        <div class="main-btn">
+                            <a href="#">지금 시작하기</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Point area-->
+                <div class="point-area">
+                    <div class="point1"></div>
+                    <div class="point2"></div>
+                    <div class="point3"></div>
+
+                    <div class="progress-bar"></div>
+                </div>
 
 
-    <h1>Hello 안녕</h1>
-    
+            </div>
+
+
+        </section>
+
+
+
+    </main>
+
+
+    <!-- #FF6741 -->
     <script src="../js/jquery-3.6.0.min.js"></script>
 
-    <script>
-
-    </script>
-
+    <script></script>
 </body>
+
 </html>
