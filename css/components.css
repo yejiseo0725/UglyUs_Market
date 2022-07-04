@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Leferi';
+    src: url("../font/Leferi_TTF/LeferiBaseBold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Leferi';
+    src: url("../font/Leferi_TTF/LeferiPointBlack.ttf");
+    font-weight: 800;
+}
+
+/* Noto Sans KR */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Raleway', 'Noto sans KR';
+}
