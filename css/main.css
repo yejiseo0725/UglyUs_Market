@@ -143,3 +143,83 @@ main {
 }
 
 /* Point area */
+.visual .video-area .point-area {
+  position: absolute;
+  left: 50%;
+  bottom: 52px;
+  transform: translate(-50%);
+
+  width: 1440px;
+  height: 160px;
+  background-color: dodgerblue;
+  color: white;
+
+  display: flex;
+}
+
+/* point-area - point-box */
+.visual .video-area .point-area .point-box {
+  display: flex;
+
+  position: absolute;
+  width: 401px;
+  height: 90px;
+  background-color: cadetblue;
+}
+.visual .video-area .point-area .point1 {
+}
+.visual .video-area .point-area .point2 {
+  left: 50%;
+  transform: translate(-50%);
+}
+.visual .video-area .point-area .point3 {
+  width: 400px;
+  right: 0;
+}
+
+/* point-box characters */
+.point-area .point-box .chat_num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 44px;
+  font-weight: 500;
+
+  width: 90px;
+  height: 90px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  margin-right: 25px;
+}
+
+.point-area .point-box .chat--text_box {
+  display: flex;
+  flex-direction: column;
+
+  width: 280px;
+}
+
+.point-area .point-box .chat--text_box .chat_title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.point-area .point-box .chat--text_box .chat_desc {
+  font-size: 16px;
+  font-weight: 300;
+}
+.point-area .point-box .chat--text_box span {
+  color: #ff6741;
+  font-weight: 400;
+}
+
+/* progress bar */
+.visual .video-area .point-area .progress-bar {
+  position: absolute;
+  bottom: 0;
+
+  width: 1440px;
+  height: 2px;
+  background-color: white;
+}
