@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Leferi";
-  src: url("../font/Leferi_TTF/LeferiBaseBold.ttf");
+  src: url("../../font/Leferi_TTF/LeferiBaseBold.ttf");
   font-weight: 600;
 }
 @font-face {
   font-family: "Leferi";
-  src: url("../font/Leferi_TTF/LeferiPointBlack.ttf");
+  src: url("../../font/Leferi_TTF/LeferiPointBlack.ttf");
   font-weight: 800;
 }
 
@@ -19,6 +19,8 @@ body {
   font-family: "Raleway", "Noto sans KR";
   position: relative;
   max-width: 1920px;
+
+  color: #252525;
 }
 
 a {
