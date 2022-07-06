@@ -381,11 +381,18 @@ main {
 
   width: 320px;
   height: 350px;
-  background-color: white;
+  /* background-color: white; */
   text-align: center;
 }
-.section_01 .content2 article:hover {
+
+/* 순차적으로 활성화 시키기 */
+.section_01 .content2 article.on {
+  background-color: #fff5f0;
 }
+.section_01 .content2 article.on h2 {
+  color: #ff6741;
+}
+/* --- */
 
 .section_01 .content2 article h2 {
   font-size: 120px;

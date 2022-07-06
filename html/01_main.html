@@ -172,7 +172,6 @@
                     </article>
                 </div>
             </div>
-
         </div>
 
     </section>
@@ -181,7 +180,25 @@
     <!-- #FF6741 -->
     <script src="../js/jquery-3.6.0.min.js"></script>
 
-    <script></script>
+    <script>
+
+        // section 01 - content 2 --> 순차적으로 활성화 시키기
+        $(function () {
+            let index = 0;
+            setInterval(time, 1000);
+            function time() {
+                let box = $('.content2 article');
+                box.removeClass('on');
+                box.eq(index).addClass('on');
+                // eq: 선택한 요소의 index 번호에 해당하는 요소를 찾는 역할
+                index++;
+                if (index >= box.length) {
+                    index = 0;
+                }
+            }
+        });
+
+    </script>
 </body>
 
 </html>

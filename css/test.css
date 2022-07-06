@@ -1,0 +1,21 @@
+/* test */
+
+ul {
+  width: 100px;
+  margin: 10px;
+}
+
+li {
+  width: 100%;
+  padding-top: 5px;
+  border: 1px solid #252525;
+  text-align: center;
+  font-size: 20px;
+  list-style: none;
+  color: #252525;
+}
+
+.on {
+  background-color: coral;
+  color: #fff;
+}
