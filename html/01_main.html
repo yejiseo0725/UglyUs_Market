@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/slick.css">
     <link rel="stylesheet" href="../css/components/common.css">
     <link rel="stylesheet" href="../css/main.css" />
 
@@ -114,6 +116,11 @@
     <!-- Section 01 -->
     <section class="section_01">
 
+        <img id="main-img1" src="../img/main/side-veggies1.png" alt="">
+        <img id="main-img2" src="../img/main/side_veggies2.png" alt="">
+        <img id="main-img3" src="../img/main/uglybox.png" alt="">
+        <img id="main-img4" src="../img/main/2veggies.png" alt="">
+
         <div class="section-inner">
 
             <div class="title-area">
@@ -149,7 +156,7 @@
 
             <div class="container2">
                 <div class="content2">
-                    <article class="article1">
+                    <article>
                         <h2>01</h2>
                         <h3>수확 직후 직매입</h3>
                         <p>판로를 찾지 못한 농산물들을<br>
@@ -157,14 +164,14 @@
                             직접 공급받아요.</p>
                     </article>
 
-                    <article class="article2">
+                    <article>
                         <h2>02</h2>
                         <h3>조금씩 다양하게 소포장</h3>
                         <p>가구 수에 맞게<br>
                             소량으로 포장해요.</p>
                     </article>
 
-                    <article class="article3">
+                    <article>
                         <h2>03</h2>
                         <h3>집 앞까지 정기배송</h3>
                         <p>중간 유통 절차없이<br>
@@ -176,16 +183,93 @@
 
     </section>
 
+    <section class="section_02">
+        <div class="color-background">
+            <div class="section-inner">
+
+                <div class="title-area">
+                    <h2>이들이 못난이가 된 사연</h2>
+                    <div class="article-btn">
+                        <div class="btn left-btn"></div>
+                        <div class="btn right-btn"></div>
+                    </div>
+                </div>
+
+                <div class="slide-con">
+
+                    <article class="slick-slide">
+                        <div class="reason-img img1">
+                            <div class="reason-dimmed">
+                                <h5>똑같이 맛있어도<br>
+                                    크기가 제각각이에요</h5>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="slick-slide">
+                        <div class="reason-img img2">
+                            <div class="reason-dimmed">
+                                <h5>영양이 풍부해도<br>
+                                    생김새가 너무 개성적이에요</h5>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="slick-slide">
+                        <div class="reason-img img3">
+                            <div class="reason-dimmed">
+                                <h5>풍년이 오히려 근심<br>
+                                    공급 물량이 너무 많아요</h5>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="slick-slide">
+                        <div class="reason-img img4">
+                            <div class="reason-dimmed">
+                                <h5>사이 좋게 딱 붙어 자랐어요</h5>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="slick-slide">
+                        <div class="reason-img img5">
+                            <div class="reason-dimmed">
+                                <h5>살충제 없이 해충을 견디며<br>
+                                    무해한 상처가 남았어요</h5>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="reason-img img6">
+                            <div class="reason-dimmed">
+                                <h5>코로나로 줄어든 급식 수요에<br>
+                                    판로가 막혔어요</h5>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </section>
+
 
     <!-- #FF6741 -->
     <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/main.js"></script>
 
     <script>
 
         // section 01 - content 2 --> 순차적으로 활성화 시키기
         $(function () {
             let index = 0;
-            setInterval(time, 1000);
+            setInterval(time, 1200);
             function time() {
                 let box = $('.content2 article');
                 box.removeClass('on');

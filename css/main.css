@@ -6,11 +6,10 @@ header {
   width: 1920px;
   height: 80px;
   background-color: rgba(0, 0, 0, 0.1);
-  z-index: 10;
+  z-index: 30;
 }
 
 header .header-inner {
-  /* background-color: dodgerblue; */
   display: flex;
   align-items: center;
 }
@@ -237,12 +236,13 @@ main {
 
 /* Section 01 */
 .section_01 {
+  position: relative;
+
   display: flex;
   justify-content: center;
 
   width: 1920px;
   height: 1600px;
-  background-color: #fff5f0;
 }
 
 .section_01 .section-inner {
@@ -254,28 +254,49 @@ main {
   margin-left: 50px;
   margin-right: 50px;
 
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
 }
 
-/* section01 - title area */
+/* Section 01 --- images */
+.section_01 img {
+  position: absolute;
+}
+
+.section_01 #main-img1 {
+  left: 0;
+}
+.section_01 #main-img2 {
+  right: 0;
+  top: 50%;
+}
+.section_01 #main-img3 {
+  left: 280px;
+  bottom: 72px;
+  z-index: 10;
+}
+.section_01 #main-img4 {
+  left: 290px;
+  bottom: 75px;
+  z-index: 11;
+}
+
+/* section 01 - title area */
 .section_01 .title-area {
   margin-top: 96px;
   text-align: center;
 }
-.section_01 .title-area h3 {
+.title-area h3 {
   font-size: 28px;
   font-weight: 400;
   margin-bottom: 10px;
 }
-.section_01 .title-area h2 {
+.title-area h2 {
   font-size: 36px;
   font-weight: 500;
 }
 
-/* section01 - contents area 1 */
+/* section 01 - contents area 1 */
 .section_01 .container {
-  border: 3px solid red;
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -317,7 +338,7 @@ main {
 }
 .section_01 .container .content1 .left p {
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 300;
 }
 .section_01 .container .content1 .left .first_desc {
   margin-bottom: 50px;
@@ -356,10 +377,8 @@ main {
   background-repeat: no-repeat;
 }
 
-/* section01 - contents area 2 */
+/* section 01 - contents area 2 */
 .container2 {
-  border: 3px solid red;
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -408,17 +427,107 @@ main {
 }
 .section_01 .content2 article p {
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 300;
 
   padding-top: 45px;
 }
 
-/* each article */
-.section_01 .content2 .article1 {
+/* Section 02 */
+.section_02 {
+  display: flex;
+  justify-content: center;
+
+  width: 1920px;
 }
 
-.section_01 .content2 .article2 {
+.section_02 .color-background {
 }
 
-.section_01 .content2 .article3 {
+.section_02 .section-inner {
+  width: 1010px;
+  height: 580px;
+  background-color: aliceblue;
+}
+
+/* Section 02 --- title area */
+.section_02 .title-area {
+  padding-top: 90px;
+  padding-bottom: 25px;
+  /* text-align: center; */
+}
+
+.section_02 .title-area .article-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.section_02 .title-area .article-btn .btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #333;
+  cursor: pointer;
+
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-position: center;
+}
+.section_02 .title-area .article-btn .left-btn {
+  background-image: url(../img/components/left.png);
+  margin-right: 10px;
+}
+.section_02 .title-area .article-btn .right-btn {
+  background-image: url(../img/components/right.png);
+}
+
+/* Section 02 --- Reason area */
+.section_02 .slide-con {
+  width: 1010px;
+  margin: 0 auto;
+}
+
+.section_02 .slide-con .slick-slide {
+  position: relative;
+  margin-right: 25px;
+}
+.section_02 .slide-con .slick-slide .reason-img {
+  width: 320px;
+  height: 320px;
+  background-color: #333;
+}
+
+/* ugly images */
+.section_02 .slide-con .slick-slide .img1 {
+  background-image: url(../img/main/u_pump.png);
+}
+.section_02 .slide-con .slick-slide .img2 {
+  background-image: url(../img/main/u_papri.png);
+}
+.section_02 .slide-con .slick-slide .img3 {
+  background-image: url(../img/main/u_garlic.jpg);
+}
+.section_02 .slide-con .slick-slide .img4 {
+  background-image: url(../img/main/u_ban.png);
+}
+.section_02 .slide-con .slick-slide .img5 {
+  background-image: url(../img/main/u_oran.png);
+}
+.section_02 .slide-con .slick-slide .img6 {
+  background-image: url(../img/main/u_corn.png);
+}
+
+.section_02 .slide-con .slick-slide .reason-dimmed {
+  position: absolute;
+  bottom: 0;
+
+  width: 320px;
+  height: 85px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.section_02 .slide-con .slick-slide .reason-dimmed h5 {
+  position: absolute;
+  left: 27px;
+  top: 13px;
+
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
 }
