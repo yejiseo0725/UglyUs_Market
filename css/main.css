@@ -5,7 +5,7 @@ header {
   position: fixed;
   width: 1920px;
   height: 80px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 30;
 }
 
@@ -139,14 +139,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 220px;
   height: 50px;
   background: #ff6741;
+
   font-size: 20px;
   font-weight: 500;
-}
-.visual .video-area .title-area .main-btn a {
-  color: white;
 }
 
 /* Point area */
@@ -758,12 +757,14 @@ main {
 }
 .section_04 .section-inner .title-area {
   padding-top: 90px;
+  padding-bottom: 54px;
 }
 
 .section_04 a {
   display: inline-block;
 }
-.section_04 a .more-review-btn {
+
+.section_04 .more-review-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -771,7 +772,6 @@ main {
   width: 230px;
   height: 50px;
   background: #ff6741;
-  margin-top: 54px;
 
   font-size: 20px;
   font-weight: 500;
@@ -866,3 +866,90 @@ main {
 .section_04 .slide-area .grade .img15 {
 }
 /* --- */
+
+/* Section 05 */
+.section_05 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 500px;
+
+  color: white;
+
+  background-image: url(../img/main/tom_dimm.png);
+}
+
+/* dimmed 처리 */
+.section_05:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.section_05 .section-inner {
+  display: flex;
+
+  position: absolute;
+  z-index: 5;
+
+  width: 1440px;
+  padding-top: 133px;
+}
+
+.section_05 .title-area {
+}
+.section_05 .title-area h3 {
+  color: #ff6741;
+}
+.section_05 .title-area h2 {
+  padding-bottom: 36px;
+}
+.section_05 .title-area p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* Section 05 --- info area */
+.section_05 .info-wrap {
+  padding-left: 114px;
+}
+.section_05 .info-area {
+  display: flex;
+
+  font-family: "Noto sans KR";
+  text-align: center;
+}
+.section_05 .info-area .info {
+  padding-top: 41px;
+  padding-right: 85px;
+  padding-bottom: 56px;
+}
+.section_05 .info-area .info h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.section_05 .info-area .info h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.section_05 a {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+}
+.section_05 a .together-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 280px;
+  height: 50px;
+  background-color: #ff6741;
+}
