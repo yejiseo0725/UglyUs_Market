@@ -539,6 +539,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  position: relative;
   height: 1250px;
 }
 
@@ -555,7 +557,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(237, 196, 182);
+  background-color: white;
 
   width: 1440px;
   height: 100%;
@@ -578,6 +580,7 @@ main {
   background-color: #333;
   box-sizing: border-box;
   margin-bottom: 10px;
+  cursor: pointer;
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -656,20 +659,29 @@ main {
   font-size: 20px;
   font-weight: 400;
 }
-.section_03 .veggie-box .main-area .desc .start-btn a {
+.section_03 .veggie-box .main-area .desc a {
   color: white;
 }
 
 /* Section 03 --- bottom background */
 .section_03 .bottom-background {
-  width: 1920px;
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
   height: 327px;
-  background-color: dodgerblue;
+
+  background-color: #fff5f0;
 }
 
 /* Section 03 --- cards */
 .section_03 .intro-cards {
+  width: 100%;
+  position: absolute;
+  top: -82px;
+
   display: flex;
+  justify-content: center;
 
   margin-left: 50px;
   margin-right: 50px;
@@ -683,6 +695,8 @@ main {
   height: 300px;
   background-color: white;
   margin-right: 120px;
+
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.15);
 }
 
 .section_03 .intro-cards .last-card {
@@ -693,6 +707,8 @@ main {
   height: 100px;
   background-color: #ff987e;
   border-radius: 50%;
+
+  margin-top: 50px;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -713,9 +729,21 @@ main {
 }
 
 .section_03 .intro-cards .card p {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 17px;
 }
 .section_03 .intro-cards .card .card-line {
   width: 50px;
   height: 2px;
   background-color: #ff6741;
+  margin-top: 42px;
+}
+
+/* Section 04 */
+.section_04 {
+  width: 100%;
+  height: 1130px;
+  background-color: royalblue;
 }
