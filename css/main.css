@@ -1,92 +1,9 @@
-/* Header */
-header {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  width: 1920px;
-  height: 80px;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 30;
-}
-
-header .header-inner {
-  display: flex;
-  align-items: center;
-}
-header #logo {
-  width: 130px;
-  height: 41.6px;
-  margin-left: 50px;
-  margin-right: 228px;
-}
-/* header - gnb list */
-header nav {
-  display: flex;
-  align-items: center;
-}
-header nav .gnb {
-  display: flex;
-}
-
-header nav .gnb li {
-  width: 120px;
-  height: 25px;
-  margin-right: 50px;
-  font-size: 18px;
-  font-weight: 500;
-
-  position: relative;
-}
-header nav .gnb li#li-last {
-  margin-right: 0;
-}
-
-/* 차오르는 효과 nav-bar */
-.gnb li a::before {
-  content: attr(data-text);
-  white-space: nowrap;
-
-  position: absolute;
-  left: 0;
-  top: 0;
-
-  width: 0%;
-  overflow: hidden;
-
-  color: #ff6741;
-  transition: 0.5s;
-}
-
-.gnb li a:hover::before {
-  width: 100%;
-}
-/* ----- */
-
-/* header - icons */
-header nav .gnb-icons {
-  display: flex;
-  margin-right: 50px;
-}
-header nav .gnb-icons li a .basket_icon {
-  width: 50px;
-  height: 50px;
-  margin-left: 227px;
-}
-header nav .gnb-icons li a .user_icon {
-  width: 30px;
-  height: 31px;
-  margin-left: 35px;
-  margin-top: 9px;
-}
-
-/* Main */
+/* Main Visual */
 main {
   position: relative;
 }
 
-/* Visual */
-
-/* Main - video-area */
+/* Main --- video-area */
 .visual .video-area {
   position: relative;
   height: 1080px;
@@ -103,7 +20,7 @@ main {
   object-fit: cover;
 }
 
-/* Main - title area */
+/* Main --- title area */
 .visual .video-area .title-area {
   color: white;
 }
@@ -162,7 +79,7 @@ main {
   display: flex;
 }
 
-/* point-area - point-box */
+/* point-area --- point-box */
 .visual .video-area .point-area .point-box {
   display: flex;
 
@@ -274,7 +191,7 @@ main {
   z-index: 11;
 }
 
-/* section 01 - title area */
+/* section 01 --- title area */
 .section_01 .title-area {
   margin-top: 96px;
   text-align: center;
@@ -289,7 +206,7 @@ main {
   font-weight: 500;
 }
 
-/* section 01 - contents area 1 */
+/* section 01 --- contents area 1 */
 .section_01 .container {
   display: flex;
   justify-content: flex-end;
@@ -371,7 +288,7 @@ main {
   background-repeat: no-repeat;
 }
 
-/* section 01 - contents area 2 */
+/* section 01 --- contents area 2 */
 .container2 {
   display: flex;
   justify-content: flex-end;
@@ -786,6 +703,7 @@ main {
 }
 .section_04 .slide-area .grade {
   display: flex;
+  /* flex-wrap: wrap; */
 
   /* width: 4450px; */
   width: 100%;
@@ -905,6 +823,7 @@ main {
 .section_05 .title-area {
 }
 .section_05 .title-area h3 {
+  margin: 0;
   color: #ff6741;
 }
 .section_05 .title-area h2 {

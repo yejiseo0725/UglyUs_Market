@@ -1,0 +1,113 @@
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 475px;
+
+  font-family: "Noto Sans KR";
+  background-color: #fff5f0;
+}
+
+footer .section-inner {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1440px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+  padding-top: 60px;
+}
+
+/* Footer --- company information area */
+footer .company-info-area {
+}
+footer .company-info-area img {
+  width: 140px;
+  height: 45px;
+}
+
+footer .company-info-area p {
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 47px;
+  color: #333;
+}
+footer .company-info-area p strong {
+  font-weight: 500;
+  color: #ff6741;
+}
+
+footer .company-info-area .info-btns {
+  display: flex;
+  margin-top: 32px;
+}
+footer .company-info-area .info-btns .info-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 160px;
+  height: 44px;
+  border: 1px solid #ff6741;
+
+  font-size: 18px;
+  font-weight: 400;
+  color: #ff6741;
+}
+footer .company-info-area .info-btns .btn1 {
+  margin-right: 30px;
+}
+
+footer .company-info-area h6 {
+  font-size: 12px;
+  font-weight: 300;
+  color: #333;
+
+  padding-top: 16px;
+}
+
+/* Footer --- customer service area */
+footer .cs-area {
+  text-align: right;
+  padding-top: 44px;
+}
+footer .cs-area h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+footer .cs-area h5 span {
+  color: #ff6741;
+}
+
+footer .cs-area p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #333;
+  padding-top: 22px;
+}
+
+footer .cs-area .cs-btns {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 59px;
+}
+footer .cs-area .cs-btns .cs-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 150px;
+  height: 44px;
+  background-color: #ff6741;
+
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+footer .cs-area .cs-btns .btn2 {
+  margin-left: 30px;
+}
