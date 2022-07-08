@@ -11,6 +11,12 @@ header {
   z-index: 30;
 }
 
+/* 여기도 color 변경 해주기 */
+
+/* header nav .gnb li a {
+  color: #252525;
+} */
+
 header .header-inner {
   display: flex;
   align-items: center;
@@ -39,12 +45,6 @@ header nav .gnb li {
 
   position: relative;
 }
-
-/* 여기도 color 변경 해주기 */
-
-/* header nav .gnb li a {
-  color: #252525;
-} */
 
 header nav .gnb li#li-last {
   margin-right: 0;
