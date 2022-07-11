@@ -6,7 +6,7 @@ main {
 /* Main --- video-area */
 .visual .video-area {
   position: relative;
-  height: 1080px;
+  height: 100vh;
 }
 .visual .video-area video {
   position: absolute;
@@ -37,6 +37,7 @@ main {
   transform: translate(-50%, 0);
   text-align: center;
 }
+
 
 .visual .video-area .title-area h1 {
   line-height: 60px;
@@ -169,23 +170,21 @@ main {
 .section_01 img {
   position: absolute;
 }
-
 .section_01 #main-img1 {
-  left: 0;
+  left: 250px;
+  bottom: 65px;
+  z-index: 10;
+
+  width: 219px;
+  height: 162px;
 }
 .section_01 #main-img2 {
-  right: 0;
-  top: 50%;
-}
-.section_01 #main-img3 {
-  left: 10%;
-  bottom: 72px;
-  z-index: 10;
-}
-.section_01 #main-img4 {
-  left: 11%;
-  bottom: 75px;
+  left: 270px;
+  bottom: 65px;
   z-index: 11;
+
+  width: 34px;
+  height: 40px;
 }
 
 /* section 01 --- title area */
@@ -206,47 +205,54 @@ main {
 /* section 01 --- contents area 1 */
 .section_01 .container {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: center;
 
-  width: 1340px;
+  width: 100%;
   height: 525px;
   margin-top: 84px;
 }
 
 .section_01 .container .content1 {
   display: flex;
+  justify-content: center; 
+  align-items: center;
 }
 
 /* left-content */
 .section_01 .container .content1 .left {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
-  height: 261px;
-  padding-top: 90px;
-  padding-right: 61px;
+  width: 488px;
+  height: 525px;
+  background-color: #FFF5F0;
+
+  margin-right: 25px;
 }
 .section_01 .container .content1 .left span {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   margin-bottom: 7px;
 
-  background-color: #fff5f0;
-  color: #ff6741;
+  background-color: #ff6741;
+  color: white;
 
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 500;
   line-height: 10px;
+
+  margin-left: 44px;
 }
 .section_01 .container .content1 .left p {
   font-size: 18px;
   font-weight: 300;
+  padding-left: 44px;
 }
 .section_01 .container .content1 .left .first_desc {
   margin-bottom: 50px;
@@ -288,7 +294,7 @@ main {
 /* section 01 --- contents area 2 */
 .container2 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 
   width: 1340px;
@@ -299,7 +305,7 @@ main {
   display: flex;
   justify-content: space-between;
 
-  width: 1010px;
+  width: 1078px;
 }
 
 /* articles common */
@@ -310,11 +316,13 @@ main {
   height: 350px;
   /* background-color: white; */
   text-align: center;
+  border: 1px solid #EDEDED;
 }
 
 /* 순차적으로 활성화 시키기 */
 .section_01 .content2 article.on {
   background-color: #fff5f0;
+  border: 1px solid #fff5f0;
 }
 .section_01 .content2 article.on h2 {
   color: #ff6741;
@@ -347,22 +355,15 @@ main {
   height: 580px;
 }
 
-.section_02 .color-background {
-  width: 100%;
-  height: 400px;
-  background-color: #fff5f0;
-
-  display: flex;
-  justify-content: center;
-}
-
-.section_02 .section-inner {
-  width: 1010px;
-  height: 580px;
-}
 
 /* Section 02 --- title area */
+.section_02 {
+  background-color: #FF987E;
+}
+
 .section_02 .title-area {
+  width: 1010px;
+  color: white;
   padding-top: 90px;
   padding-bottom: 25px;
   /* text-align: center; */
@@ -375,7 +376,7 @@ main {
 .section_02 .title-area .article-btn .btn {
   width: 50px;
   height: 50px;
-  border: 1px solid #333;
+  border: 1px solid white;
   cursor: pointer;
 
   background-repeat: no-repeat;
@@ -524,13 +525,28 @@ main {
   height: 480px;
   background-image: url(../img/main/standard_box.png);
   background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: tomato;
 }
-.section_03 .veggie-box .main-area .desc {
+.section_03 .veggie-box .main-area .desc-box {
+  position: relative;
+
+  width: 440px;
+  height: 480px;
+
   font-family: "Noto sans KR";
-  padding-top: 30px;
-  padding-left: 50px;
+  border: 3px solid teal;
 }
-.section_03 .veggie-box .main-area .desc span {
+
+.section_03 .veggie-box .main-area .desc-box .text {
+  margin-left: 50px;
+}
+.section_03 .veggie-box .main-area .desc-box span {
+  position: absolute;
+  top: 28px;
+  right: 26px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -543,28 +559,39 @@ main {
   font-size: 20px;
   font-weight: 500;
   color: #ff6e4a;
-  margin-bottom: 30px;
 }
-.section_03 .veggie-box .main-area .desc h3 {
+.section_03 .veggie-box .main-area .desc-box h3 {
   font-size: 28px;
   font-weight: 500;
+  margin-top: 27px;
 }
-.section_03 .veggie-box .main-area .desc h4 {
+.section_03 .veggie-box .main-area .desc-box h4 {
   font-size: 24px;
   font-weight: 400;
-  margin-bottom: 44px;
+  margin-top: 5px;
 }
-.section_03 .veggie-box .main-area .desc p {
-  font-size: 18px;
-  font-weight: 300;
+
+.section_03 .veggie-box .main-area .desc-box .title-line {
+  width: 364px;
+  height: 1px;
+  background-color: #ff6741;
+
+  margin-top: 24px;
   margin-bottom: 54px;
 }
-.section_03 .veggie-box .main-area .desc .start-btn {
+
+.section_03 .veggie-box .main-area .desc-box p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  margin-bottom: 54px;
+}
+.section_03 .veggie-box .main-area .desc-box .start-btn {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 220px;
+  width: 364px;
   height: 50px;
   background-color: #ff6741;
   border: none;
@@ -572,41 +599,28 @@ main {
   font-size: 20px;
   font-weight: 400;
 }
-.section_03 .veggie-box .main-area .desc a {
-}
-
-/* Section 03 --- bottom background */
-.section_03 .bottom-background {
-  position: absolute;
-  bottom: 0;
-
-  width: 100%;
-  height: 327px;
-
-  background-color: #fff5f0;
+.section_03 .veggie-box .main-area .desc-box a {
 }
 
 /* Section 03 --- cards */
 .section_03 .intro-cards {
-  width: 100%;
-  position: absolute;
-  top: -82px;
-
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
-  margin-left: 50px;
-  margin-right: 50px;
+  width: 1010px;
+
+  margin-top: 150px;
 }
 .section_03 .intro-cards .card {
   display: flex;
   flex-direction: column;
   align-items: center;
 
+
   width: 220px;
   height: 300px;
   background-color: white;
-  margin-right: 120px;
 
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.15);
 }
