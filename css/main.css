@@ -33,9 +33,14 @@ main {
 
   position: absolute;
   left: 50%;
-  top: 36%;
+  top: 31%;
   transform: translate(-50%, 0);
   text-align: center;
+}
+.visual .video-area .title-area .pause-btn {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 10px;
 }
 
 
@@ -536,7 +541,6 @@ main {
   height: 480px;
 
   font-family: "Noto sans KR";
-  border: 3px solid teal;
 }
 
 .section_03 .veggie-box .main-area .desc-box .text {

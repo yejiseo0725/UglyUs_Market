@@ -13,7 +13,6 @@ header nav .gnb li a {
   align-items: center;
 
   width: 100%;
-  height: 100%;
 
   position: absolute;
   left: 0;
@@ -26,22 +25,21 @@ header nav .gnb li a {
 
   width: 100%;
   height: 520px;
-  background-color: #FFF5F0;
+
+  background-image: url(../img/mission/orange_main.png);
+  background-repeat: no-repeat;
+  object-fit: cover;
 }
 
 .main {
   display: flex;
-  justify-content: space-between;
 
-  width: 1440px;
+  width: 1340px;
   height: 100%;
-
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 .main .title-area {
-  padding-top: 100px;
+  padding-top: 153px;
 }
 .main .title-area h3 {
   font-size: 28px;
@@ -57,18 +55,10 @@ header nav .gnb li a {
   padding-top: 34px;
 }
 
-.main img {
-  width: 800px;
-  height: 520px;
-  object-fit: cover;
-}
-
 /* Section */
 .section-inner {
   width: 1340px;
   height: 100%;
-
-  background-color: rgb(247, 235, 213);
 }
 
 /* Section 01 */
@@ -76,7 +66,7 @@ header nav .gnb li a {
   display: flex;
 
   width: 100%;
-  height: 480px;
+  height: 622px;
 }
 
 .section_01 img {
@@ -84,11 +74,11 @@ header nav .gnb li a {
   height: 370px;
   object-fit: cover;
 
-  margin-top: 70px;
+  margin-top: 200px;
 }
 .section_01 .title-area {
-  padding-top: 162px;
-  padding-left: 58px;
+  padding-top: 288px;
+  padding-left: 62px;
 }
 .section_01 .title-area h3 {
   font-size: 28px;
