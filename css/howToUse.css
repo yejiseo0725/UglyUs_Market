@@ -1,0 +1,453 @@
+/* header */
+header {
+    background-color: #fff;
+}
+header nav .gnb li a {
+    color: #252525;
+}
+
+/* Main */
+.container {
+    position: absolute;
+    left: 0;
+    top: 80px;
+
+    width: 100%;
+}
+
+.main-background {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 520px;
+
+    background-image: url(../img/howToUse/howToUse_main.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.main {
+    width: 1340px;
+    height: 100%;
+}
+.main .title-area {
+    padding-top: 153px;
+}
+
+.main .title-area h2 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #FF6741;
+}
+.main .title-area h1 {
+    padding-top: 10px;
+}
+
+.main .title-area a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 220px;
+    height: 50px;
+    background-color: #FF6741;
+
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+
+    margin-top: 50px;
+}
+
+/* Section 01 */
+.section_01 {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 620px;
+}
+.section_01 .section-inner {
+    width: 1340px;
+    height: 100%;
+}
+
+.section_01 .title-area {
+    padding-top: 100px;
+}
+.section_01 .title-area h2{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.section_01 .article-box {
+    display: flex;
+    padding-top: 73px;
+}
+.section_01 .article-box article {
+    position: relative;
+    margin-right: 70px;
+}
+.section_01 article .index-area {
+    position: absolute;
+
+    width: 120px;
+    height: 80px;
+
+    left: 10px;
+    top: -20px;
+
+    background-image: url(../img/howToUse/index.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section_01 article .index-area h4 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+
+    padding-top: 9px;
+}
+.section_01 article .index-area h4 span {
+    font-size: 40px;
+    line-height: 36px;
+}
+
+.section_01 article .desc-area {
+    width: 400px;
+    height: 320px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+}
+.section_01 article .desc-area h3 {
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 85px;
+}
+.section_01 article .desc-area img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    padding-top: 35px;
+}
+.section_01 article .desc-area h5 {
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 12px;
+}
+
+/* box-area */
+.section_01 article .desc-area .box-area {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 41px;
+}
+.section_01 article .desc-area .box-area .standard {
+    padding-right: 60px;
+    padding-top: 13px;
+}
+.section_01 article .desc-area .box-area .standard .s-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 75px;
+    height: 43px;
+    margin-left: 25px;
+
+    border: 3px solid black;
+    border-radius: 5px; 
+
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.section_01 article .desc-area .box-area .jumbo {}
+.section_01 article .desc-area .box-area .jumbo .j-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 85px;
+    height: 55px;
+
+    border: 3px solid black;
+    border-radius: 5px; 
+
+    font-size: 22px;
+    font-weight: 600;
+}
+.section_01 article .desc-area .box-area h5 {
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 13px;
+}
+.section_01 article .desc-area .box-area h6 {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+
+/* Section 02 */
+.section_02 {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 476px;
+}
+.section_02 .section-inner {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1340px;
+    height: 100%;
+}
+
+.section_02 .title-area {
+    padding-top: 100px;
+}
+.section_02 .title-area h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+.section_02 .title-area p {
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 48px;
+}
+.section_02 .title-area a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 220px;
+    height: 50px;
+    border: 1px solid #FF6741;
+
+    font-size: 20px;
+    font-weight: 500;
+    color: #ff6741;
+
+    margin-top: 65px;
+}
+
+.section_02 .notice-area {
+    display: flex;
+    padding-top: 152px;
+    padding-right: 85px;
+}
+.section_02 .notice-area img.right {
+    width: 50px;
+    height: 48px;
+    margin-top: 37px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.section_02 .notice-area .notice {
+    width: 120px;
+    height: 195px;
+    text-align: center;
+}
+.section_02 .notice-area .notice .notice-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #FFD0C4;
+
+    background-image: url(../img/howToUse/bell.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section_02 .notice-area .notice .notice-img2 {
+    background-color: #FF987E;
+    background-image: url(../img/howToUse/card.png);
+}
+.section_02 .notice-area .notice .notice-img3 {
+    background-color: #FF6741;
+    background-image: url(../img/howToUse/truck.png);
+}
+
+.section_02 .notice-area .notice .notice-img img {}
+.section_02 .notice-area .notice h5 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 15px;
+}
+.section_02 .notice-area .notice h6 {
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 9px;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+    background-color: #FFF5F0;
+}
+.banner img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.banner .text-area {
+    margin: 0 30px;
+}
+.banner .text-area h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+.banner .text-area p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Section 03 */
+.section_03 {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 880px;
+}
+.section_03 .section-inner {
+    display: flex;
+
+    width: 1340px;
+    height: 100%;
+}
+
+/* Section 03 --- img area */
+.section_03 .img-area {
+    display: flex;
+    padding-top: 114px;
+}
+.section_03 .img-area .left-img {
+    width: 377px;
+    height: 695px;
+    margin-right: 25px;
+}
+.section_03 .img-area .left-img img {
+    width: 100%;
+}
+
+.section_03 .img-area .right-img {
+    width: 350px;
+    height: 335px;
+}
+.section_03 .img-area .right-img img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+/* Section 04 --- text area */
+.section_03 .text-area {
+    padding: 185px 0 0 86px;
+}
+.section_03 .text-area h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+.section_03 .text-area h2 span {
+    color: #FF6741;
+}
+
+/* Section 04 --- text area --- desc area */
+.section_03 .text-area .desc-area {
+    padding-top: 50px;
+}
+.section_03 .text-area .desc-area p {
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 58px;
+}
+.section_03 .text-area .desc-area p span {
+    font-weight: 400;
+    color: #FF6741;
+}
+
+/* Section 04 */
+.section_04 {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 990px;
+}
+.section_04 .section-inner {
+    position: relative;
+
+    width: 1340px;
+    height: 100%;
+}
+
+/* Section 04 --- small img */
+.section_04 .small-img {
+    display: flex;
+    justify-content: space-between;
+
+    width: 865px;
+    height: 400px;
+    margin-top: 115px;
+}
+.section_04 .small-img img {
+    width: 420px;
+    height: 100%;
+}
+
+/* Section 04 --- text area */
+.section_04 .text-area {
+    padding-top: 90px;
+}
+.section_04 .text-area h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+.section_04 .text-area p {
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 46px;
+}
+.section_04 .text-area p span {
+    font-weight: 400;
+    color: #FF6741;
+}
+.section_04 .text-area a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 220px;
+    height: 50px;
+    background-color: #FF6741;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    margin-top: 67px;
+}
+
+
+/* Section 04 --- big img */
+.section_04 .big-img {
+    position: absolute;
+    top: 115px;
+    right: 0;
+
+    width: 450px;
+    height: 800px;
+
+
+}
+.section_04 .big-img img {
+    width: 100%;
+}

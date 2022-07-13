@@ -26,13 +26,14 @@ header nav .gnb li a {
   width: 100%;
   height: 520px;
 
-  background-image: url(../img/mission/orange_main.png);
+  background-image: url(../img/mission/flattlay_main.png);
   background-repeat: no-repeat;
   object-fit: cover;
 }
 
 .main {
   display: flex;
+  justify-content: flex-end;
 
   width: 1340px;
   height: 100%;
@@ -44,7 +45,7 @@ header nav .gnb li a {
 .main .title-area h3 {
   font-size: 28px;
   font-weight: 400;
-  color: #FF6741;
+  color: #333;
 }
 .main .title-area h1 {
   padding-top: 10px;
