@@ -516,10 +516,8 @@ main {
 }
 /* --- */
 
-.section_03 .veggie-box .small-area small-box1 {
-}
-.section_03 .veggie-box .small-area small-box2 {
-}
+.section_03 .veggie-box .small-area small-box1 {}
+.section_03 .veggie-box .small-area small-box2 {}
 
 /* Section03 --- veggie box - main area */
 .section_03 .veggie-box .main-area {
@@ -670,6 +668,38 @@ main {
   background-color: #ff6741;
   margin-top: 42px;
 }
+
+/* Banner */
+.banner {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 150px;
+  background-color: #ff6741;
+}
+
+.banner img.confetti {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+}
+.banner img.free-truck {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.banner .event-box {
+  width: 130px;
+  height: 60px;
+  background-color: white;
+  border-radius: 10px; 
+}
+
+.banner .text-box {}
+.banner .text-box h3 {}
+.banner .text-box p {}
 
 /* Section 04 */
 .section_04 {
