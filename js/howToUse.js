@@ -1,17 +1,12 @@
 $(function () {
     
-    $(".faq-accordion .title-box").click(function () {
-        $(this).addClass("active")
-        $(this).next().addClass("active");
+    // FAQ Slide Toggle
+    $(".faq-accordion .title").click(function () {
+        $(this).toggleClass("active");
+        $(this).parent().siblings().children().removeClass("active");
 
-        $(this).parent().parent().children(".title-box").removeClass("active");
-
-        $(this).siblings(".desc").stop().slideToggle();
-        $(this).parents().children(".desc").stop().slideUp();
+        $(this).next().stop().slideToggle();
+        $(this).parent().siblings().children(".desc").slideUp();
     });
-
-
-
-
 
 });
