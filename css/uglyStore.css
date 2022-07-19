@@ -1,0 +1,148 @@
+/* header */
+header {
+    background-color: #fff;
+}
+header nav .gnb li a {
+    color: #252525;
+}
+
+/* Container */
+.container {
+    position: absolute;
+    top: 80px;
+
+    width: 1920px;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* Main */
+.main {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 650px;
+
+    background-color: #FFF5F0;
+}
+.main .main-inner {
+    position: relative;
+    width: 1340px;
+}
+.main .left-area {
+    position: absolute;
+    z-index: 10;
+
+    width: 30%;
+    height: 100%;
+}
+.main .left-area .main-title {
+    padding-top: 90px;
+}
+.main .left-area .main-title h2 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #FF6741;
+}
+.main .left-area .main-title h1 {
+    padding-top: 10px;
+}
+
+.main .left-area .main-text {
+    padding-top: 40px;
+}
+.main .left-area .main-text p {
+    font-size: 24px;
+    font-weight: 300;
+}
+.main .left-area .main-text h4 {
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 5px;
+}
+.main .left-area .main-text span {
+    font-size: 26px;
+    font-weight: 300;
+    padding-right: 10px;
+    color: #FF6741;
+}
+
+.main .left-area .main-btn {
+    display: block;
+    width: 220px;
+    height: 50px;
+    background-color: #FF6741;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    text-align: center;
+    line-height: 50px;
+
+    margin-top: 45px;
+}
+
+.main .left-area .slide-btn {
+    position: absolute;
+    bottom: 48px;
+    right: -20px;
+}
+.main .left-area .slide-btn button {
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid #252525;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main .left-area .slide-btn .left-btn {
+    background-image: url(../img/uglyStore/left-ant.png);
+
+    margin-right: 10px;
+}
+.main .left-area .slide-btn .right-btn {
+    background-image: url(../img/uglyStore/right-ant.png);
+}
+
+/* Slide Area */
+.main .slide-area {
+    position: absolute;
+    right: 0;
+    top: 50px;
+
+    width: 900px;
+    height: 550px;
+}
+.main .slide-area .item {}
+.main .slide-area .item img {
+    width: 100%;
+}
+
+/* JQuery --- Dots */
+.main .slide-area .slick-dots {
+    position: relative;
+    top: -100px;
+
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+
+    display: flex;
+    justify-content: center;
+}
+.main .slide-area .slick-dots li {
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    margin-top: 60px;
+    margin-right: 10px;
+}
+.main .slide-area .slick-dots li.slick-active {
+    background-color: #FF6741;
+}
+.main .slide-area .slick-dots li button {
+    display: none;
+}

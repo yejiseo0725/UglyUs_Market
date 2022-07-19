@@ -568,21 +568,37 @@ header nav .gnb li a {
 }
 .section_06 .faq-accordion ul li {
     /* position: relative; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.section_06 .faq-accordion ul li .title::before {
-    content: url(../img/howToUse/plus.png);
-    width: 22px;
-    height: 22px;
-    margin-right: 30px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
 }
 .section_06 .faq-accordion ul li .title {
+    
+}
+/* .section_06 .faq-accordion ul li .title::before {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    
+    background-position: 50% 50%;
+    width: 22px;
+    height: 30px;
+    margin-right: 30px;
+
+    /* border: 1px solid teal; */
+/* } */ 
+.section_06 .faq-accordion ul li .title {
+    display: inline-block;
     font-size: 24px;
     font-weight: 400;
-    padding-left: 28px;
+    padding-left: 58px;
+    /* border: 2px solid crimson; */
+    background-image: url(../img/howToUse/plus.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    cursor: pointer;
 }
+
 .section_06 .faq-accordion ul li .desc {
     font-size: 18px;
     font-weight: 300;
@@ -591,10 +607,10 @@ header nav .gnb li a {
 
 /* Active 추가 */
 .section_06 .faq-accordion ul li .title.active {
-    /* background-color: teal; */
+    background-image: url(../img/howToUse/minus.png);
 }
 .section_06 .faq-accordion ul li .title.active::before {
-    content: url(../img/howToUse/minus.png);
+    
 }
 .section_06 .faq-accordion ul li .desc {
     display: none;
