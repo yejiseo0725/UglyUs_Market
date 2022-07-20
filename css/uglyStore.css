@@ -199,9 +199,13 @@ header nav .gnb li a {
 .section_01 .slide-articles article {
     margin-right: 47px;
 }
-.section_01 .slide-articles article img {
+.section_01 .slide-articles article .img-area {
     width: 300px;
     height: 320px;
+    border: 5px solid blue;
+}
+.section_01 .slide-articles article .img-area img {
+    width: 100%;
     object-fit: cover;
 }
 .section_01 .slide-articles article h5 {
