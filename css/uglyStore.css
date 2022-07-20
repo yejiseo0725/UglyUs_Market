@@ -5,7 +5,6 @@ header {
 header nav .gnb li a {
     color: #252525;
 }
-
 /* Container */
 .container {
     position: absolute;
@@ -14,6 +13,7 @@ header nav .gnb li a {
     width: 1920px;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -116,7 +116,7 @@ header nav .gnb li a {
     width: 900px;
     height: 550px;
 }
-.main .slide-area .item {}
+/* .main .slide-area .item {} */
 .main .slide-area .item img {
     width: 100%;
 }
@@ -146,3 +146,284 @@ header nav .gnb li a {
 .main .slide-area .slick-dots li button {
     display: none;
 }
+
+/* Section 01 */
+.section_01 {
+    width: 100%;
+    height: 750px;
+
+    display: flex;
+    justify-content: center;
+}
+.section_01 .section-inner {
+    position: relative;
+    width: 1340px;
+}
+
+/* Buttons */
+.section_01 button {
+    position: absolute;
+    top: 55%;
+    /* transform: translateY(-50%); */
+
+    width: 50px;
+    height: 50px;
+
+    background-color: white;
+}
+.section_01 button.left-ant {
+    left: -7%;
+}
+.section_01 button.right-ant {
+    right: -7%;
+}
+
+/* Title */
+.section_01 .title-area {
+    text-align: center;
+    padding-top: 90px;
+}
+.section_01 .title-area h3 {
+    font-size: 28px;
+    font-weight: 400;
+}
+.section_01 .title-area h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+/* Articles (Slide) */
+.section_01 .slide-articles {
+    margin-top: 80px;
+}
+.section_01 .slide-articles article {
+    margin-right: 47px;
+}
+.section_01 .slide-articles article img {
+    width: 300px;
+    height: 320px;
+    object-fit: cover;
+}
+.section_01 .slide-articles article h5 {
+    font-size: 16px;
+    font-weight: 300;
+    color: #333;
+    padding-top: 10px;
+}
+.section_01 .slide-articles article h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+.section_01 .slide-articles article h3 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 4px;
+}
+.section_01 .slide-articles article h3 span {
+    font-size: 16px;
+    font-weight: 300;
+    color: #FF6741;
+    padding-right: 7px;
+}
+
+/* JQuery --- Slick dots */
+.slick-dots {
+    display: flex;
+    justify-content: center;
+}
+.slick-dots li {
+    margin: 37px 0;
+
+    width: 160px;
+    height: 5px;
+    background-color: #D2D2D2;
+}
+.slick-dots li.slick-active {
+    background-color: #FF6741;
+}
+.slick-dots li button {
+    display: none;
+}
+
+/* Section 02 */
+.section_02 {
+    width: 100%;
+    height: 1416px;
+    background-color: #FFF5F0;
+
+    display: flex;
+    justify-content: center;
+}
+.section_02 .section-inner {
+    width: 1060px;
+    height: 100%;
+}
+
+/* Title */
+.section_02 .title-area {
+    text-align: center;
+    padding-top: 100px;
+}
+.section_02 .title-area h3 {
+    font-size: 28px;
+    font-weight: 400;
+}
+.section_02 .title-area h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+/* Articles */
+.section_02 .articles {
+    width: 1060px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+
+    margin-top: 60px;
+}
+.section_02 .articles .article-stage {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+.section_02 article {
+    width: 320px;
+    height: 320px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.section_02 article img {
+    width: 100%;
+    object-fit: cover;
+}
+.section_02 article.last {
+    margin: 0;
+}
+.section_02 article.a1 {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.section_02 article.a1:hover .hover {
+    opacity: 1;
+    visibility: visible;
+} 
+
+/* Hover 시 나오는 Contents */
+.section_02 article.a1 .hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 50px;
+    box-sizing: border-box;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.section_02 article.a1 .hover .upper-part {
+    display: flex;
+    align-items: center;
+}
+.section_02 article.a1 .hover .upper-part .line1 {
+    width: 80px;
+    height: 1px;
+    background-color: white;
+}
+.section_02 article.a1 .hover .upper-part img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin: 0 6px;
+}
+.section_02 article.a1 .hover .upper-part .line2 {
+    width: 80px;
+    height: 1px;
+    background-color: white;
+}
+
+.section_02 article.a1 .hover .review-part {}
+.section_02 article.a1 .hover .review-part img {
+    width: 82px;
+    height: 14px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+.section_02 article.a1 .hover .review-part p {
+    font-size: 14px;
+    font-weight: 200;
+    text-align: start;
+    margin-top: 15px;
+}
+
+.section_02 article.a1 .hover .lower-part {}
+.section_02 article.a1 .hover .lower-part .line3 {
+    width: 206px;
+    height: 1px;
+    background-color: white;
+    margin-top: 41px;
+}
+.section_02 article.a1 .hover .lower-part h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF6741;
+    margin-top: 7px;
+}
+
+
+
+
+
+.section_02 article.a2 {}
+.section_02 article.a3 {}
+.section_02 article.a4 {}
+.section_02 article.a5 {
+    width: 320px;
+    height: 320px;
+    background-color: white;
+
+    text-align: center;
+    cursor: auto;
+}
+.section_02 article.a5 h3 {
+    font-size: 30px;
+    font-weight: 400;
+
+    padding-top: 78px;
+    box-sizing: border-box;
+}
+.section_02 article.a5 a {
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    background-color: #FF6741;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px;
+
+    margin-top: 38px;
+}
+
+.section_02 article.a6 {}
+.section_02 article.a7 {}
+.section_02 article.a8 {}
+.section_02 article.a9 {}
