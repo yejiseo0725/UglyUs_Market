@@ -457,7 +457,7 @@ main {
   align-items: center;
 
   position: relative;
-  height: 1250px;
+  height: 1300px;
 }
 
 .section_03 .title-area {
@@ -673,17 +673,13 @@ main {
 .banner {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   width: 100%;
   height: 150px;
   background-color: #ff6741;
 }
 
-.banner img.confetti {
-  width: 55px;
-  height: 55px;
-  object-fit: cover;
-}
 .banner img.free-truck {
   width: 120px;
   height: 120px;
@@ -691,15 +687,48 @@ main {
 }
 
 .banner .event-box {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 130px;
   height: 60px;
   background-color: white;
-  border-radius: 10px; 
+  border-radius: 60px; 
+}
+.banner .event-box img.confetti {
+  position: absolute;
+  left: 50%;
+  top: -70%;
+  transform: translateX(-50%);
+
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+}
+.banner .event-box h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ff6741;
+  text-align: center;
 }
 
-.banner .text-box {}
-.banner .text-box h3 {}
-.banner .text-box p {}
+.banner .text-box {
+  text-align: center;
+  color: white;
+  margin: 0 70px;
+}
+.banner .text-box p {
+  font-size: 16px;
+  font-weight: 300;
+}
+.banner .text-box h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
 
 /* Section 04 */
 .section_04 {
