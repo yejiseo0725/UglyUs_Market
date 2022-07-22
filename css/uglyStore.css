@@ -207,18 +207,19 @@ header nav .gnb li a {
 }
 .section_01 .slide-articles article .img-area img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .section_01 .slide-articles article .img-area .img-dimmed {
     position: absolute;
-    bottom: -100px;
+    bottom: -80px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: rgba(0, 0, 0, 0.6);
 
     opacity: 0;
@@ -239,8 +240,8 @@ header nav .gnb li a {
     justify-content: center;
     align-items: center;
 
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     background-color: white;
     border-radius: 50%;
 
@@ -250,13 +251,13 @@ header nav .gnb li a {
     margin-right: 0;
 }
 .section_01 .img-dimmed .icon-btns a img {
-    width: 17px;
-    height: 17px;
+    width: 23px;
+    height: 23px;
     object-fit: cover;
 }
 .section_01 .img-dimmed .icon-btns a img.cart {
-    width: 20px;
-    height: 20px;
+    width: 26px;
+    height: 2px;
 }
 
 .section_01 .slide-articles article h5 {
@@ -349,6 +350,8 @@ header nav .gnb li a {
 }
 
 .section_02 article {
+    position: relative;
+
     width: 320px;
     height: 320px;
     margin-right: 50px;
@@ -366,18 +369,25 @@ header nav .gnb li a {
     box-sizing: border-box;
 }
 
-.section_02 article.a1:hover .hover {
+.section_02 article.a1:hover .hover,
+.section_02 article.a2:hover .hover,
+.section_02 article.a3:hover .hover, 
+.section_02 article.a4:hover .hover, 
+.section_02 article.a6:hover .hover, 
+.section_02 article.a7:hover .hover, 
+.section_02 article.a8:hover .hover, 
+.section_02 article.a9:hover .hover {
     opacity: 1;
     visibility: visible;
 } 
 
 /* Hover 시 나오는 Contents */
-.section_02 article.a1 .hover {
+/* 공통 부분 */
+.section_02 article .hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    left: 0;
-    top: 0;
+
     background-color: rgba(0, 0, 0, 0.6);
 
     color: white;
@@ -394,49 +404,73 @@ header nav .gnb li a {
     visibility: hidden;
     transition: 0.5s;
 }
-.section_02 article.a1 .hover .upper-part {
+
+/* 개별 부분 */
+.section_02 article.a1 .hover,
+.section_02 article.a4 .hover, 
+.section_02 article.a7 .hover {
+    left: 0;
+    top: 0;
+}
+.section_02 article.a2 .hover, 
+.section_02 article.a8 .hover {
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+.section_02 article.a3 .hover, 
+.section_02 article.a6 .hover, 
+.section_02 article.a9 .hover {
+    right: 0;
+    top: 0;
+}
+
+
+
+
+.section_02 article .hover .upper-part {
     display: flex;
     align-items: center;
 }
-.section_02 article.a1 .hover .upper-part .line1 {
+.section_02 article .hover .upper-part .line1 {
     width: 80px;
     height: 1px;
     background-color: white;
 }
-.section_02 article.a1 .hover .upper-part img {
+.section_02 article .hover .upper-part img {
     width: 30px;
     height: 30px;
     object-fit: cover;
     margin: 0 6px;
 }
-.section_02 article.a1 .hover .upper-part .line2 {
+.section_02 article .hover .upper-part .line2 {
     width: 80px;
     height: 1px;
     background-color: white;
 }
 
-.section_02 article.a1 .hover .review-part {}
-.section_02 article.a1 .hover .review-part img {
+.section_02 article .hover .review-part {}
+.section_02 article .hover .review-part img {
     width: 82px;
     height: 14px;
     object-fit: cover;
     margin-top: 10px;
 }
-.section_02 article.a1 .hover .review-part p {
+.section_02 article .hover .review-part p {
     font-size: 14px;
     font-weight: 200;
     text-align: start;
     margin-top: 15px;
 }
 
-.section_02 article.a1 .hover .lower-part {}
-.section_02 article.a1 .hover .lower-part .line3 {
+.section_02 article .hover .lower-part {}
+.section_02 article .hover .lower-part .line3 {
     width: 206px;
     height: 1px;
     background-color: white;
     margin-top: 41px;
 }
-.section_02 article.a1 .hover .lower-part h5 {
+.section_02 article .hover .lower-part h5 {
     font-size: 16px;
     font-weight: 500;
     color: #FF6741;
