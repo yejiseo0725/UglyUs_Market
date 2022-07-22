@@ -257,7 +257,8 @@ header nav .gnb li a {
 }
 .section_01 .img-dimmed .icon-btns a img.cart {
     width: 26px;
-    height: 2px;
+    height: 26px;
+    object-fit: cover;
 }
 
 .section_01 .slide-articles article h5 {
@@ -369,17 +370,10 @@ header nav .gnb li a {
     box-sizing: border-box;
 }
 
-.section_02 article.a1:hover .hover,
-.section_02 article.a2:hover .hover,
-.section_02 article.a3:hover .hover, 
-.section_02 article.a4:hover .hover, 
-.section_02 article.a6:hover .hover, 
-.section_02 article.a7:hover .hover, 
-.section_02 article.a8:hover .hover, 
-.section_02 article.a9:hover .hover {
+.section_02 article:hover .hover {
     opacity: 1;
     visibility: visible;
-} 
+}
 
 /* Hover 시 나오는 Contents */
 /* 공통 부분 */
@@ -424,9 +418,6 @@ header nav .gnb li a {
     right: 0;
     top: 0;
 }
-
-
-
 
 .section_02 article .hover .upper-part {
     display: flex;
@@ -477,13 +468,7 @@ header nav .gnb li a {
     margin-top: 7px;
 }
 
-
-
-
-
-.section_02 article.a2 {}
-.section_02 article.a3 {}
-.section_02 article.a4 {}
+/* 이미지 없는 파트 */
 .section_02 article.a5 {
     width: 320px;
     height: 320px;
@@ -512,7 +497,164 @@ header nav .gnb li a {
     margin-top: 38px;
 }
 
-.section_02 article.a6 {}
-.section_02 article.a7 {}
-.section_02 article.a8 {}
-.section_02 article.a9 {}
+/* Banner */
+.banner {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 250px;
+
+    background-image: url(../img/uglyStore/asparagus.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.banner h2 {
+    position: absolute;
+    z-index: 10;
+
+    font-family: "Raleway";
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+
+/* Section 03 */
+.section_03 {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 3200px;
+}
+.section_03 .section-inner {
+    width: 1060px;
+}
+
+.section_03 .title-area {
+    text-align: center;
+    margin-top: 100px;
+}
+.section_03 .title-area h3 {
+    font-size: 28px;
+    font-weight: 400;
+}
+.section_03 .title-area h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.section_03 .filter {
+    display: flex;
+    justify-content: center;
+    margin-top: 62px;
+}
+.section_03 .filter .f-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 35px;
+
+    border: 1px solid #FF6741;
+    border-radius: 5px;
+    background-color: white;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF6741;
+
+    margin-right: 20px;
+    cursor: pointer;
+}
+.section_03 .filter .f-btn1 {
+    background-color: #FF6741;
+    color: white;
+}
+.section_03 .filter .f-btn2 {}
+.section_03 .filter .f-btn3 {}
+
+.section_03 .boxes {
+    border: 1px solid crimson;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 60px;
+}
+
+.section_03 .boxes section img:not(.out):hover {
+    transform: scale(1.5);
+} 
+
+.section_03 .boxes section {
+    position: relative;
+
+    border: 2px solid royalblue;
+    margin-bottom: 50px;
+}
+.section_03 .boxes section img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    margin: 0;
+}
+.section_03 .boxes section .desc-area {
+    height: 90px;
+}
+.section_03 .boxes section .desc-area .text-box1 {
+    display: flex;
+    justify-content: space-between;
+}
+.section_03 .boxes section .desc-area .text-box1 .text-part1 {}
+.section_03 .boxes section .desc-area .text-box1 .text-part1 h4 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #333;
+}
+.section_03 .boxes section .desc-area .text-box1 .text-part2 {}
+.section_03 .boxes section .desc-area .text-box1 .text-part2 h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+.section_03 .boxes section .desc-area .text-box1 .text-part2 h4 span {
+    font-size: 16px;
+    font-weight: 300;
+    color: #FF6741;
+    margin-right: 4px;
+}
+
+.section_03 .boxes section .desc-area .text-box2 {}
+.section_03 .boxes section .desc-area .text-box2 h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Sold Out Box */
+.section_03 .boxes section .soldout-area {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    background-image: url(../img/uglyStore/soldout.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
