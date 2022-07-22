@@ -203,7 +203,7 @@ header nav .gnb li a {
     position: relative;
     width: 300px;
     height: 320px;
-    border: 5px solid blue;
+    overflow: hidden;
 }
 .section_01 .slide-articles article .img-area img {
     width: 100%;
@@ -211,11 +211,53 @@ header nav .gnb li a {
 }
 .section_01 .slide-articles article .img-area .img-dimmed {
     position: absolute;
+    bottom: -100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 100%;
     height: 100px;
-    background-color: blue;
-}
+    background-color: rgba(0, 0, 0, 0.6);
 
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.section_01 .slide-articles article .img-area:hover .img-dimmed {
+    bottom: 0;
+
+    opacity: 1;
+    visibility: visible;
+}
+.section_01 .img-dimmed .icon-btns {
+    display: flex;
+}
+.section_01 .img-dimmed .icon-btns a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+
+    margin-right: 25px;
+}
+.section_01 .img-dimmed .icon-btns a.last-icon {
+    margin-right: 0;
+}
+.section_01 .img-dimmed .icon-btns a img {
+    width: 17px;
+    height: 17px;
+    object-fit: cover;
+}
+.section_01 .img-dimmed .icon-btns a img.cart {
+    width: 20px;
+    height: 20px;
+}
 
 .section_01 .slide-articles article h5 {
     font-size: 16px;
