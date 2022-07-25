@@ -5,3 +5,97 @@ header {
 header nav .gnb li a {
     color: #252525;
 }
+
+/* Main */
+main {
+    position: relative;
+    top: 80px;
+
+    width: 1920px;
+    height: 1000px;
+    background-color: #FF6741;
+}
+
+main .title-box {
+    padding-top: 130px;
+
+    color: white;
+    text-align: center;
+}
+main .title-box h3 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.main .uglybox-img {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    width: 494px;   
+    height: 200px;
+
+    background-image: url(../img/review/uglybox.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Box Slide Area */
+.main .slide-area {
+    margin-top: 89px;
+}
+.main .slide-area .slide-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main .slide-area .slide-box .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 350px;
+    height: 430px;
+    background-color: white;
+    margin-right: 50px;
+}
+.main .slide-area .slide-box .box img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 25px;
+}
+.main .slide-area .slide-box .box .desc-area {
+    width: 300px;
+    margin-top: 20px;
+}
+.main .slide-area .slide-box .box .desc-area p {
+    height: 92px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.main .slide-area .slide-box .box .desc-area .user-box {
+    margin-top: 35px;
+}
+.main .slide-area .slide-box .box .desc-area .user-box .user {
+    display: flex;
+    justify-content: space-between;
+}
+.main .slide-area .slide-box .box .desc-area .user-box .user h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+.main .slide-area .slide-box .box .desc-area .user-box .user h6 {
+    font-weight: 300;
+    font-size: 14px;
+    color: #333;
+}
+.main .slide-area .slide-box .box .desc-area .user-box img {
+    width: 58px;
+    height: 10px;
+    object-fit: cover;
+    margin: 0;
+}
