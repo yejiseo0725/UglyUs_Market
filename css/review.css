@@ -9,11 +9,12 @@ header nav .gnb li a {
 /* Main */
 main {
     position: relative;
-    top: 80px;
 
     width: 1920px;
     height: 1000px;
     background-color: #FF6741;
+
+    padding-top: 80px;
 }
 
 main .title-box {
@@ -99,3 +100,57 @@ main .title-box h3 {
     object-fit: cover;
     margin: 0;
 }
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 150px;
+    background-color: #FFF5F0;
+}
+.banner .banner-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1340px;
+}
+.banner .left-area {}
+.banner .left-area h3 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #FF6741;
+}
+.banner .left-area h4 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+}
+
+.banner .right-area {
+    display: flex;
+}
+.banner .right-area .review-info {}
+.banner .right-area .review-info .point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 137px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #D6D6D5;
+
+    font-size: 12px;
+}
+.banner .right-area .review-info .point span {
+    color: #FF6741;
+}
+.banner .right-area .review-info .login-btn {}
+
+.banner .right-area .score-info {}
+.banner .right-area .score-info .score {}
+.banner .right-area .score-info .score .score-box {}
+.banner .right-area .score-info .score h5 {}
