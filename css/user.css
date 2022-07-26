@@ -1,0 +1,61 @@
+/* header */
+header {
+    background-color: #FFF5F0;
+}
+header nav .gnb li a {
+    color: #252525;
+}
+
+a{
+    color: #252525;
+}
+
+/* Contents */
+.login-section {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 80px;
+    width: 100%;
+    height: 1000px;
+}
+.login-section .section-inner {
+    width: 406px;
+    border: 1px solid teal;
+}
+
+.login-section .title-area {
+    padding-top: 90px;
+}
+.login-section .title-area h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.login-section .input-area {
+    margin-top: 85px;
+}
+.login-section .input-area input[type="text"] {
+    width: 100%;
+    height: 50px;
+}
+.login-section .input-area h5 {}
+
+.login-section .login-btn {}
+
+.login-section .or-area {}
+.login-section .or-area::before,
+.login-section .or-area::after {
+    content: "";
+    position: absolute;
+    width: 165px;
+    height: 1px;
+    background-color: #D2D2D2;
+}
+.login-section .or-area::after {}
+
+.login-section .otherWay-area {}
+.login-section .otherWay-area a {}
+.login-section .otherWay-area .google-login {}
+.login-section .otherWay-area .kkt-login {}
+.login-section .otherWay-area .naver-login {}
