@@ -5,17 +5,6 @@ header {
 header nav .gnb li a {
     color: #252525;
 }
-/* Container */
-.container {
-    position: absolute;
-    top: 80px;
-
-    width: 1920px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 /* Main */
 .main {

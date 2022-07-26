@@ -208,7 +208,7 @@ main {
 }
 
 /* section 01 --- contents area 1 */
-.section_01 .container {
+.section_01 .container1 {
   display: flex;
   justify-content: center;
 
@@ -217,14 +217,14 @@ main {
   margin-top: 84px;
 }
 
-.section_01 .container .content1 {
+.section_01 .container1 .content1 {
   display: flex;
   justify-content: center; 
   align-items: center;
 }
 
 /* left-content */
-.section_01 .container .content1 .left {
+.section_01 .container1 .content1 .left {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,7 +236,7 @@ main {
 
   margin-right: 25px;
 }
-.section_01 .container .content1 .left span {
+.section_01 .container1 .content1 .left span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -255,17 +255,17 @@ main {
 
   margin-left: 44px;
 }
-.section_01 .container .content1 .left p {
+.section_01 .container1 .content1 .left p {
   font-size: 18px;
   font-weight: 300;
   padding-left: 44px;
 }
-.section_01 .container .content1 .left .first_desc {
+.section_01 .container1 .content1 .left .first_desc {
   margin-bottom: 50px;
 }
 
 /* right-content */
-.section_01 .container .content1 .right {
+.section_01 .container1 .content1 .right {
   display: flex;
   flex-wrap: wrap;
 
@@ -274,7 +274,7 @@ main {
 }
 
 /* right-content boxes */
-.section_01 .container .content1 .right .small-box {
+.section_01 .container1 .content1 .right .small-box {
   width: 270px;
   height: 250px;
   margin-bottom: 25px;
@@ -283,12 +283,12 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.section_01 .container .content1 .right .small-box1 {
+.section_01 .container1 .content1 .right .small-box1 {
   background-image: url(../img/main/ug_tom\ 1.png);
   margin-right: 25px;
 }
 
-.section_01 .container .content1 .right .big-box {
+.section_01 .container1 .content1 .right .big-box {
   width: 565px;
   height: 250px;
 

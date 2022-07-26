@@ -37,3 +37,15 @@ h1 {
 button {
   border: none;
 }
+
+.container {
+  position: absolute;
+  left: 0;
+  top: 80px;
+
+  width: 1920px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
