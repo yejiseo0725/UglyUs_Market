@@ -38,8 +38,44 @@ a{
 .login-section .input-area input[type="text"] {
     width: 100%;
     height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #D2D2D2;
+    border-radius: 5px;
+    outline: none;
+
+    margin-bottom: 25px;
+    font-size: 20px;
+    padding-left: 20px;
+
+    font-family: "Raleway";
+    color: #252525;
+
+    transition: 0.5s;
 }
-.login-section .input-area h5 {}
+.login-section .input-area input[type="text"]:nth-child(2) {
+    margin: 0;
+}
+.login-section .input-area input[type="text"]::placeholder {
+    font-family: "Raleway";
+    font-size: 20px;
+    font-weight: 400;
+    color: #D2D2D2;
+}
+.login-section .input-area input[type="text"]:hover, 
+.login-section .input-area input[type="text"]:focus {
+    border: 1px solid #FF6741;
+}
+.login-section .input-area input[type="text"]:focus::placeholder {
+    color: transparent;
+}
+.login-section .input-area a {
+    display: block;
+    text-align: end;
+    padding-top: 14px;
+}
+.login-section .input-area a:hover {
+    text-decoration: underline;
+}
 
 .login-section .login-btn {}
 
