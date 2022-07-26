@@ -21,7 +21,7 @@ header nav .gnb li a {
 /* Contents Items --- Left Area */
 .contents .wrap {
     display: flex;
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 .contents .title-area {
@@ -36,19 +36,37 @@ header nav .gnb li a {
 .contents .item-area {}
 .contents .item-area ul {
     display: flex;
+    align-items: center;
 }
 .contents .item-area ul li {
+    display: inline-block;
     font-size: 16px;
     font-weight: 400;
+    margin-bottom: 15px;
 }
-.contents .item-area ul li:nth-child(1) { margin-right: 135px; }
-.contents .item-area ul li:nth-child(2) { margin-right: 290px; }
-.contents .item-area ul li:nth-child(3) { margin-right: 93px; }
-.contents .item-area ul li:nth-child(4) { margin-right: 93px; }
-.contents .item-area ul li:nth-child(5) { margin-right: 93px; }
+
+.contents .item-area ul li:nth-child(1) { 
+    width: 150px;
+}
+.contents .item-area ul li:nth-child(2) { 
+    width: 310px;
+    margin-left: 15px;
+}
+.contents .item-area ul li:nth-child(3),
+.contents .item-area ul li:nth-child(4),
+.contents .item-area ul li:nth-child(5) {
+    width: 120px;
+}
+
 .contents .item-area ul li input[type="checkbox"] {
-    margin-top: 2px;
+    width: 20px;
+    height: 20px;
+    margin-left: 0;
 }
+.contents .item-area ul li input[type="checkbox"]:checked {
+    accent-color: #f06b4a;
+}
+
 
 .contents .item-area .list-line {
     width: 100%;
@@ -59,9 +77,10 @@ header nav .gnb li a {
 
 .contents .item-area .order-item {
     display: flex;
-    height: 180px;
+    height: 150px;
     border-bottom: 1px solid #EDEDED;
     margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 .contents .item-area .order-item .img-area {
     width: 150px;
@@ -74,25 +93,29 @@ header nav .gnb li a {
 }
 
 .contents .item-area .order-item .item-info {
-    /* display: flex;
+    position: relative;
+
+    display: flex;
     flex-direction: column;
-    justify-content: center; */
+    justify-content: center;
 
     width: 310px;
-    padding-top: 24px;
     box-sizing: border-box;
 
     /* border: 1px solid teal; */
 }
 
 /* 모든 checkbox 설정 */
-input[type="checkbox"] {
-    /* display: inline-block; */
+.contents .item-area .order-item .item-info input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+
     width: 20px;
     height: 20px;
-    margin: 0 0 20px 0;
+    margin: 0;
 }
-input[type="checkbox"]:checked {
+.contents .item-area .order-item .item-info input[type="checkbox"]:checked {
     accent-color: #f06b4a;
 }
 
