@@ -170,6 +170,62 @@ main {
   100% { width: 100%; } 
 }
 
+/* Fixed Items */
+.fixed-area {
+  /* position: fixed; */
+  position: absolute;
+  width: 80px;
+  height: 210px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 30;
+}
+.fixed-area .fixed-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  color: white;
+  margin-bottom: 5px;
+}
+
+.fixed-area .fixed-item h5 {
+  font-size: 14px;
+  font-weight: 400;
+}
+.fixed-area .fixed-item.delivery {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: #FF6741;
+}
+.fixed-area .fixed-item.delivery img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+}
+.fixed-area .fixed-item.contact {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: #414B5A;
+}
+.fixed-area .fixed-item.contact img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.fixed-area .fixed-item.top-btn {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #FF6741;
+}
 
 /* Section 01 */
 .section_01 {
@@ -196,22 +252,13 @@ main {
 /* Section 01 --- images */
 .section_01 img {
   position: absolute;
-}
-.section_01 #main-img1 {
-  left: 250px;
-  bottom: 65px;
-  z-index: 10;
-
-  width: 219px;
-  height: 162px;
-}
-.section_01 #main-img2 {
-  left: 270px;
-  bottom: 65px;
-  z-index: 11;
-
-  width: 34px;
-  height: 40px;
+  width: 236px;
+  height: 175px;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  object-fit: cover;
 }
 
 /* section 01 --- title area */
@@ -344,17 +391,19 @@ main {
   height: 350px;
   /* background-color: white; */
   text-align: center;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .2);
-}
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
 
-/* 순차적으로 활성화 시키기 */
-.section_01 .content2 article.on {
+  cursor: default;
+  transition: 0.5s;
+}
+/* .section_01 .content2 article:hover {
   background-color: #fff5f0;
 }
-.section_01 .content2 article.on h2 {
+.section_01 .content2 article:hover h2 {
   color: #ff6741;
-}
-/* --- */
+} */
+
+
 
 .section_01 .content2 article h2 {
   font-size: 120px;
@@ -363,6 +412,7 @@ main {
   color: #d6d6d5;
 
   padding-top: 75px;
+  transition: 0.5s;
 }
 .section_01 .content2 article h3 {
   font-size: 26px;
@@ -515,26 +565,18 @@ main {
 .section_03 .veggie-box .small-area .small {
   width: 80px;
   height: 80px;
-  background-color: #333;
-  box-sizing: border-box;
+  object-fit: cover;
+  border: 1px solid white;
+
   margin-bottom: 10px;
   cursor: pointer;
-
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.section_03 .veggie-box .small-area .small-box1 {
-  background-image: url(../img/main/standard_box.png);
-
-  border: 3px solid #ff6741;
+.section_03 .veggie-box .small-area .small img {
+  width: 100%;
 }
-.section_03 .veggie-box .small-area .small-box2 {
-  background-image: url(../img/main/jumbo_box.png);
-}
-
 /* small area :: active */
 .section_03 .veggie-box .small-area .small.active {
-  border: 3px solid #ff6741;
+  border: 1px solid #ff6741;
 }
 /* --- */
 
@@ -544,15 +586,15 @@ main {
 /* Section03 --- veggie box - main area */
 .section_03 .veggie-box .main-area {
   display: flex;
+  position: relative;
 }
 .section_03 .veggie-box .main-area .main-box {
   width: 480px;
   height: 480px;
-  background-image: url(../img/main/standard_box.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  background-color: tomato;
+  object-fit: cover;
+}
+.section_03 .veggie-box .main-area .main-box img {
+  width: 100%;
 }
 .section_03 .veggie-box .main-area .desc-box {
   position: relative;
@@ -561,6 +603,14 @@ main {
   height: 480px;
 
   font-family: "Noto sans KR";
+}
+/* img 에 맞추어 desc-box opacity on 으로 조절해주기 */
+.section_03 .veggie-box .main-area .desc-box.on {
+  opacity: 0;
+}
+.section_03 .veggie-box .main-area .desc-box.desc-jumbo {
+  position: absolute;
+  right: 0;
 }
 
 .section_03 .veggie-box .main-area .desc-box .text {
@@ -623,8 +673,7 @@ main {
   font-size: 20px;
   font-weight: 400;
 }
-.section_03 .veggie-box .main-area .desc-box a {
-}
+.section_03 .veggie-box .main-area .desc-box a {}
 
 /* Section 03 --- cards */
 .section_03 .intro-cards {
@@ -634,7 +683,7 @@ main {
 
   width: 1010px;
 
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .section_03 .intro-cards .card {
   display: flex;
@@ -649,9 +698,39 @@ main {
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-.section_03 .intro-cards .last-card {
+/* active 되면 애니메이션 실행 */
+.section_03 .intro-cards .card.active {
+  animation-name: show-cards;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  /* animation-iteration-count: infinite; */
+}
+
+.section_03 .intro-cards .card.active:nth-child(1) {
+  animation-duration: 0.4s;
+}
+.section_03 .intro-cards .card.active:nth-child(2) {
+  animation-duration: 0.6s;
+}
+.section_03 .intro-cards .card.active:nth-child(3) {
+  animation-duration: 0.8s;
+}
+.section_03 .intro-cards .card.active:nth-child(4) {
+  animation-duration: 1s;
   margin-right: 0;
 }
+
+@keyframes show-cards {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .section_03 .intro-cards .card .card-icon {
   width: 100px;
   height: 100px;
@@ -801,6 +880,8 @@ main {
 
 .section_04 .slide-area .grade {
   width: 200vw;
+  height: 250px;
+
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
