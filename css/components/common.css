@@ -1,51 +1,46 @@
-@font-face {
-  font-family: "Leferi";
-  src: url("../../font/Leferi_TTF/LeferiBaseBold.ttf");
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Leferi";
-  src: url("../../font/Leferi_TTF/LeferiPointBlack.ttf");
-  font-weight: 800;
-}
-
-/* Noto Sans KR */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
-
-/* Raleway */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-body {
-  font-family: "Noto sans KR", "Raleway";
-  position: relative;
-  max-width: 1920px;
+@font-face {
+    font-family: "Leferi";
+    src: url("../../font/Leferi_TTF/LeferiBaseBold.ttf");
+    font-weight: 600;
+}
 
-  color: #252525;
+@font-face {
+    font-family: "Leferi";
+    src: url("../../font/Leferi_TTF/LeferiPointBlack.ttf");
+    font-weight: 800;
+}
+
+body {
+    font-family: "Noto sans KR", "Raleway", sans-serif;
+    color: #252525;
 }
 
 a {
-  text-decoration: none;
-  color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
 
 h1 {
-  font-family: "Leferi";
-  font-size: 44px;
-  font-weight: 600;
+    font-family: "Leferi";
+    font-size: 44px;
+    font-weight: 600;
 }
 
 button {
-  border: none;
+    border: none;
 }
 
 .container {
-  position: absolute;
-  left: 0;
-  top: 80px;
+    position: absolute;
+    left: 0;
+    top: 80px;
 
-  width: 1920px;
+    width: 1920px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
