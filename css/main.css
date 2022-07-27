@@ -140,14 +140,36 @@ main {
 }
 
 /* progress bar */
-.visual .video-area .point-area .progress-bar {
-  position: absolute;
-  bottom: 0;
+.visual .video-area .progress-bar {
+  position: relative;
+  bottom: -80%;
 
   width: 1340px;
   height: 2px;
   background-color: white;
+  /* overflow: hidden; */
 }
+.visual .video-area .progress-bar::after {
+  content: "";
+  position: absolute;
+  width: 1340px;
+  height: 2px;
+  left: 0;
+  top: 0;
+  background-color: #ff6741;
+
+  animation-name: progress;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+@keyframes progress {
+  0% { width: 0; } 
+  100% { width: 100%; } 
+}
+
 
 /* Section 01 */
 .section_01 {
@@ -770,33 +792,38 @@ main {
 
 /* Section 04 - slide area */
 .section_04 .slide-area {
-  /* width: 4490px; */
   width: 100%;
   height: 550px;
   margin-top: 100px;
+
+  overflow: hidden;
 }
 
 .section_04 .slide-area .grade {
   width: 200vw;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+  box-sizing: border-box;
 
-  /* width: 4450px; */
-  /* width: 100%; */
-  height: 250px;
-
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
+.section_04 .slide-area .grade1 {
+  margin-bottom: 50px;
+  animation-name: left-move;
+}
+.section_04 .slide-area .grade2 {
+  transform: translateX(50px);
+  animation-name: right-move;
+}
+
 .section_04 .slide-area .grade .img-box {
   width: 250px;
   height: 250px;
   background-color: #333;
   margin-right: 50px;
-}
-.section_04 .slide-area .grade1 {
-  margin-bottom: 50px;
-}
-.section_04 .slide-area .grade2 {
-  transform: translateX(50px);
 }
 
 .section_04 .slide-area .grade1 .img1 {
@@ -820,6 +847,30 @@ main {
 .section_04 .slide-area .grade1 .img7 {
   background-image: url(../img/main/Frame\ 106.png);
 }
+.section_04 .slide-area .grade1 .img8 {
+  background-image: url(../img/main/Frame\ 107.png);
+}
+.section_04 .slide-area .grade1 .img9 {
+  background-image: url(../img/main/Frame\ 108.png);
+}
+.section_04 .slide-area .grade1 .img10 {
+  background-image: url(../img/main/Frame\ 109.png);
+}
+.section_04 .slide-area .grade1 .img11 {
+  background-image: url(../img/main/Frame\ 110.png);
+}
+.section_04 .slide-area .grade1 .img12 {
+  background-image: url(../img/main/Frame\ 120.png);
+}
+.section_04 .slide-area .grade1 .img13 {
+  background-image: url(../img/main/Frame\ 121.png);
+}
+.section_04 .slide-area .grade1 .img14 {
+  background-image: url(../img/main/Frame\ 122.png);
+}
+.section_04 .slide-area .grade1 .img15 {
+  background-image: url(../img/main/Frame\ 123.png);
+}
 
 .section_04 .slide-area .grade2 .img1 {
   background-image: url(../img/main/Frame\ 94.png);
@@ -842,25 +893,40 @@ main {
 .section_04 .slide-area .grade2 .img7 {
   background-image: url(../img/main/Frame\ 111.png);
 }
+.section_04 .slide-area .grade2 .img8 {
+  background-image: url(../img/main/Frame\ 112.png);
+}
+.section_04 .slide-area .grade2 .img9 {
+  background-image: url(../img/main/Frame\ 113.png);
+}
+.section_04 .slide-area .grade2 .img10 {
+  background-image: url(../img/main/Frame\ 114.png);
+}
+.section_04 .slide-area .grade2 .img11 {
+  background-image: url(../img/main/Frame\ 115.png);
+}
+.section_04 .slide-area .grade2 .img12 {
+  background-image: url(../img/main/Frame\ 116.png);
+}
+.section_04 .slide-area .grade2 .img13 {
+  background-image: url(../img/main/Frame\ 117.png);
+}
+.section_04 .slide-area .grade2 .img14 {
+  background-image: url(../img/main/Frame\ 118.png);
+}
+.section_04 .slide-area .grade2 .img15 {
+  background-image: url(../img/main/Frame\ 119.png);
+}
 
-/* 나중에 */
-.section_04 .slide-area .grade .img8 {
+@keyframes left-move {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-1000px); }
 }
-.section_04 .slide-area .grade .img9 {
+
+@keyframes right-move {
+  0% { transform: translateX(-1000px); }
+  100% { transform: translateX(0); }
 }
-.section_04 .slide-area .grade .img10 {
-}
-.section_04 .slide-area .grade .img11 {
-}
-.section_04 .slide-area .grade .img12 {
-}
-.section_04 .slide-area .grade .img13 {
-}
-.section_04 .slide-area .grade .img14 {
-}
-.section_04 .slide-area .grade .img15 {
-}
-/* --- */
 
 /* Section 05 */
 .section_05 {
