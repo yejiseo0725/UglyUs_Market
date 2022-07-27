@@ -6,10 +6,6 @@ header nav .gnb li a {
     color: #252525;
 }
 
-a{
-    color: #252525;
-}
-
 /* Contents */
 .login-section {
     display: flex;
@@ -21,7 +17,6 @@ a{
 }
 .login-section .section-inner {
     width: 406px;
-    border: 1px solid teal;
 }
 
 .login-section .title-area {
@@ -35,7 +30,8 @@ a{
 .login-section .input-area {
     margin-top: 85px;
 }
-.login-section .input-area input[type="text"] {
+.login-section .input-area input[type="text"], 
+.login-section .input-area input[type="password"] {
     width: 100%;
     height: 50px;
     box-sizing: border-box;
@@ -52,17 +48,23 @@ a{
 
     transition: 0.5s;
 }
-.login-section .input-area input[type="text"]:nth-child(2) {
+.login-section .input-area input[type="password"] {
+    background-image: url(../img/user/eye.png);
+    background-repeat: no-repeat;
+    background-position: 96%;
     margin: 0;
 }
-.login-section .input-area input[type="text"]::placeholder {
+.login-section .input-area input[type="text"]::placeholder, 
+.login-section .input-area input[type="password"]::placeholder {
     font-family: "Raleway";
     font-size: 20px;
     font-weight: 400;
     color: #D2D2D2;
 }
 .login-section .input-area input[type="text"]:hover, 
-.login-section .input-area input[type="text"]:focus {
+.login-section .input-area input[type="text"]:focus, 
+.login-section .input-area input[type="password"]:hover, 
+.login-section .input-area input[type="password"]:focus {
     border: 1px solid #FF6741;
 }
 .login-section .input-area input[type="text"]:focus::placeholder {
@@ -71,27 +73,79 @@ a{
 .login-section .input-area a {
     display: block;
     text-align: end;
-    padding-top: 14px;
+    color: #252525;
+    padding-top: 10px;
 }
 .login-section .input-area a:hover {
     text-decoration: underline;
 }
 
-.login-section .login-btn {}
+.login-section .login-btn {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    background-color: #FF6741;
 
-.login-section .or-area {}
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+
+    margin-top: 45px;
+}
+
+.login-section .or-area {
+    position: relative;
+    margin-top: 50px;
+
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
 .login-section .or-area::before,
 .login-section .or-area::after {
     content: "";
     position: absolute;
     width: 165px;
     height: 1px;
+    top: 50%;
+    transform: translateY(-50%);
     background-color: #D2D2D2;
 }
-.login-section .or-area::after {}
+.login-section .or-area::before {
+    left: 0;
+}
+.login-section .or-area::after {
+    right: 0;
+}
 
-.login-section .otherWay-area {}
-.login-section .otherWay-area a {}
-.login-section .otherWay-area .google-login {}
-.login-section .otherWay-area .kkt-login {}
-.login-section .otherWay-area .naver-login {}
+.login-section .otherWay-area {
+    padding-top: 25px;
+}
+.login-section .otherWay-area a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 50px;
+
+    font-size: 20px;
+    font-weight: 500;
+    color: #252525;
+    line-height: 50px;
+
+    margin-bottom: 25px;
+}
+.login-section .otherWay-area a img {
+    padding-right: 20px;
+}
+.login-section .otherWay-area a:nth-child(1) {
+    background-color: #FFA3A3;
+}
+.login-section .otherWay-area a:nth-child(2) {
+    background-color: #FFE485;
+}
+.login-section .otherWay-area a:nth-child(3) {
+    background-color: #54D58D;
+}
