@@ -36,34 +36,28 @@ $(function () {
         $(".desc-standard").removeClass("on").siblings().addClass("on");
     });
 
-    // $(".section_03 .section-inner").css("border", "3px solid royalblue");
-
+    // Offset & ScrollTop 위치값 변수
+    const innerHeight = $(window).innerHeight();
     const main_title_offset = $(".visual .main-title").offset().top;
-    const sec3_title_offset = $(".section_03 .title-area h3").offset().top;
-    const s3_card_offset = $(".section_03 .intro-cards").offset().top;
+    const s3_card_offset = $(".sec_03 .intro-cards").offset().top;
 
     $(window).scroll(function () {
 
-        const scrollTopLocation = parseInt($(this).scrollTop());
-        // Fixed area
-
-        if (scrollTopLocation > main_title_offset) {
-            $(".fixed-area").css({
+        const scrollTopLocation = $(this).scrollTop();
+        
+        // Fixed navBar 
+        if (scrollTopLocation + (innerHeight * 0.1) >= main_title_offset) {
+            $(".side-navBar").css({
                 position: "fixed",
             });
         } else {
-            $(".fixed-area").css({
+            $(".side-navBar").css({
                 position: "absolute",
             });
         }
 
-        // Fixed-area Top btn
-        // $(".fixed-area .top-btn").click(function () {
-
-        // });
-
         // Section 03 Animation
-        if (scrollTopLocation + ($(window).innerHeight() * 0.4) >= s3_card_offset) {
+        if (scrollTopLocation + (innerHeight * 0.7) >= s3_card_offset) {
             $(".intro-cards .card").addClass("active");
         } else {
             $(".intro-cards .card").removeClass("active");

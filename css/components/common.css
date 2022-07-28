@@ -23,14 +23,33 @@ a {
     color: #fff;
 }
 
-h1 {
+.title-area h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+.title-area h2 span {
+    display: block;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+h2.heading {
     font-family: "Leferi";
     font-size: 44px;
     font-weight: 600;
+    line-height: 60px;
 }
 
 button {
     border: none;
+}
+
+.layout {
+    position: relative;
+    max-width: 1920px;
+    min-width: 1340px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .container {

@@ -56,7 +56,27 @@
             </div>
         </header>
 
+        <!-- Fixed NavBar -->
+        <div class="side-navBar">
+            <div class="fixed-item delivery">
+                <h5>정기배송</h5>
+                <img src="../img/main/fast-delivery.png" alt="">
+            </div>
+            <div class="fixed-item contact">
+                <img src="../img/main/harvest.png" alt="">
+                <h5>문의하기</h5>
+            </div>
+            <a href="#visual">
+                <div class="fixed-item top-btn">
+                    <img src="../img/main/top-b.png" alt="">
+                    <h5>TOP</h5>
+                </div>
+            </a>
+        </div>
+
+        <!-- Main Visual -->
         <main>
+
             <!-- Visual Section -->
             <section class="visual" id="visual">
                 <!-- Video area -->
@@ -64,14 +84,13 @@
                     <video id="visualVideo" src="../video/uglyus.mp4" autoplay muted loop playsinline></video>
 
                     <!-- Title area -->
-
                     <div class="title-area">
                         <div class="main-title">
 
-                            <img class="pause-btn" src="../img/components/pause_btn.png" alt="">
-
-                            <h1>못생겨도 맛있다<br>친환경 못난이 채소박스</h1>
-                            <h2>조금씩 다양하게, 불필요한 낭비 없이</h2>
+                            <h2 class="heading">
+                                못생겨도 맛있다<br>친환경 못난이 채소박스
+                                <span>조금씩 다양하게, 불필요한 낭비 없이</span>
+                            </h2>
 
                             <a href="#">
                                 <div class="main-btn">지금 시작하기</div>
@@ -81,49 +100,54 @@
 
                     <!-- Point area-->
                     <div class="point-area">
-                        <div class="point-box point1">
+                        <div class="point-box-btn active">
                             <div class="chat_num">01</div>
 
                             <div class="chat--text_box">
                                 <div class="chat_title">유기농·무농약 채소를 저렴하게</div>
                                 <div class="chat_desc">시중보다 최대 <span>30%</span> 저렴하게<br>친환경 채소를 만나요.</div>
                             </div>
+
+                            <div class="progress-bar active"></div>
                         </div>
-                        <div class="point-box point2">
+                        <div class="point-box-btn">
                             <div class="chat_num">02</div>
 
                             <div class="chat--text_box">
                                 <div class="chat_title">생활을 바꾸는 채소생활</div>
                                 <div class="chat_desc">1-2인 가구에게도 딱 맞게,<br>다양한 <span>제철 채소를 소량씩</span> 즐겨요.</div>
                             </div>
+
+                            <div class="progress-bar"></div>
                         </div>
-                        <div class="point-box point3">
+                        <div class="point-box-btn">
                             <div class="chat_num">03</div>
 
                             <div class="chat--text_box">
                                 <div class="chat_title">생산자와 소비자가 함께 웃는 소비</div>
                                 <div class="chat_desc">건강한 생산을 응원하고 친환경 땅을<br>지키는 <span>선순환 구조</span>를 만들어요.</div>
                             </div>
-                        </div>
 
-                        <div class="progress-bar"></div>
+                            <div class="progress-bar"></div>
+                        </div>
                     </div>
+
                 </div>
             </section>
 
             <!-- Section 01 -->
-            <section class="section_01">
-                <img id="main-img1" src="../img/main/uglybox.png" alt="">
-
+            <section class="sec_01">
                 <div class="section-inner">
 
                     <div class="title-area">
-                        <div class="sub-title">우리의 문제</div>
-                        <h2>못난이 농산물이 아닌, 자연의 농산물</h2>
+                        <h2>
+                            <span class="sub-title">우리의 문제</span>
+                            못난이 농산물이 아닌, 자연의 농산물
+                        </h2>
                     </div>
 
-                    <div class="container1">
-                        <div class="content1">
+                    <div class="problem-area">
+                        <div class="problem-box">
                             <div class="left">
                                 <span>01</span>
                                 <p class="first_desc">수확량의 1/3은 못난이 농산물로 분류되고,<br>
@@ -150,8 +174,8 @@
                         </h2>
                     </div>
 
-                    <div class="container2">
-                        <div class="content2">
+                    <div class="solution-area">
+                        <div class="solution-box">
                             <article>
                                 <strong>01</strong>
                                 <h3>수확 직후 직매입</h3>
@@ -180,7 +204,7 @@
             </section>
 
             <!-- Section 02 -->
-            <section class="section_02">
+            <section class="sec_02">
 
                 <div class="section-inner">
 
@@ -251,11 +275,13 @@
             </section>
 
             <!-- Section 03 -->
-            <section class="section_03">
+            <section class="sec_03">
 
                 <div class="title-area">
-                    <h2>못난이 채소 박스를 소개합니다</h2>
-                    <h3>무농약·유기농 채소들을 구출해 보내드려요</h3>
+                    <h2>
+                        못난이 채소 박스를 소개합니다
+                        <span class="sub-title">무농약·유기농 채소들을 구출해 보내드려요</span>
+                    </h2>
                 </div>
 
                 <div class="section-inner">
@@ -355,7 +381,7 @@
             </section>
 
             <!-- Section 04 -->
-            <section class="section_04">
+            <section class="sec_04">
                 <div class="section-inner">
                     <div class="title-area">
                         <h2>이렇게 많은 분들이<br>지속가능한 식탁을 만들고 있어요!</h2>
@@ -409,11 +435,13 @@
             </section>
 
             <!-- Section 05 -->
-            <section class="section_05">
+            <section class="sec_05">
                 <div class="section-inner">
                     <div class="title-area">
-                        <h3>우리의 미션</h3>
-                        <h2>지속가능한 식탁 만들기</h2>
+                        <h2>
+                            <span class="sub-title">우리의 미션</span>
+                            지속가능한 식탁 만들기
+                        </h2>
                         <p>농산물의 폐기 문제는 지구 온난화의 원인이 되고<br>
                             물과 비료, 노동 에너지의 낭비로 이어집니다.<br>
                             농산물들의 제 가치를 찾아, 음식물 폐기는 줄이고 친환경 땅을 늘림으로써<br>
@@ -446,24 +474,6 @@
             </section>
 
         </main>
-        <!-- Main Visual -->
-
-        <!-- Fixed Items -->
-        <div class="fixed-area">
-            <!-- side-navBar -->
-            <div class="fixed-item delivery">
-                <h5>정기배송</h5>
-                <img src="../img/main/fast-delivery.png" alt="">
-            </div>
-            <div class="fixed-item contact">
-                <img src="../img/main/harvest.png" alt="">
-                <h5>문의하기</h5>
-            </div>
-            <div class="fixed-item top-btn">
-                <a href="#visual"><img src="../img/main/top-b.png" alt=""></a>
-                <h5>TOP</h5>
-            </div>
-        </div>
 
         <!-- Footer -->
         <footer class="footer">
