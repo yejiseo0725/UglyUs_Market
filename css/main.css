@@ -89,8 +89,6 @@ main {
     max-width: 1340px;
     min-width: 1300px;
     color: white;
-
-    display: flex;
 }
 
 /* [Slide Btn] point-area --- point-box */
@@ -102,7 +100,7 @@ main {
     height: 120px;
 
     cursor: pointer;
-    border: 2px solid royalblue;
+    /* border: 2px solid royalblue; */
 }
 
 /* point-box characters */
@@ -247,7 +245,7 @@ main {
     display: flex;
     justify-content: center;
 
-    height: 1600px;
+    height: auto;
 }
 
 .sec_01 .section-inner {
@@ -255,9 +253,7 @@ main {
     flex-direction: column;
     align-items: center;
 
-    width: 1440px;
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 1240px;
 }
 
 /* section 01 --- title area */
@@ -329,6 +325,7 @@ main {
 /* right-content */
 .sec_01 .problem-area .problem-box .right {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 
     width: 565px;
@@ -348,7 +345,7 @@ main {
 
 .sec_01 .problem-area .problem-box .right .small-box1 {
     background-image: url(../img/main/ug_tom\ 1.png);
-    margin-right: 25px;
+    /* margin-right: 25px; */
 }
 
 .sec_01 .problem-area .problem-box .right .big-box {
@@ -374,6 +371,8 @@ main {
     justify-content: space-between;
 
     width: 1078px;
+
+    margin-bottom: 50px;
 }
 
 /* articles common */
@@ -1153,4 +1152,251 @@ main {
     width: 280px;
     height: 50px;
     background-color: #ff6741;
+}
+
+/* Responsive */
+@Media (max-width: 770px) {
+    .layout {
+        min-width: auto;
+    }
+    /* Main Video */
+    .visual .video-area {
+        height: 844px;
+    }
+    .visual .video-area video {
+		left: 0;
+		top: 0;
+		transform: translate(0, 0);
+    }
+
+    /* Main title */
+    .visual .video-area .title-area {
+        top: 35%;
+    }
+    .visual .video-area .title-area .main-title {
+        width: 300px;
+    }
+    .visual .video-area .title-area .main-title h2.heading span {
+        font-size: 18px;
+    }
+
+    .visual .video-area .title-area .main-btn {
+        width: 200px;
+        height: 45px;
+    }
+
+    /* Main Point Area */
+    .visual .video-area .point-area {
+        bottom: 5%;
+    
+        flex-wrap: wrap;
+    
+        max-width: 100%;
+        min-width: 100%;
+        height: auto;
+        color: white;
+    }
+    /* [Slide Btn] point-area --- point-box */
+    .visual .video-area .point-area .point-box-btn {
+        margin-bottom: 20px;
+    
+        width: 100%;
+        height: auto;
+
+        justify-content: center;
+        text-align: center;
+    }
+    .visual .video-area .point-area .point-box-btn:last-child {
+        margin: 0;
+    }
+    .point-area .point-box-btn .chat_num {
+        font-family: "Raleway";
+        font-size: 30px;
+        width: 58px;
+        height: 58px;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    .point-area .point-box-btn .chat--text_box {}
+    .point-area .point-box-btn .chat--text_box .chat_title {
+        font-size: 14px;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    .point-area .point-box-btn .chat--text_box .chat_desc {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    /* Fixed navBar */
+    .side-navBar {
+        width: 60px;
+    }
+    .side-navBar .fixed-item.delivery {
+        width: 60px;
+        height: 60px;
+    }
+    .side-navBar .fixed-item.delivery img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+    .side-navBar .fixed-item.contact {
+        width: 60px;
+        height: 60px;
+    }
+    .side-navBar .fixed-item.contact img {
+        width: 28px;
+        height: 28px;
+    }
+    .side-navBar .fixed-item.top-btn {
+        margin: 0 auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #FF6741;
+    }
+    .side-navBar .fixed-item.top-btn h5 {
+        font-size: 10px;
+    }
+
+    /* Section 01 */
+    .sec_01 .title-area {
+        margin-top: 40px;
+    }
+    
+    /* section 01 --- Problem Area */
+    .sec_01 .problem-area {
+        width: auto;
+        height: auto;
+        margin-top: 30px;
+    }
+    
+    .sec_01 .problem-area .problem-box {
+        flex-direction: column-reverse;
+    }
+    
+    /* left-content */
+    .sec_01 .problem-area .problem-box .left {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    
+        padding: 30px;
+        margin-top: 25px;
+        margin-right: 0;
+    }
+    
+    .sec_01 .problem-area .problem-box .left span {
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    
+    .sec_01 .problem-area .problem-box .left p {
+        font-size: 14px;
+        font-weight: 300;
+        padding: 0;
+    }
+    
+    /* right-content */
+    .sec_01 .problem-area .problem-box .right {
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* right-content boxes */
+    .sec_01 .problem-area .problem-box .right .small-box {
+        width: 120px;
+        height: 120px;
+        margin: 0;
+    
+        background-image: url(../img/main/ug_pap\ 1.png);
+    }
+    
+    .sec_01 .problem-area .problem-box .right .small-box1 {
+        background-image: url(../img/main/ug_tom\ 1.png);
+        margin: 0;
+    }
+    
+    .sec_01 .problem-area .problem-box .right .big-box {
+        width: 120px;
+        height: 120px;
+    
+        background-image: url(../img/main/ug_oran1.png);
+    }
+
+    /* section 01 --- Solution Area */
+    .sec_01 .solution-area {
+        margin-top: 30px;
+    }
+
+    .sec_01 .solution-area .solution-box {
+        flex-direction: column;
+    width: auto;
+    }
+
+    /* articles common */
+    .sec_01 .solution-area .solution-box article {
+        width: 300px;
+        height: 220px;
+        margin-bottom: 25px;
+    }
+    .sec_01 .solution-area .solution-box article strong {
+        font-size: 80px;
+        line-height: 30px;
+        margin-top: 35px;
+        color: #FF987E;
+    }
+    .sec_01 .solution-area .solution-box article h3 {
+        font-size: 16px;
+        margin-top: 14px;
+    }
+    .sec_01 .solution-area .solution-box article p {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+
+    /* Section 02 */
+.sec_02 {
+    width: auto;
+    height: auto;
+}
+
+.sec_02 .title-area {
+    width: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.sec_02 .title-area .article-btn .btn {
+    width: 26px;
+    height: 26px;
+    border: 1px solid white;
+    cursor: pointer;
+
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+}
+
+/* Section 02 --- [Slick-slide] Reason area */
+.sec_02 .slide-con {
+    width: 320px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.sec_02 .slide-con .slick-slide .reason-dimmed {
+    width: 100%;
+    height: 85px;
+}
+.sec_02 .slide-con .slick-slide .reason-dimmed p {
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+
 }

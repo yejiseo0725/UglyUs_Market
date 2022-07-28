@@ -6,11 +6,12 @@ header nav .gnb li a {
   color: #252525;
 }
 
-/* Mission --- main */
+/* Main */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 80px;
 }
 
 .main-background {
@@ -34,15 +35,10 @@ header nav .gnb li a {
 }
 
 .main .title-area {
-  padding-top: 153px;
-}
-.main .title-area h3 {
-  font-size: 28px;
-  font-weight: 400;
-  color: #333;
-}
-.main .title-area h1 {
-  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
 }
 .main .title-area p {
   font-size: 24px;
@@ -53,7 +49,10 @@ header nav .gnb li a {
 /* Section */
 .section-inner {
   width: 1340px;
+  min-width: 1300px;
   height: 100%;
+
+  border: 2px solid teal;
 }
 
 /* Section 01 */
@@ -75,17 +74,13 @@ header nav .gnb li a {
   padding-top: 288px;
   padding-left: 62px;
 }
-.section_01 .title-area h3 {
-  font-size: 28px;
-  font-weight: 500;
-  color: #FF6741;
-}
 .section_01 .title-area h2 {
   font-family: "Noto Sans KR";
-  font-size: 36px;
-  font-weight: 500;
-  padding-top: 12px;
 }
+.section_01 .title-area h2 span {
+  color: #FF6741;
+}
+
 .section_01 .title-area p {
   font-family: "Noto Sans KR";
   font-size: 18px;
@@ -272,3 +267,7 @@ header nav .gnb li a {
   color: #FF6741;
 }
 
+/* Responsive */
+@Media (max-width: 768px) {
+
+}

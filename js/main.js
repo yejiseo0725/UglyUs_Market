@@ -16,6 +16,15 @@ $(function () {
         variableWidth: true,
         vertical: false,
         initialSlide: 0,
+        responsive: [ // 반응형 적용여부
+            {
+                breakpoint: 401, //해상도 브레이크 포인트 설정
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     });
 
     let imgIndex;
