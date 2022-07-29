@@ -398,7 +398,7 @@ header nav .gnb li a {
 .section_04 .img-area .upper-img {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   border: 2px solid coral;
   margin-right: 25px;
@@ -411,8 +411,8 @@ header nav .gnb li a {
 .section_04 .img-area .lower-img {
 }
 .section_04 .img-area .lower-img img {
-  width: 945px;
-  height: 550px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
 }
 
