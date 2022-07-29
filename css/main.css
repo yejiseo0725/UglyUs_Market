@@ -39,6 +39,7 @@ main {
 /* Main --- title area */
 .visual .video-area .title-area {
     position: absolute;
+    width: 100%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -164,7 +165,6 @@ main {
     animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-
 }
 
 @keyframes progress {
@@ -1116,8 +1116,6 @@ main {
 }
 
 /* Section 05 --- info area */
-.sec_05 .info-wrap {}
-
 .sec_05 .info-area {
     display: flex;
 
@@ -1156,7 +1154,7 @@ main {
 }
 
 /* Responsive */
-@Media (max-width: 770px) {
+@Media (max-width: 771px) {
     .layout {
         min-width: auto;
     }
@@ -1174,13 +1172,9 @@ main {
     .visual .video-area .title-area {
         top: 35%;
     }
-    .visual .video-area .title-area .main-title {
-        width: 300px;
-    }
     .visual .video-area .title-area .main-title h2.heading span {
         font-size: 18px;
     }
-
     .visual .video-area .title-area .main-btn {
         width: 200px;
         height: 45px;
@@ -1227,6 +1221,13 @@ main {
     .point-area .point-box-btn .chat--text_box .chat_desc {
         font-size: 12px;
         margin-bottom: 15px;
+    }
+    /* [Slide] progress bar */
+    .point-area .point-box-btn .progress-bar {
+        position: relative;
+        width: 100%;
+        height: 2px;
+        background-color: white;
     }
 
     /* Fixed navBar */
@@ -1477,7 +1478,7 @@ main {
 }
 
 .sec_03 .veggie-box .main-area .desc-box h3 {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     margin-top: 0;
 }
@@ -1507,10 +1508,12 @@ main {
 
 /* Section 03 --- cards */
 .sec_03 .intro-cards {
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
-    margin: 50px 20px;
+    width: auto;
+    height: 380px;
+    margin: 50px 0;
 }
 
 .sec_03 .intro-cards .card {

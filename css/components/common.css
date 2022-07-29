@@ -52,19 +52,7 @@ button {
     overflow: hidden;
 }
 
-/* .container {
-    position: absolute;
-    left: 0;
-    top: 80px;
-
-    width: 1920px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
-
-@Media (max-width: 770px) {
+@Media (max-width: 771px) {
     .title-area h2 {
         font-size: 18px;
     }
