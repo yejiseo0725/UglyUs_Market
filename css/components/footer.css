@@ -15,7 +15,7 @@ footer .section-inner {
   justify-content: space-between;
 
   width: 1440px;
-  height: 0;
+  height: auto;
   margin-left: 50px;
   margin-right: 50px;
 
@@ -23,8 +23,7 @@ footer .section-inner {
 }
 
 /* Footer --- company information area */
-footer .company-info-area {
-}
+footer .company-info-area {}
 footer .company-info-area img {
   width: 140px;
   height: 45px;
@@ -70,6 +69,14 @@ footer .company-info-area h6 {
   padding-top: 16px;
 }
 
+/* Footer Line */
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: #d2d2d2;
+  display: none;
+}
+
 /* Footer --- customer service area */
 footer .cs-area {
   text-align: right;
@@ -111,4 +118,85 @@ footer .cs-area .cs-btns .cs-btn {
 }
 footer .cs-area .cs-btns .btn2 {
   margin-left: 30px;
+}
+
+/* Responsive */
+@media (max-width: 771px) {
+  footer {
+    width: auto;
+    height: auto;
+    padding: 50px 30px;
+  }
+  footer .section-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  /* Footer --- company information area */
+footer .company-info-area {
+  width: auto;
+  height: auto;
+}
+footer .company-info-area img {
+  width: 90px;
+  height: 29px;
+  object-fit: cover;
+}
+footer .company-info-area p {
+  font-size: 12px;
+  padding-top: 20px;
+}
+footer .company-info-area .info-btns {
+  justify-content: center;
+  margin-top: 20px;
+}
+footer .company-info-area .info-btns .info-btn {
+  width: 140px;
+  height: 40px;
+  font-size: 16px;
+}
+footer .company-info-area .info-btns .btn1 {
+  margin-right: 20px;
+}
+
+footer .company-info-area h6 {
+  font-size: 12px;
+  padding-top: 20px;
+}
+
+/* Footer Line */
+.footer-line {
+  margin: 30px 0;
+  display: block;
+}
+
+/* Footer --- customer service area */
+footer .cs-area {
+  width: 100%;
+  height: 100%;
+  text-align: start;
+  padding-top: 0;
+}
+footer .cs-area h5 {
+  font-size: 12px;
+  font-weight: 500;
+}
+footer .cs-area p {
+  font-size: 12px;
+  padding-top: 20px;
+}
+footer .cs-area .cs-btns {
+  justify-content: center;
+  margin-top: 20px;
+}
+footer .cs-area .cs-btns .cs-btn {
+  width: 140px;
+  height: 40px;
+  font-size: 16px;
+}
 }

@@ -101,7 +101,7 @@ header nav .gnb-icons li a .user_icon {
 }
 
 /* Responsive */
-@Media (max-width: 770px) {
+@Media (max-width: 771px) {
   header {
       width: 100%;
       height: 50px;
