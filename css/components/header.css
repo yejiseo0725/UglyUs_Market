@@ -4,7 +4,8 @@ header {
   align-items: center;
   justify-content: center;
   position: fixed;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   height: 80px;
   /* color 변경 해주기 */
   background-color: rgba(0, 0, 0, 0.3);

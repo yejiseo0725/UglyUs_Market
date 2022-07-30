@@ -615,3 +615,16 @@ header nav .gnb li a {
 .section_06 .faq-accordion ul li .desc {
     display: none;
 }
+
+/* Tablet Responsive */
+@Media (max-width: 770px) {
+    .layout {
+        width: 768px;
+        min-width: 390px;
+        max-width: 768px;
+        min-height: 100%;
+    }
+    .container {
+        margin-top: 50px;
+    }
+}

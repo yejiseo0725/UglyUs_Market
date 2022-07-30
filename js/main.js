@@ -18,7 +18,7 @@ $(function () {
         initialSlide: 0,
         responsive: [ // 반응형 적용여부
             {
-                breakpoint: 770, //해상도 브레이크 포인트 설정
+                breakpoint: 771, //해상도 브레이크 포인트 설정
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
