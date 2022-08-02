@@ -969,8 +969,8 @@ header nav .gnb li a {
     padding-top: 50px;
   }
   .sec_05 article {
-    width: 160px;
-    height: 200px;
+    width: 170px;
+    height: 220px;
     text-align: center;
   }
   .sec_05 article img {
@@ -1031,16 +1031,6 @@ header nav .gnb li a {
 }
 
 @media (max-width: 760px) {
-  .sec_06 {
-    margin-top: 220px;
-    padding-top: 0;
-    margin-top: 50px;
-  }
-  .sec_05 article {
-    width: 190px;
-    height: 230px;
-    text-align: center;
-  }
   .sec_05 article img {
     padding-top: 20px;
     width: 35px;
@@ -1053,5 +1043,9 @@ header nav .gnb li a {
   .sec_05 article p {
     font-size: 14px;
     padding-top: 10px;
+  }
+  .sec_06 {
+    margin-top: 250px;
+    padding-top: 0;
   }
 }
