@@ -14,6 +14,7 @@ header nav .gnb li a {
   min-width: 100%;
   height: 500px;
   margin-top: 80px;
+<<<<<<< HEAD
 }
 .main-area img.howToUse-main {
   width: 100%;
@@ -46,6 +47,40 @@ header nav .gnb li a {
   font-weight: 500;
   color: white;
 
+=======
+}
+.main-area img.howToUse-main {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-area .title-area {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-area .title-area p {
+  font-size: 24px;
+  font-weight: 300;
+  padding-top: 34px;
+}
+
+.main-area .title-area a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 220px;
+  height: 50px;
+  background-color: #ff6741;
+
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+
+>>>>>>> 91f64d2034f35245a67284f80e1a2230bb642d0a
   margin-top: 50px;
 }
 
@@ -231,6 +266,7 @@ header nav .gnb li a {
 .sec_02 .notice-area {
   display: flex;
   padding-top: 152px;
+<<<<<<< HEAD
 }
 .sec_02 .notice-area img.right {
   width: 50px;
@@ -244,6 +280,21 @@ header nav .gnb li a {
   height: 195px;
   text-align: center;
 }
+=======
+}
+.sec_02 .notice-area img.right {
+  width: 50px;
+  height: 48px;
+  margin-top: 37px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.sec_02 .notice-area .notice {
+  width: 120px;
+  height: 195px;
+  text-align: center;
+}
+>>>>>>> 91f64d2034f35245a67284f80e1a2230bb642d0a
 .sec_02 .notice-area .notice .notice-img {
   width: 120px;
   height: 120px;
@@ -539,6 +590,7 @@ header nav .gnb li a {
 /* Accordion List */
 .sec_06 .faq-accordion {
   padding: 113px 90px 0 90px;
+<<<<<<< HEAD
 }
 .sec_06 .faq-accordion ul {
 }
@@ -575,6 +627,44 @@ header nav .gnb li a {
 }
 .sec_06 .faq-accordion ul li .title.active::before {
 }
+=======
+}
+.sec_06 .faq-accordion ul {
+}
+.sec_06 .faq-accordion ul li {
+  width: 1147px;
+  border-bottom: 1px solid #ededed;
+  padding: 20px 0;
+}
+.sec_06 .faq-accordion ul li {
+}
+.sec_06 .faq-accordion ul li .title {
+}
+.sec_06 .faq-accordion ul li .title {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 400;
+  padding-left: 58px;
+  /* border: 2px solid crimson; */
+  background-image: url(../img/howToUse/plus.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  cursor: pointer;
+}
+
+.sec_06 .faq-accordion ul li .desc {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 25px 0 30px 120px;
+}
+
+/* Active 추가 */
+.sec_06 .faq-accordion ul li .title.active {
+  background-image: url(../img/howToUse/minus.png);
+}
+.sec_06 .faq-accordion ul li .title.active::before {
+}
+>>>>>>> 91f64d2034f35245a67284f80e1a2230bb642d0a
 .sec_06 .faq-accordion ul li .desc {
   display: none;
 }
@@ -587,9 +677,12 @@ header nav .gnb li a {
     max-width: 768px;
     min-height: 100%;
   }
+<<<<<<< HEAD
   .main-area {
     margin-top: 50px;
   }
+=======
+>>>>>>> 91f64d2034f35245a67284f80e1a2230bb642d0a
   .main-area .title-area a {
     width: 200px;
     height: 45px;
@@ -820,6 +913,7 @@ header nav .gnb li a {
 
   .sec_04 .small-img {
     display: flex;
+<<<<<<< HEAD
     justify-content: flex-start;
 
     width: auto;
@@ -827,6 +921,16 @@ header nav .gnb li a {
     margin-top: 0;
   }
   .sec_04 .small-img img {
+=======
+    justify-content: center;
+
+    width: auto;
+    height: 200px;
+    margin-top: 0;
+  }
+  .sec_04 .small-img img {
+    width: 100%;
+>>>>>>> 91f64d2034f35245a67284f80e1a2230bb642d0a
     height: 100%;
     object-fit: cover;
   }
@@ -881,6 +985,7 @@ header nav .gnb li a {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+<<<<<<< HEAD
     padding-top: 50px;
   }
   .sec_05 article {
@@ -948,5 +1053,27 @@ header nav .gnb li a {
 @media (max-width: 760px) {
   .sec_06 {
     margin-top: 220px;
+=======
+    padding-top: 0;
+    margin-top: 50px;
+  }
+  .sec_05 article {
+    width: 190px;
+    height: 230px;
+    text-align: center;
+  }
+  .sec_05 article img {
+    padding-top: 20px;
+    width: 35px;
+    height: 35px;
+  }
+  .sec_05 article h4 {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  .sec_05 article p {
+    font-size: 14px;
+    padding-top: 10px;
+>>>>>>> 91f64d2034f35245a67284f80e1a2230bb642d0a
   }
 }
