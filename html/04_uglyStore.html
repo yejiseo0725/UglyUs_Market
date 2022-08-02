@@ -19,1098 +19,1202 @@
 
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="header-inner">
-            <!-- gnb list -->
-            <nav>
-                <h1>
-                    <a href="01_main.html">
-                        <img id="logo" src="../img/components/uglyus_logo.png" />
-                    </a>
-                </h1>
+    <div class="layout">
 
-                <ul class="gnb">
-                    <li><a href="02_mission.html" data-text="미션">미션</a></li>
-                    <li><a href="03_howToUse.html" data-text="이용방법">이용방법</a></li>
-                    <li><a href="04_uglyStore.html" data-text="못난이상점">못난이상점</a></li>
-                    <li id="li-last"><a href="05_review.html" data-text="이용후기">이용후기</a></li>
-                </ul>
-
-                <!-- gnb icons -->
-                <ul class="gnb-icons">
-                    <li>
-                        <a href="06_basket.html">
-                            <img class="basket_icon" src="../img/components/bag_btn.png" alt="" />
+        <!-- Header -->
+        <header class="header">
+            <div class="header-inner">
+                <!-- gnb list -->
+                <nav>
+                    <h1>
+                        <a href="01_main.html">
+                            <img id="logo" src="../img/components/uglyus_logo.png" />
                         </a>
-                    </li>
+                    </h1>
 
-                    <li>
-                        <a href="07_user.html">
-                            <img class="user_icon" src="../img/components/user-btn-black.png" alt="" />
-                        </a>
-                    </li>
+                    <ul class="gnb">
+                        <li><a href="02_mission.html" data-text="미션">미션</a></li>
+                        <li>
+                            <a href="03_howToUse.html" data-text="이용방법">이용방법</a>
+                        </li>
+                        <li>
+                            <a href="04_uglyStore.html" data-text="못난이상점">못난이상점</a>
+                        </li>
+                        <li id="li-last">
+                            <a href="05_review.html" data-text="이용후기">이용후기</a>
+                        </li>
+                    </ul>
 
-                    <li>
-                        <a class="last-h-icon" href="#">
-                            <img class="hamburger_icon" src="../img/components/hamburger.png" alt="" />
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+                    <!-- gnb icons -->
+                    <ul class="gnb-icons">
+                        <li>
+                            <a href="06_basket.html">
+                                <img class="basket_icon" src="../img/components/bag_btn.png" alt="" />
+                            </a>
+                        </li>
 
-    <div class="container">
+                        <li>
+                            <a href="07_user.html">
+                                <img class="user_icon" src="../img/components/user-btn-black.png" alt="" />
+                            </a>
+                        </li>
 
-        <!-- Main -->
-        <main class="main">
-            <div class="main-inner">
-                <div class="left-area">
-                    <div class="main-title">
-                        <h2>시선집중</h2>
-                        <h1>지금 가장 맛있는<br>제철 과일 한 상자</h1>
-                    </div>
+                        <li>
+                            <a class="last-h-icon" href="#">
+                                <img class="hamburger_icon" src="../img/components/hamburger2.png" alt="" />
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-                    <div class="main-text">
-                        <p>
-                            [6월의 과일]<br>
-                            애플수박 & 천도복숭아
-                        </p>
-                        <h4><span>24%</span>21,100원</h4>
-                    </div>
-
-                    <a class="main-btn" href="#">지금 만나러 가기</a>
-
-                    <div class="slide-btn">
-                        <button class="left-btn"></button>
-                        <button class="right-btn"></button>
-                    </div>
+        <!-- Responsive Popup -->
+        <div class="hamburger-popup">
+            <div class="hamburger-popup-inner">
+                <div class="popup-close">
+                    <img src="../img/components/close.png" alt="" />
                 </div>
 
-                <div class="slide-area">
-                    <div class="item"><img src="../img/uglyStore/fruit1.png" alt=""></div>
-                    <div class="item"><img src="../img/uglyStore/fruit2.png" alt=""></div>
-                    <div class="item"><img src="../img/uglyStore/fruit3.png" alt=""></div>
-                    <div class="item"><img src="../img/uglyStore/fruit4.png" alt=""></div>
+                <ul class="hidden-nav">
+                    <li><a href="../html/02_mission.html">미션</a></li>
+                    <li><a href="../html/03_howToUse.html">이용방법</a></li>
+                    <li><a href="../html/04_uglyStore.html">못난이상점</a></li>
+                    <li><a href="../html/05_review.html">이용후기</a></li>
+                </ul>
+
+                <div class="hidden-btns">
+                    <a class="hidden-btn" href="../html/07_user.html">로그인</a>
+                    <a class="hidden-btn" href="#">구독하기</a>
                 </div>
             </div>
+        </div>
+
+        <!-- Contents -->
+        <main>
+
+            <!-- Visual Section -->
+            <section class="main-area">
+                <div class="main-inner">
+                    <div class="desc a">
+                        <div class="main-title">
+                            <h2>
+                                <span>시선집중</span>
+                                지금 가장 맛있는<br>제철 과일 한 상자
+                            </h2>
+                        </div>
+
+                        <div class="main-text">
+                            <p>
+                                [6월의 과일]<br>
+                                애플수박 & 천도복숭아
+                            </p>
+                            <h4><span>24%</span>21,100원</h4>
+                        </div>
+
+                        <a class="main-btn" href="#">지금 만나러 가기</a>
+
+                        <div class="slide-btn">
+                            <button class="left-btn"></button>
+                            <button class="right-btn"></button>
+                        </div>
+                    </div>
+
+                    <div class="desc b">
+                        <div class="main-title">
+                            <h2>
+                                <span>시선집중</span>
+                                꾸미지 않았어요,<br>자연 그대로의<br>유기농 복숭아
+                            </h2>
+                        </div>
+
+                        <div class="main-text">
+                            <p>
+                                유기농 황도/백도 복숭아<br>
+                                1.8kg/3.6kg
+                            </p>
+                            <h4><span>49%</span>29,900원</h4>
+                        </div>
+
+                        <a class="main-btn" href="#">지금 만나러 가기</a>
+
+                        <div class="slide-btn">
+                            <button class="left-btn"></button>
+                            <button class="right-btn"></button>
+                        </div>
+                    </div>
+
+                    <div class="desc c">
+                        <div class="main-title">
+                            <h2>
+                                <span>시선집중</span>
+                                다양한 생명과<br>더불어 크는 블루베리
+                            </h2>
+                        </div>
+
+                        <div class="main-text">
+                            <p>
+                                유기농 블루베리<br>
+                            </p>
+                            <h4><span>80%</span>29,900원</h4>
+                        </div>
+
+                        <a class="main-btn" href="#">지금 만나러 가기</a>
+
+                        <div class="slide-btn">
+                            <button class="left-btn"></button>
+                            <button class="right-btn"></button>
+                        </div>
+                    </div>
+
+                    <div class="desc d">
+                        <div class="main-title">
+                            <h2>
+                                <span>시선집중</span>
+                                지금 가장 맛있는<br>품종의 복숭아를<br>보내드려요.
+                            </h2>
+                        </div>
+
+                        <div class="main-text">
+                            <p>
+                                GAP 복숭아<br>
+                            </p>
+                            <h4><span>31%</span>21,100원</h4>
+                        </div>
+
+                        <a class="main-btn" href="#">지금 만나러 가기</a>
+
+                        <div class="slide-btn">
+                            <button class="left-btn"></button>
+                            <button class="right-btn"></button>
+                        </div>
+                    </div>
+
+                    <div class="slide-area">
+                        <div class="item"><img src="../img/uglyStore/fruit1.png" alt=""></div>
+                        <div class="item"><img src="../img/uglyStore/fruit2.png" alt=""></div>
+                        <div class="item"><img src="../img/uglyStore/fruit3.png" alt=""></div>
+                        <div class="item"><img src="../img/uglyStore/fruit4.png" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 01 -->
+            <section class="sec_01">
+                <div class="section-inner">
+                    <!-- 1340 -->
+                    <button class="left-ant"><img src="../img/uglyStore/ant-design_left-outlined.png" alt=""></button>
+                    <button class="right-ant"><img src="../img/uglyStore/ant-design_right-outlined.png" alt=""></button>
+
+
+                    <div class="title-area">
+                        <h3>지금 제일 맛있는</h3>
+                        <h2>추천 제철 과일</h2>
+                    </div>
+
+                    <div class="slide-articles">
+
+                        <article class="art1">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/rec_f1.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <!-- User Info 로 연결해주기 -->
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+                                        <!-- 장바구니로 연결해주기 -->
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5>[산청]</h5>
+                            <h4>유기농 송이/어글리 바나나</h4>
+                            <h3><span>42%</span>14,700원</h3>
+                        </article>
+
+                        <article class="art2">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/rec_f2.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <!-- User Info 로 연결해주기 -->
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+                                        <!-- 장바구니로 연결해주기 -->
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5>[성주]</h5>
+                            <h4>유기농 참외 3kg/5kg</h4>
+                            <h3><span>52%</span>24,300원</h3>
+                        </article>
+
+                        <article class="art3">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/rec_f3.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <!-- User Info 로 연결해주기 -->
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+                                        <!-- 장바구니로 연결해주기 -->
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5>[경산]</h5>
+                            <h4>GAP 복숭아</h4>
+                            <h3><span>31%</span>27,900원</h3>
+                        </article>
+
+                        <article class="art4">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/rec_f4.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <!-- User Info 로 연결해주기 -->
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+                                        <!-- 장바구니로 연결해주기 -->
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5>[제주]</h5>
+                            <h4>청정 제주 카라향/하귤</h4>
+                            <h3><span>20%</span>22,300원</h3>
+                        </article>
+
+                        <article class="art5">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/rec_f5.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <!-- User Info 로 연결해주기 -->
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+                                        <!-- 장바구니로 연결해주기 -->
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5>[문경]</h5>
+                            <h4>친환경 초당옥수수 - 10개/20개</h4>
+                            <h3><span>44%</span>25,300원</h3>
+                        </article>
+
+                        <article class="art6">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/rec_f6.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <!-- User Info 로 연결해주기 -->
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+                                        <!-- 장바구니로 연결해주기 -->
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5>[화순]</h5>
+                            <h4>유기농 황도/백도 복숭아 1.8kg/3.6kg</h4>
+                            <h3><span>49%</span>29,900원</h3>
+                        </article>
+
+                        <article class="art7">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/rec_f7.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <!-- User Info 로 연결해주기 -->
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+                                        <!-- 장바구니로 연결해주기 -->
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5>[임실]</h5>
+                            <h4>유기농 블루베리</h4>
+                            <h3><span>80%</span>29,900원</h3>
+                        </article>
+
+                        <article class="art8">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/rec_f8.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <!-- User Info 로 연결해주기 -->
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+                                        <!-- 장바구니로 연결해주기 -->
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5>[해남]</h5>
+                            <h4>무농약 꿀무화과 - 1kg/2kg</h4>
+                            <h3><span>29%</span>21,900원</h3>
+                        </article>
+                    </div>
+
+                    <!-- 나중에 제이쿼리! -->
+                    <div class="progress"></div>
+                </div>
+            </section>
+
+            <!-- Section 02 -->
+            <section class="sec_02">
+                <div class="section-inner">
+                    <!-- 1060 -->
+                    <div class="title-area">
+                        <h3>어글리 어스와 함께 차린 식탁</h3>
+                        <h2>고객 추천</h2>
+                    </div>
+
+                    <div class="articles">
+                        <div class="article-stage">
+                            <article class="a1">
+                                <img src="../img/uglyStore/a1.png" alt="">
+                                <div class="hover">
+                                    <div class="upper-part">
+                                        <div class="line1"></div>
+                                        <img src="../img/uglyStore/quote.png" alt="">
+                                        <div class="line2"></div>
+                                    </div>
+
+                                    <div class="review-part">
+                                        <img src="../img/uglyStore/stars.png" alt="">
+                                        <p>맛도 좋고 신선합니다<br>
+                                            유기농이라 깨끗이 씻어서<br>
+                                            껍질채 먹어도 많이 질기지 않고<br>
+                                            아삭아삭 맛있습니다 :)</p>
+                                    </div>
+
+                                    <div class="lower-part">
+                                        <div class="line3"></div>
+                                        <h5>psli***** 고객님</h5>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="a2">
+                                <img src="../img/uglyStore/a2.png" alt="">
+                                <div class="hover">
+                                    <div class="upper-part">
+                                        <div class="line1"></div>
+                                        <img src="../img/uglyStore/quote.png" alt="">
+                                        <div class="line2"></div>
+                                    </div>
+
+                                    <div class="review-part">
+                                        <img src="../img/uglyStore/stars.png" alt="">
+                                        <p>이번 주문도 싱싱한 야채가 왔어요!<br>
+                                            간장이랑 오일 넣고 에.프에 돌리니까<br>
+                                            빠삭꼬소해서 맛있었습니다.<br>
+                                            마음의 눈으로 보시길바라요.</p>
+                                    </div>
+
+                                    <div class="lower-part">
+                                        <div class="line3"></div>
+                                        <h5>O***k 고객님</h5>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="a3 last">
+                                <img src="../img/uglyStore/a3.png" alt="">
+                                <div class="hover">
+                                    <div class="upper-part">
+                                        <div class="line1"></div>
+                                        <img src="../img/uglyStore/quote.png" alt="">
+                                        <div class="line2"></div>
+                                    </div>
+
+                                    <div class="review-part">
+                                        <img src="../img/uglyStore/stars.png" alt="">
+                                        <p>겉잎이 무르긴 했어도 2주 안에 멀쩡히 <br>
+                                            소비할 수 있더라고요. 점보박스가 훨씬<br>
+                                            마음에 들었답니다😋 뭘 해먹을지<br>
+                                            기다리는 시간이 설레네요.</p>
+                                    </div>
+
+                                    <div class="lower-part">
+                                        <div class="line3"></div>
+                                        <h5>수* 고객님</h5>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="article-stage">
+                            <article class="a4">
+                                <img src="../img/uglyStore/a4.png" alt="">
+                                <div class="hover">
+                                    <div class="upper-part">
+                                        <div class="line1"></div>
+                                        <img src="../img/uglyStore/quote.png" alt="">
+                                        <div class="line2"></div>
+                                    </div>
+
+                                    <div class="review-part">
+                                        <img src="../img/uglyStore/stars.png" alt="">
+                                        <p>평소바나나 잘안사먹는데 유기농이라<br>
+                                            구매해봤어요 정말달고 부드럽고 향이<br>
+                                            좋아요. 못난이 구매했는데 일반과 별<br>
+                                            다르지않네요. 진한 바나나 맛있어요.</p>
+                                    </div>
+
+                                    <div class="lower-part">
+                                        <div class="line3"></div>
+                                        <h5>정*선 고객님</h5>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="a5">
+                                <h3>더 많은 리뷰를<br>만나보세요</h3>
+                                <a href="../html/05_review.html">리뷰 더보기</a>
+                            </article>
+                            <article class="a6 last">
+                                <img src="../img/uglyStore/a5.png" alt="">
+                                <div class="hover">
+                                    <div class="upper-part">
+                                        <div class="line1"></div>
+                                        <img src="../img/uglyStore/quote.png" alt="">
+                                        <div class="line2"></div>
+                                    </div>
+
+                                    <div class="review-part">
+                                        <img src="../img/uglyStore/stars.png" alt="">
+                                        <p>배송받은 날 먹을 때도 새콤달콤하니<br>
+                                            괜찮았는데 후숙하니까 정~~말 맛있어요<br>
+                                            부모님도 아주 만족하십니다ㅎㅎ</p>
+                                    </div>
+
+                                    <div class="lower-part">
+                                        <div class="line3"></div>
+                                        <h5>고*혜 고객님</h5>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="article-stage">
+                            <article class="a7">
+                                <img src="../img/uglyStore/a6.png" alt="">
+                                <div class="hover">
+                                    <div class="upper-part">
+                                        <div class="line1"></div>
+                                        <img src="../img/uglyStore/quote.png" alt="">
+                                        <div class="line2"></div>
+                                    </div>
+
+                                    <div class="review-part">
+                                        <img src="../img/uglyStore/stars.png" alt="">
+                                        <p>한 주도 신선하게 잘 먹었네요,<br>
+                                            다채로운 재료들이 있으니 좀 더<br>
+                                            건강하게 먹는 것 같아요.</p>
+                                    </div>
+
+                                    <div class="lower-part">
+                                        <div class="line3"></div>
+                                        <h5>다* 고객님</h5>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="a8">
+                                <img src="../img/uglyStore/a7.png" alt="">
+                                <div class="hover">
+                                    <div class="upper-part">
+                                        <div class="line1"></div>
+                                        <img src="../img/uglyStore/quote.png" alt="">
+                                        <div class="line2"></div>
+                                    </div>
+
+                                    <div class="review-part">
+                                        <img src="../img/uglyStore/stars.png" alt="">
+                                        <p>너무 맛있게 잘먹고있어요<br>
+                                            크기도 너무 크지도 작지도 않고<br>
+                                            되게 달고 맛있어요!</p>
+                                    </div>
+
+                                    <div class="lower-part">
+                                        <div class="line3"></div>
+                                        <h5>psli***** 고객님</h5>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="a9 last">
+                                <img src="../img/uglyStore/a8.png" alt="">
+                                <div class="hover">
+                                    <div class="upper-part">
+                                        <div class="line1"></div>
+                                        <img src="../img/uglyStore/quote.png" alt="">
+                                        <div class="line2"></div>
+                                    </div>
+
+                                    <div class="review-part">
+                                        <img src="../img/uglyStore/stars.png" alt="">
+                                        <p>길쭉한 놈도 있고 통통한 놈도 있어요.<br>
+                                            통통한 애는 반 잘라서 구웠답니다.<br>
+                                            귀리우유랑 같이 먹었는데 든든했습니다.<br>
+                                            많이 파세요^^</p>
+                                    </div>
+
+                                    <div class="lower-part">
+                                        <div class="line3"></div>
+                                        <h5>임*숙 고객님</h5>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Banner -->
+            <section class="banner">
+                <h2>Tasty, Healthy & Fresh</h2>
+            </section>
+
+            <!-- Section 03 -->
+            <section class="sec_03">
+                <div class="section-inner">
+                    <div class="title-area">
+                        <h3>무농약·유기농</h3>
+                        <h2>과일과 채소를 구출 해 주세요</h2>
+                    </div>
+
+                    <div class="filter">
+                        <div class="f-btn f-btn1">전체</div>
+                        <div class="f-btn f-btn2">과일</div>
+                        <div class="f-btn f-btn3">채소</div>
+                    </div>
+
+                    <div class="boxes">
+                        <!-- On Sale Boxes -->
+                        <section class="box">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/box1.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desc-area">
+                                <div class="text-box1">
+                                    <div class="text-part1">
+                                        <h4>[제주]</h4>
+                                    </div>
+                                    <div class="text-part2">
+                                        <h4><span>42%</span>14,700원</h4>
+                                    </div>
+                                </div>
+
+                                <div class="text-box2">
+                                    <h3>포슬포슬 친환경 미니밤호박 3kg/5kg</h3>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="box">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/box2.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desc-area">
+                                <div class="text-box1">
+                                    <div class="text-part1">
+                                        <h4>[화순]</h4>
+                                    </div>
+                                    <div class="text-part2">
+                                        <h4><span>49%</span>29,900원</h4>
+                                    </div>
+                                </div>
+
+                                <div class="text-box2">
+                                    <h3>유기농 황도/백도 복숭아 1.8kg/3.6kg</h3>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="box">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/box3.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desc-area">
+                                <div class="text-box1">
+                                    <div class="text-part1">
+                                        <h4>[경산]</h4>
+                                    </div>
+                                    <div class="text-part2">
+                                        <h4><span>31%</span>27,900원</h4>
+                                    </div>
+                                </div>
+
+                                <div class="text-box2">
+                                    <h3>GAP 복숭아</h3>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="box">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/box4.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desc-area">
+                                <div class="text-box1">
+                                    <div class="text-part1">
+                                        <h4>[임실]</h4>
+                                    </div>
+                                    <div class="text-part2">
+                                        <h4><span>80%</span>29,900원</h4>
+                                    </div>
+                                </div>
+
+                                <div class="text-box2">
+                                    <h3>유기농 블루베리</h3>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="box">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/box5.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desc-area">
+                                <div class="text-box1">
+                                    <div class="text-part1">
+                                        <h4>[경남 진주]</h4>
+                                    </div>
+                                    <div class="text-part2">
+                                        <h4><span>40%</span>18,900원</h4>
+                                    </div>
+                                </div>
+
+                                <div class="text-box2">
+                                    <h3>친환경 어글리 파프리카</h3>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="box">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/box6.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desc-area">
+                                <div class="text-box1">
+                                    <div class="text-part1">
+                                        <h4>[부여]</h4>
+                                    </div>
+                                    <div class="text-part2">
+                                        <h4><span>50%</span>24,000원</h4>
+                                    </div>
+                                </div>
+
+                                <div class="text-box2">
+                                    <h3>부여밤 2kg</h3>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="box">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/box7.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desc-area">
+                                <div class="text-box1">
+                                    <div class="text-part1">
+                                        <h4>[고창]</h4>
+                                    </div>
+                                    <div class="text-part2">
+                                        <h4><span>4%</span>9,600원</h4>
+                                    </div>
+                                </div>
+
+                                <div class="text-box2">
+                                    <h3>친환경 쌈채소 600g</h3>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="box">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/box8.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desc-area">
+                                <div class="text-box1">
+                                    <div class="text-part1">
+                                        <h4>[성주]</h4>
+                                    </div>
+                                    <div class="text-part2">
+                                        <h4><span>52%</span>24,300원</h4>
+                                    </div>
+                                </div>
+
+                                <div class="text-box2">
+                                    <h3>유기농 참외 3kg/5kg</h3>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="box">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/box9.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desc-area">
+                                <div class="text-box1">
+                                    <div class="text-part1">
+                                        <h4>[김제]</h4>
+                                    </div>
+                                    <div class="text-part2">
+                                        <h4><span>52%</span>12,700원</h4>
+                                    </div>
+                                </div>
+
+                                <div class="text-box2">
+                                    <h3>유기농 꿀고구마 3kg</h3>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="box">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/box10.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desc-area">
+                                <div class="text-box1">
+                                    <div class="text-part1">
+                                        <h4>[영천]</h4>
+                                    </div>
+                                    <div class="text-part2">
+                                        <h4><span>10%</span>16,200원</h4>
+                                    </div>
+                                </div>
+
+                                <div class="text-box2">
+                                    <h3>무농약 유럽상추 1kg<br>
+                                        (버터헤드, 카이피라, 이자벨)</h3>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="box">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/box11.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desc-area">
+                                <div class="text-box1">
+                                    <div class="text-part1">
+                                        <h4>[산청]</h4>
+                                    </div>
+                                    <div class="text-part2">
+                                        <h4><span>42%</span>14,700원</h4>
+                                    </div>
+                                </div>
+
+                                <div class="text-box2">
+                                    <h3>유기농 송이/어글리 바나나<br>
+                                        (1.5kg/2.5kg)</h3>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="box">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/box12.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desc-area">
+                                <div class="text-box1">
+                                    <div class="text-part1">
+                                        <h4>[부여]</h4>
+                                    </div>
+                                    <div class="text-part2">
+                                        <h4><span>40%</span>26,700원</h4>
+                                    </div>
+                                </div>
+
+                                <div class="text-box2">
+                                    <h3>애플수박 - 3개 1상자</h3>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Sold Out Boxes -->
+                        <section class="box sold">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/box13.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="soldout-area"></div>
+
+                            <div class="desc-area">
+                                <div class="text-box1">
+                                    <div class="text-part1">
+                                        <h4>[부여, 경산]</h4>
+                                    </div>
+                                    <div class="text-part2">
+                                        <h4><span>24%</span>21,100원</h4>
+                                    </div>
+                                </div>
+
+                                <div class="text-box2">
+                                    <h3>6월 과일박스 - 애플수박 & 천도복숭아</h3>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="box sold">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/box14.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="soldout-area"></div>
+
+                            <div class="desc-area">
+                                <div class="text-box1">
+                                    <div class="text-part1">
+                                        <h4>[제주]</h4>
+                                    </div>
+                                    <div class="text-part2">
+                                        <h4><span>20%</span>22,300원</h4>
+                                    </div>
+                                </div>
+
+                                <div class="text-box2">
+                                    <h3>청정 제주 카라향/하귤</h3>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="box sold">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/box15.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="soldout-area"></div>
+
+                            <div class="desc-area">
+                                <div class="text-box1">
+                                    <div class="text-part1">
+                                        <h4>[해남]</h4>
+                                    </div>
+                                    <div class="text-part2">
+                                        <h4><span>50%</span>10,900원</h4>
+                                    </div>
+                                </div>
+
+                                <div class="text-box2">
+                                    <h3>친환경 밤고구마/호박고구마/<br>
+                                        달수고구마 2.5kg</h3>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="box sold">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/box16.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="soldout-area"></div>
+
+                            <div class="desc-area">
+                                <div class="text-box1">
+                                    <div class="text-part1">
+                                        <h4>[의성]</h4>
+                                    </div>
+                                    <div class="text-part2">
+                                        <h4><span>20%</span>41,500원</h4>
+                                    </div>
+                                </div>
+
+                                <div class="text-box2">
+                                    <h3>유기농 사과 3.5kg</h3>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="box sold">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/box17.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="soldout-area"></div>
+
+                            <div class="desc-area">
+                                <div class="text-box1">
+                                    <div class="text-part1">
+                                        <h4>[산청]</h4>
+                                    </div>
+                                    <div class="text-part2">
+                                        <h4><span>34%</span>39,500원</h4>
+                                    </div>
+                                </div>
+
+                                <div class="text-box2">
+                                    <h3>친환경 배 5kg /10kg</h3>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="box sold">
+                            <div class="img-area">
+                                <img src="../img/uglyStore/box18.png" alt="">
+                                <div class="img-dimmed">
+                                    <div class="icon-btns">
+                                        <a href="#">
+                                            <img class="heart" src="../img/uglyStore/heart.png" alt="">
+                                        </a>
+
+                                        <a class="last-icon" href="#">
+                                            <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="soldout-area"></div>
+
+                            <div class="desc-area">
+                                <div class="text-box1">
+                                    <div class="text-part1">
+                                        <h4>[논산]</h4>
+                                    </div>
+                                    <div class="text-part2">
+                                        <h4><span>25%</span>19,500원</h4>
+                                    </div>
+                                </div>
+
+                                <div class="text-box2">
+                                    <h3>[2차 긴급구출]<br>
+                                        무농약 못난이 완숙토마토 4.5kg</h3>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+
+            </section>
+
         </main>
-
-        <!-- Section 01 -->
-        <div class="section_01">
-            <div class="section-inner">
-                <!-- 1340 -->
-                <button class="left-ant"><img src="../img/uglyStore/ant-design_left-outlined.png" alt=""></button>
-                <button class="right-ant"><img src="../img/uglyStore/ant-design_right-outlined.png" alt=""></button>
-
-
-                <div class="title-area">
-                    <h3>지금 제일 맛있는</h3>
-                    <h2>추천 제철 과일</h2>
-                </div>
-
-                <div class="slide-articles">
-
-                    <article class="art1">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/rec_f1.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <!-- User Info 로 연결해주기 -->
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-                                    <!-- 장바구니로 연결해주기 -->
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <h5>[산청]</h5>
-                        <h4>유기농 송이/어글리 바나나</h4>
-                        <h3><span>42%</span>14,700원</h3>
-                    </article>
-
-                    <article class="art2">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/rec_f2.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <!-- User Info 로 연결해주기 -->
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-                                    <!-- 장바구니로 연결해주기 -->
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <h5>[성주]</h5>
-                        <h4>유기농 참외 3kg/5kg</h4>
-                        <h3><span>52%</span>24,300원</h3>
-                    </article>
-
-                    <article class="art3">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/rec_f3.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <!-- User Info 로 연결해주기 -->
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-                                    <!-- 장바구니로 연결해주기 -->
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <h5>[경산]</h5>
-                        <h4>GAP 복숭아</h4>
-                        <h3><span>31%</span>27,900원</h3>
-                    </article>
-
-                    <article class="art4">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/rec_f4.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <!-- User Info 로 연결해주기 -->
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-                                    <!-- 장바구니로 연결해주기 -->
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <h5>[제주]</h5>
-                        <h4>청정 제주 카라향/하귤</h4>
-                        <h3><span>20%</span>22,300원</h3>
-                    </article>
-
-                    <article class="art5">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/rec_f5.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <!-- User Info 로 연결해주기 -->
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-                                    <!-- 장바구니로 연결해주기 -->
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <h5>[문경]</h5>
-                        <h4>친환경 초당옥수수 - 10개/20개</h4>
-                        <h3><span>44%</span>25,300원</h3>
-                    </article>
-
-                    <article class="art6">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/rec_f6.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <!-- User Info 로 연결해주기 -->
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-                                    <!-- 장바구니로 연결해주기 -->
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <h5>[화순]</h5>
-                        <h4>유기농 황도/백도 복숭아 1.8kg/3.6kg</h4>
-                        <h3><span>49%</span>29,900원</h3>
-                    </article>
-
-                    <article class="art7">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/rec_f7.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <!-- User Info 로 연결해주기 -->
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-                                    <!-- 장바구니로 연결해주기 -->
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <h5>[임실]</h5>
-                        <h4>유기농 블루베리</h4>
-                        <h3><span>80%</span>29,900원</h3>
-                    </article>
-
-                    <article class="art8">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/rec_f8.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <!-- User Info 로 연결해주기 -->
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-                                    <!-- 장바구니로 연결해주기 -->
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <h5>[해남]</h5>
-                        <h4>무농약 꿀무화과 - 1kg/2kg</h4>
-                        <h3><span>29%</span>21,900원</h3>
-                    </article>
-                </div>
-
-                <!-- 나중에 제이쿼리! -->
-                <div class="progress"></div>
-            </div>
-        </div>
-
-        <!-- Section 02 -->
-        <div class="section_02">
-            <div class="section-inner">
-                <!-- 1060 -->
-                <div class="title-area">
-                    <h3>어글리 어스와 함께 차린 식탁</h3>
-                    <h2>고객 추천</h2>
-                </div>
-
-                <div class="articles">
-                    <div class="article-stage">
-                        <article class="a1">
-                            <img src="../img/uglyStore/a1.png" alt="">
-                            <div class="hover">
-                                <div class="upper-part">
-                                    <div class="line1"></div>
-                                    <img src="../img/uglyStore/quote.png" alt="">
-                                    <div class="line2"></div>
-                                </div>
-
-                                <div class="review-part">
-                                    <img src="../img/uglyStore/stars.png" alt="">
-                                    <p>맛도 좋고 신선합니다<br>
-                                        유기농이라 깨끗이 씻어서<br>
-                                        껍질채 먹어도 많이 질기지 않고<br>
-                                        아삭아삭 맛있습니다 :)</p>
-                                </div>
-
-                                <div class="lower-part">
-                                    <div class="line3"></div>
-                                    <h5>psli***** 고객님</h5>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="a2">
-                            <img src="../img/uglyStore/a2.png" alt="">
-                            <div class="hover">
-                                <div class="upper-part">
-                                    <div class="line1"></div>
-                                    <img src="../img/uglyStore/quote.png" alt="">
-                                    <div class="line2"></div>
-                                </div>
-
-                                <div class="review-part">
-                                    <img src="../img/uglyStore/stars.png" alt="">
-                                    <p>이번 주문도 싱싱한 야채가 왔어요!<br>
-                                        간장이랑 오일 넣고 에.프에 돌리니까<br>
-                                        빠삭꼬소해서 맛있었습니다.<br>
-                                        마음의 눈으로 보시길바라요.</p>
-                                </div>
-
-                                <div class="lower-part">
-                                    <div class="line3"></div>
-                                    <h5>O***k 고객님</h5>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="a3 last">
-                            <img src="../img/uglyStore/a3.png" alt="">
-                            <div class="hover">
-                                <div class="upper-part">
-                                    <div class="line1"></div>
-                                    <img src="../img/uglyStore/quote.png" alt="">
-                                    <div class="line2"></div>
-                                </div>
-
-                                <div class="review-part">
-                                    <img src="../img/uglyStore/stars.png" alt="">
-                                    <p>겉잎이 무르긴 했어도 2주 안에 멀쩡히 <br>
-                                        소비할 수 있더라고요. 점보박스가 훨씬<br>
-                                        마음에 들었답니다😋 뭘 해먹을지<br>
-                                        기다리는 시간이 설레네요.</p>
-                                </div>
-
-                                <div class="lower-part">
-                                    <div class="line3"></div>
-                                    <h5>수* 고객님</h5>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="article-stage">
-                        <article class="a4">
-                            <img src="../img/uglyStore/a4.png" alt="">
-                            <div class="hover">
-                                <div class="upper-part">
-                                    <div class="line1"></div>
-                                    <img src="../img/uglyStore/quote.png" alt="">
-                                    <div class="line2"></div>
-                                </div>
-
-                                <div class="review-part">
-                                    <img src="../img/uglyStore/stars.png" alt="">
-                                    <p>평소바나나 잘안사먹는데 유기농이라<br>
-                                        구매해봤어요 정말달고 부드럽고 향이<br>
-                                        좋아요. 못난이 구매했는데 일반과 별<br>
-                                        다르지않네요. 진한 바나나 맛있어요.</p>
-                                </div>
-
-                                <div class="lower-part">
-                                    <div class="line3"></div>
-                                    <h5>정*선 고객님</h5>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="a5">
-                            <h3>더 많은 리뷰를<br>만나보세요</h3>
-                            <a href="../html/05_review.html">리뷰 더보기</a>
-                        </article>
-                        <article class="a6 last">
-                            <img src="../img/uglyStore/a5.png" alt="">
-                            <div class="hover">
-                                <div class="upper-part">
-                                    <div class="line1"></div>
-                                    <img src="../img/uglyStore/quote.png" alt="">
-                                    <div class="line2"></div>
-                                </div>
-
-                                <div class="review-part">
-                                    <img src="../img/uglyStore/stars.png" alt="">
-                                    <p>배송받은 날 먹을 때도 새콤달콤하니<br>
-                                        괜찮았는데 후숙하니까 정~~말 맛있어요<br>
-                                        부모님도 아주 만족하십니다ㅎㅎ</p>
-                                </div>
-
-                                <div class="lower-part">
-                                    <div class="line3"></div>
-                                    <h5>고*혜 고객님</h5>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="article-stage">
-                        <article class="a7">
-                            <img src="../img/uglyStore/a6.png" alt="">
-                            <div class="hover">
-                                <div class="upper-part">
-                                    <div class="line1"></div>
-                                    <img src="../img/uglyStore/quote.png" alt="">
-                                    <div class="line2"></div>
-                                </div>
-
-                                <div class="review-part">
-                                    <img src="../img/uglyStore/stars.png" alt="">
-                                    <p>한 주도 신선하게 잘 먹었네요,<br>
-                                        다채로운 재료들이 있으니 좀 더<br>
-                                        건강하게 먹는 것 같아요.</p>
-                                </div>
-
-                                <div class="lower-part">
-                                    <div class="line3"></div>
-                                    <h5>다* 고객님</h5>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="a8">
-                            <img src="../img/uglyStore/a7.png" alt="">
-                            <div class="hover">
-                                <div class="upper-part">
-                                    <div class="line1"></div>
-                                    <img src="../img/uglyStore/quote.png" alt="">
-                                    <div class="line2"></div>
-                                </div>
-
-                                <div class="review-part">
-                                    <img src="../img/uglyStore/stars.png" alt="">
-                                    <p>너무 맛있게 잘먹고있어요<br>
-                                        크기도 너무 크지도 작지도 않고<br>
-                                        되게 달고 맛있어요!</p>
-                                </div>
-
-                                <div class="lower-part">
-                                    <div class="line3"></div>
-                                    <h5>psli***** 고객님</h5>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="a9 last">
-                            <img src="../img/uglyStore/a8.png" alt="">
-                            <div class="hover">
-                                <div class="upper-part">
-                                    <div class="line1"></div>
-                                    <img src="../img/uglyStore/quote.png" alt="">
-                                    <div class="line2"></div>
-                                </div>
-
-                                <div class="review-part">
-                                    <img src="../img/uglyStore/stars.png" alt="">
-                                    <p>길쭉한 놈도 있고 통통한 놈도 있어요.<br>
-                                        통통한 애는 반 잘라서 구웠답니다.<br>
-                                        귀리우유랑 같이 먹었는데 든든했습니다.<br>
-                                        많이 파세요^^</p>
-                                </div>
-
-                                <div class="lower-part">
-                                    <div class="line3"></div>
-                                    <h5>임*숙 고객님</h5>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Banner -->
-        <div class="banner">
-            <h2>Tasty, Healthy & Fresh</h2>
-        </div>
-
-        <!-- Section 03 -->
-        <div class="section_03">
-            <div class="section-inner">
-                <div class="title-area">
-                    <h3>무농약·유기농</h3>
-                    <h2>과일과 채소를 구출 해 주세요</h2>
-                </div>
-
-                <div class="filter">
-                    <div class="f-btn f-btn1">전체</div>
-                    <div class="f-btn f-btn2">과일</div>
-                    <div class="f-btn f-btn3">채소</div>
-                </div>
-
-                <div class="boxes">
-                    <!-- On Sale Boxes -->
-                    <section class="box">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/box1.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="desc-area">
-                            <div class="text-box1">
-                                <div class="text-part1">
-                                    <h4>[제주]</h4>
-                                </div>
-                                <div class="text-part2">
-                                    <h4><span>42%</span>14,700원</h4>
-                                </div>
-                            </div>
-
-                            <div class="text-box2">
-                                <h3>포슬포슬 친환경 미니밤호박 3kg/5kg</h3>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="box">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/box2.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="desc-area">
-                            <div class="text-box1">
-                                <div class="text-part1">
-                                    <h4>[화순]</h4>
-                                </div>
-                                <div class="text-part2">
-                                    <h4><span>49%</span>29,900원</h4>
-                                </div>
-                            </div>
-
-                            <div class="text-box2">
-                                <h3>유기농 황도/백도 복숭아 1.8kg/3.6kg</h3>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="box">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/box3.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="desc-area">
-                            <div class="text-box1">
-                                <div class="text-part1">
-                                    <h4>[경산]</h4>
-                                </div>
-                                <div class="text-part2">
-                                    <h4><span>31%</span>27,900원</h4>
-                                </div>
-                            </div>
-
-                            <div class="text-box2">
-                                <h3>GAP 복숭아</h3>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="box">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/box4.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="desc-area">
-                            <div class="text-box1">
-                                <div class="text-part1">
-                                    <h4>[임실]</h4>
-                                </div>
-                                <div class="text-part2">
-                                    <h4><span>80%</span>29,900원</h4>
-                                </div>
-                            </div>
-
-                            <div class="text-box2">
-                                <h3>유기농 블루베리</h3>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="box">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/box5.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="desc-area">
-                            <div class="text-box1">
-                                <div class="text-part1">
-                                    <h4>[경남 진주]</h4>
-                                </div>
-                                <div class="text-part2">
-                                    <h4><span>40%</span>18,900원</h4>
-                                </div>
-                            </div>
-
-                            <div class="text-box2">
-                                <h3>친환경 어글리 파프리카</h3>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="box">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/box6.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="desc-area">
-                            <div class="text-box1">
-                                <div class="text-part1">
-                                    <h4>[부여]</h4>
-                                </div>
-                                <div class="text-part2">
-                                    <h4><span>50%</span>24,000원</h4>
-                                </div>
-                            </div>
-
-                            <div class="text-box2">
-                                <h3>부여밤 2kg</h3>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="box">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/box7.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="desc-area">
-                            <div class="text-box1">
-                                <div class="text-part1">
-                                    <h4>[고창]</h4>
-                                </div>
-                                <div class="text-part2">
-                                    <h4><span>4%</span>9,600원</h4>
-                                </div>
-                            </div>
-
-                            <div class="text-box2">
-                                <h3>친환경 쌈채소 600g</h3>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="box">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/box8.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="desc-area">
-                            <div class="text-box1">
-                                <div class="text-part1">
-                                    <h4>[성주]</h4>
-                                </div>
-                                <div class="text-part2">
-                                    <h4><span>52%</span>24,300원</h4>
-                                </div>
-                            </div>
-
-                            <div class="text-box2">
-                                <h3>유기농 참외 3kg/5kg</h3>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="box">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/box9.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="desc-area">
-                            <div class="text-box1">
-                                <div class="text-part1">
-                                    <h4>[김제]</h4>
-                                </div>
-                                <div class="text-part2">
-                                    <h4><span>52%</span>12,700원</h4>
-                                </div>
-                            </div>
-
-                            <div class="text-box2">
-                                <h3>유기농 꿀고구마 3kg</h3>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="box">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/box10.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="desc-area">
-                            <div class="text-box1">
-                                <div class="text-part1">
-                                    <h4>[영천]</h4>
-                                </div>
-                                <div class="text-part2">
-                                    <h4><span>10%</span>16,200원</h4>
-                                </div>
-                            </div>
-
-                            <div class="text-box2">
-                                <h3>무농약 유럽상추 1kg<br>
-                                    (버터헤드, 카이피라, 이자벨)</h3>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="box">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/box11.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="desc-area">
-                            <div class="text-box1">
-                                <div class="text-part1">
-                                    <h4>[산청]</h4>
-                                </div>
-                                <div class="text-part2">
-                                    <h4><span>42%</span>14,700원</h4>
-                                </div>
-                            </div>
-
-                            <div class="text-box2">
-                                <h3>유기농 송이/어글리 바나나<br>
-                                    (1.5kg/2.5kg)</h3>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="box">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/box12.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="desc-area">
-                            <div class="text-box1">
-                                <div class="text-part1">
-                                    <h4>[부여]</h4>
-                                </div>
-                                <div class="text-part2">
-                                    <h4><span>40%</span>26,700원</h4>
-                                </div>
-                            </div>
-
-                            <div class="text-box2">
-                                <h3>애플수박 - 3개 1상자</h3>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Sold Out Boxes -->
-                    <section class="box sold">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/box13.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="soldout-area"></div>
-
-                        <div class="desc-area">
-                            <div class="text-box1">
-                                <div class="text-part1">
-                                    <h4>[부여, 경산]</h4>
-                                </div>
-                                <div class="text-part2">
-                                    <h4><span>24%</span>21,100원</h4>
-                                </div>
-                            </div>
-
-                            <div class="text-box2">
-                                <h3>6월 과일박스 - 애플수박 & 천도복숭아</h3>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="box sold">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/box14.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="soldout-area"></div>
-
-                        <div class="desc-area">
-                            <div class="text-box1">
-                                <div class="text-part1">
-                                    <h4>[제주]</h4>
-                                </div>
-                                <div class="text-part2">
-                                    <h4><span>20%</span>22,300원</h4>
-                                </div>
-                            </div>
-
-                            <div class="text-box2">
-                                <h3>청정 제주 카라향/하귤</h3>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="box sold">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/box15.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="soldout-area"></div>
-
-                        <div class="desc-area">
-                            <div class="text-box1">
-                                <div class="text-part1">
-                                    <h4>[해남]</h4>
-                                </div>
-                                <div class="text-part2">
-                                    <h4><span>50%</span>10,900원</h4>
-                                </div>
-                            </div>
-
-                            <div class="text-box2">
-                                <h3>친환경 밤고구마/호박고구마/<br>
-                                    달수고구마 2.5kg</h3>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="box sold">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/box16.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="soldout-area"></div>
-
-                        <div class="desc-area">
-                            <div class="text-box1">
-                                <div class="text-part1">
-                                    <h4>[의성]</h4>
-                                </div>
-                                <div class="text-part2">
-                                    <h4><span>20%</span>41,500원</h4>
-                                </div>
-                            </div>
-
-                            <div class="text-box2">
-                                <h3>유기농 사과 3.5kg</h3>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="box sold">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/box17.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="soldout-area"></div>
-
-                        <div class="desc-area">
-                            <div class="text-box1">
-                                <div class="text-part1">
-                                    <h4>[산청]</h4>
-                                </div>
-                                <div class="text-part2">
-                                    <h4><span>34%</span>39,500원</h4>
-                                </div>
-                            </div>
-
-                            <div class="text-box2">
-                                <h3>친환경 배 5kg /10kg</h3>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="box sold">
-                        <div class="img-area">
-                            <img src="../img/uglyStore/box18.png" alt="">
-                            <div class="img-dimmed">
-                                <div class="icon-btns">
-                                    <a href="#">
-                                        <img class="heart" src="../img/uglyStore/heart.png" alt="">
-                                    </a>
-
-                                    <a class="last-icon" href="#">
-                                        <img class="cart" src="../img/uglyStore/shopping-cart.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="soldout-area"></div>
-
-                        <div class="desc-area">
-                            <div class="text-box1">
-                                <div class="text-part1">
-                                    <h4>[논산]</h4>
-                                </div>
-                                <div class="text-part2">
-                                    <h4><span>25%</span>19,500원</h4>
-                                </div>
-                            </div>
-
-                            <div class="text-box2">
-                                <h3>[2차 긴급구출]<br>
-                                    무농약 못난이 완숙토마토 4.5kg</h3>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-
-
-        </div>
 
         <!-- Footer -->
         <footer class="footer">
@@ -1155,9 +1259,11 @@
             </div>
         </footer>
 
-        <script src="../js/jquery-3.6.0.min.js"></script>
-        <script src="../js/slick.min.js"></script>
-        <script src="../js/uglyStore.js"></script>
+    </div>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/uglyStore.js"></script>
 </body>
 
 </html>
