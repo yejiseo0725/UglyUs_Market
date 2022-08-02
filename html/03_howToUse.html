@@ -52,7 +52,7 @@
 
                     <li>
                         <a class="last-h-icon" href="#">
-                            <img class="hamburger_icon" src="../img/components/hamburger.png" alt="" />
+                            <img class="hamburger_icon" src="../img/components/hamburger2.png" alt="" />
                         </a>
                     </li>
                 </ul>
@@ -60,23 +60,44 @@
         </div>
     </header>
 
-    <div class="container">
+    <!-- Responsive Popup -->
+    <div class="hamburger-popup">
+        <div class="hamburger-popup-inner">
+            <div class="popup-close">
+                <img src="../img/components/close.png" alt="">
+            </div>
 
-        <!-- Main -->
-        <div class="main-background">
-            <main class="main">
-                <div class="title-area">
-                    <h2>이용방법</h2>
-                    <h1>어글리어스 정기배송<br>
-                        이용방법</h1>
-                    <a href="#">구독하기</a>
-                </div>
-            </main>
+            <ul class="hidden-nav">
+                <li><a href="../html/02_mission.html">미션</a></li>
+                <li><a href="../html/03_howToUse.html">이용방법</a></li>
+                <li><a href="../html/04_uglyStore.html">못난이상점</a></li>
+                <li><a href="../html/05_review.html">이용후기</a></li>
+            </ul>
+
+            <div class="hidden-btns">
+                <a class="hidden-btn" href="../html/07_user.html">로그인</a>
+                <a class="hidden-btn" href="#">구독하기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contents -->
+    <main>
+        <div class="main-area">
+            <img class="howToUse-main" src="../img/howToUse/howToUse_main.jpg" alt="">
+
+            <div class="title-area">
+                <h2 class="heading">
+                    <span>이용방법</span>
+                    어글리어스 정기배송<br>
+                    이용방법
+                </h2>
+                <a href="#">구독하기</a>
+            </div>
         </div>
 
-
         <!-- Section 01 -->
-        <section class="section_01">
+        <section class="sec_01">
             <div class="section-inner">
                 <div class="title-area">
                     <h2>맞춤 박스를 선택하세요</h2>
@@ -133,7 +154,7 @@
         </section>
 
         <!-- Section 02 -->
-        <section class="section_02">
+        <section class="sec_02">
             <div class="section-inner">
                 <div class="title-area">
                     <h2>이렇게 진행돼요</h2>
@@ -176,17 +197,17 @@
         </section>
 
         <!-- Banner -->
-        <div class="banner">
+        <section class="banner">
             <img src="../img/howToUse/night-mode.png">
             <div class="text-area">
                 <h3>새벽배송으로 더 신선하게!</h3>
                 <p>* 서울 및 일부 수도권 지역 한정</p>
             </div>
             <img src="../img/howToUse/diet.png" alt="">
-        </div>
+        </section>
 
         <!-- Section 03 -->
-        <section class="section_03">
+        <section class="sec_03">
             <div class="section-inner">
                 <div class="img-area">
                     <div class="left-img">
@@ -228,7 +249,7 @@
         </section>
 
         <!-- Section 04 -->
-        <section class="section_04">
+        <section class="sec_04">
             <div class="section-inner">
 
                 <div class="small-img">
@@ -251,7 +272,7 @@
         </section>
 
         <!-- Section 05 -->
-        <section class="section_05">
+        <section class="sec_05">
             <div class="background-img">
                 <div class="section-inner">
                     <h2>걱정마세요!</h2>
@@ -295,7 +316,7 @@
         </section>
 
         <!-- Section 06 -->
-        <section class="section_06">
+        <section class="sec_06">
             <div class="section-inner">
                 <div class="main-title-area">
                     <h2>FAQ's</h2>
@@ -380,53 +401,60 @@
                 </div>
             </div>
         </section>
+    </main>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="section-inner">
-                <div class="company-info-area">
-                    <img src="../img/components/uglyus_logo.png" alt="">
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-inner">
+            <div class="company-info-area">
+                <img src="../img/components/uglyus_logo.png" alt="" />
 
-                    <p>상호명 : 주식회사 캐비지 | 대표 : 최현주 | 사업자등록번호 : 572-81-02287<br>
-                        소재지 : 경기도 화성시 만년로 915번길 39-1(안녕동) | 통신판매업 신고번호 : 2021-화성동부-0302<br>
-                        <strong>제휴 및 납품 문의 : biz@uglyus.co.kr | 농산물 납품 및 긴급구출 제보 : farm@uglyus.co.kr</strong>
-                    </p>
+                <p>
+                    상호명 : 주식회사 캐비지 | 대표 : 최현주 | 사업자등록번호 :
+                    572-81-02287<br />
+                    소재지 : 경기도 화성시 만년로 915번길 39-1(안녕동) | 통신판매업
+                    신고번호 : 2021-화성동부-0302<br />
+                    <strong>제휴 및 납품 문의 : biz@uglyus.co.kr | 농산물 납품 및 긴급구출
+                        제보 : farm@uglyus.co.kr</strong>
+                </p>
 
-                    <div class="info-btns">
-                        <a href="#">
-                            <div class="info-btn btn1">서비스 이용약관</div>
-                        </a>
-                        <a href="#">
-                            <div class="info-btn">개인정보 처리방침</div>
-                        </a>
-                    </div>
-
-                    <h6>Copyright ⓒ 2022 주식회사 캐비지 All rights reserved.</h6>
+                <div class="info-btns">
+                    <a href="#">
+                        <div class="info-btn btn1">서비스 이용약관</div>
+                    </a>
+                    <a href="#">
+                        <div class="info-btn">개인정보 처리방침</div>
+                    </a>
                 </div>
 
-                <div class="cs-area">
-                    <h5>어글리어스 고객센터 <span>02.6408.0202</span></h5>
+                <h6>Copyright ⓒ 2022 주식회사 캐비지 All rights reserved.</h6>
+            </div>
 
-                    <p>월-목요일 11:00 ~ 18:00 (점심시간 12:00 ~ 13:00)<br>
-                        금요일 09:00 ~ 18:00 (점심시간 12:00 ~ 13:00)<br>
-                        토·일·공휴일 휴무
-                    </p>
+            <div class="footer-line"></div>
 
-                    <div class="cs-btns">
-                        <a href="#">
-                            <div class="cs-btn">문의하기</div>
-                        </a>
-                        <a href="#">
-                            <div class="cs-btn btn2">자주 묻는 질문</div>
-                        </a>
-                    </div>
+            <div class="cs-area">
+                <h5>어글리어스 고객센터 <span>02.6408.0202</span></h5>
+
+                <p>
+                    월-목요일 11:00 ~ 18:00 (점심시간 12:00 ~ 13:00)<br />
+                    금요일 09:00 ~ 18:00 (점심시간 12:00 ~ 13:00)<br />
+                    토·일·공휴일 휴무
+                </p>
+
+                <div class="cs-btns">
+                    <a href="#">
+                        <div class="cs-btn">문의하기</div>
+                    </a>
+                    <a href="#">
+                        <div class="cs-btn btn2">자주 묻는 질문</div>
+                    </a>
                 </div>
             </div>
-        </footer>
-
-    </div>
+        </div>
+    </footer>
 
     <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/header.js"></script>
     <script src="../js/howToUse.js"></script>
 </body>
 
