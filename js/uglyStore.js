@@ -35,4 +35,42 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 4,
   });
+
+  // Section 02 Scroll Event
+  const s2TitleOffset = $(".sec_02 .title-area h2").offset().top;
+  console.log(s2TitleOffset);
+
+  // Section 03 Filter
+  $(".filter .f-btn").click(function () {
+    // filter btn color 변경
+    $(this).addClass("active").siblings().removeClass("active");
+
+    // 다 나오게
+    $(".veggie").css({
+      display: "block",
+    });
+    $(".fruit").css({
+      display: "block",
+    });
+  });
+
+  // 과일만 나오게
+  $(".filter .fruit-btn").click(function () {
+    $(".veggie").css({
+      display: "none",
+    });
+    $(".fruit").css({
+      display: "",
+    });
+  });
+
+  // 채소만 나오게
+  $(".filter .veggie-btn").click(function () {
+    $(".fruit").css({
+      display: "none",
+    });
+    $(".veggie").css({
+      display: "",
+    });
+  });
 });
