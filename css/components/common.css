@@ -2,66 +2,128 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @font-face {
-    font-family: "Leferi";
-    src: url("../../font/Leferi_TTF/LeferiBaseBold.ttf");
-    font-weight: 600;
+  font-family: "Leferi";
+  src: url("../../font/Leferi_TTF/LeferiBaseBold.ttf");
+  font-weight: 600;
 }
 
 @font-face {
-    font-family: "Leferi";
-    src: url("../../font/Leferi_TTF/LeferiPointBlack.ttf");
-    font-weight: 800;
+  font-family: "Leferi";
+  src: url("../../font/Leferi_TTF/LeferiPointBlack.ttf");
+  font-weight: 800;
 }
 
 body {
-    font-family: "Noto sans KR", "Raleway", sans-serif;
-    color: #252525;
+  font-family: "Noto sans KR", "Raleway", sans-serif;
+  color: #252525;
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 .title-area h2 {
-    font-size: 36px;
-    font-weight: 500;
+  font-size: 36px;
+  font-weight: 500;
 }
 .title-area h2 span {
-    display: block;
-    font-size: 28px;
-    font-weight: 400;
-    margin-bottom: 10px;
+  display: block;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 h2.heading {
-    font-family: "Leferi";
-    font-size: 44px;
-    font-weight: 600;
-    line-height: 60px;
+  font-family: "Leferi";
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 60px;
 }
 
 button {
-    border: none;
+  border: none;
 }
 
 .layout {
-    position: relative;
-    max-width: 1920px;
-    min-width: 1340px;
-    margin: 0 auto;
-    overflow: hidden;
+  position: relative;
+  max-width: 1920px;
+  min-width: 1340px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-@Media (max-width: 771px) {
-    .title-area h2 {
-        font-size: 18px;
-    }
-    .title-area h2 span {
-        font-size: 14px;
-        margin-bottom: 0;
-    }
-    h2.heading {
-        font-size: 28px;
-        line-height: 40px;
-    }
+/* Fixed Items */
+.side-navBar {
+  position: fixed;
+  /* position: absolute; */
+  width: 80px;
+  height: 210px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 30;
+}
+
+.side-navBar .fixed-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  color: white;
+  margin-bottom: 5px;
+}
+
+.side-navBar .fixed-item h5 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.side-navBar .fixed-item.delivery {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: #ff6741;
+}
+
+.side-navBar .fixed-item.delivery img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+}
+
+.side-navBar .fixed-item.contact {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: #414b5a;
+}
+
+.side-navBar .fixed-item.contact img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.side-navBar .fixed-item.top-btn {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ff6741;
+}
+
+@media (max-width: 771px) {
+  .title-area h2 {
+    font-size: 18px;
+  }
+  .title-area h2 span {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  h2.heading {
+    font-size: 28px;
+    line-height: 40px;
+  }
 }

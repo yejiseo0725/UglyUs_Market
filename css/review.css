@@ -1,334 +1,485 @@
 /* header */
 header {
-    background-color: #fff;
+  background-color: #fff;
 }
 header nav .gnb li a {
-    color: #252525;
+  color: #252525;
 }
 
 /* Main */
-main {
-    position: relative;
+.main-area {
+  position: relative;
+  margin-top: 80px;
 
-    width: 1920px;
-    height: 1000px;
-    background-color: #FF6741;
+  width: 1920px;
+  height: auto;
+  background-color: #ff6741;
 
-    padding-top: 80px;
+  padding: 100px 0;
 }
 
-main .title-box {
-    padding-top: 130px;
-
-    color: white;
-    text-align: center;
+.main-area .title-box {
+  color: white;
+  text-align: center;
 }
-main .title-box h3 {
-    font-size: 36px;
-    font-weight: 400;
-    margin-bottom: 10px;
+.main-area .title-box h2 {
+  font-size: 44px;
+}
+.main-area .title-box h2 span {
+  display: block;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
-.main .uglybox-img {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
+.main-area .uglybox-img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
 
-    width: 494px;   
-    height: 200px;
+  width: 494px;
+  height: 200px;
 
-    background-image: url(../img/review/uglybox.png);
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url(../img/review/uglybox.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Box Slide Area */
-.main .slide-area {
-    margin-top: 89px;
+.main-area .slide-area {
+  margin-top: 89px;
 }
-.main .slide-area .slide-box {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.main-area .slide-area .slide-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.main .slide-area .slide-box .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.main-area .slide-area .slide-box .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    width: 350px;
-    height: 430px;
-    background-color: white;
-    margin-right: 50px;
+  width: 350px;
+  height: 430px;
+  background-color: white;
+  margin-right: 50px;
 }
-.main .slide-area .slide-box .box img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    margin-top: 25px;
+.main-area .slide-area .slide-box .box img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 25px;
 }
-.main .slide-area .slide-box .box .desc-area {
-    width: 300px;
-    margin-top: 20px;
+.main-area .slide-area .slide-box .box .desc-area {
+  width: 300px;
+  margin-top: 20px;
 }
-.main .slide-area .slide-box .box .desc-area p {
-    height: 92px;
-    font-size: 16px;
-    font-weight: 300;
+.main-area .slide-area .slide-box .box .desc-area p {
+  height: 92px;
+  font-size: 16px;
+  font-weight: 300;
 }
-.main .slide-area .slide-box .box .desc-area .user-box {
-    margin-top: 35px;
+.main-area .slide-area .slide-box .box .desc-area .user-box {
+  margin-top: 35px;
 }
-.main .slide-area .slide-box .box .desc-area .user-box .user {
-    display: flex;
-    justify-content: space-between;
+.main-area .slide-area .slide-box .box .desc-area .user-box .user {
+  display: flex;
+  justify-content: space-between;
 }
-.main .slide-area .slide-box .box .desc-area .user-box .user h5 {
-    font-size: 14px;
-    font-weight: 400;
-    color: #333;
+.main-area .slide-area .slide-box .box .desc-area .user-box .user h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
 }
-.main .slide-area .slide-box .box .desc-area .user-box .user h6 {
-    font-weight: 300;
-    font-size: 14px;
-    color: #333;
+.main-area .slide-area .slide-box .box .desc-area .user-box .user h6 {
+  font-weight: 300;
+  font-size: 14px;
+  color: #333;
 }
-.main .slide-area .slide-box .box .desc-area .user-box img {
-    width: 58px;
-    height: 10px;
-    object-fit: cover;
-    margin: 0;
+.main-area .slide-area .slide-box .box .desc-area .user-box img {
+  width: 58px;
+  height: 10px;
+  object-fit: cover;
+  margin: 0;
+}
+
+/* Slick Slide */
+.main-area .slide-area .slide-box .slick-slide {
+  opacity: 0.7;
+}
+.main-area .slide-area .slide-box .slick-active {
+  opacity: 1;
 }
 
 /* Banner */
 .banner {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    width: 100%;
-    height: 150px;
-    background-color: #FFF5F0;
-
-    /*margin-bottom: 80px;*/
+  width: 100%;
+  height: 150px;
+  background-color: #fff5f0;
 }
 .banner .banner-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    width: 1340px;
+  width: 1340px;
 }
-.banner .left-area {}
+.banner .left-area {
+}
 .banner .left-area h3 {
-    font-size: 28px;
-    font-weight: 400;
-    color: #FF6741;
+  font-size: 28px;
+  font-weight: 400;
+  color: #ff6741;
 }
 .banner .left-area h4 {
-    font-size: 24px;
-    font-weight: 400;
-    color: #333;
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
 }
 
 .banner .right-area {
-    display: flex;
+  display: flex;
 }
-.banner .right-area .review-info {}
+.banner .right-area .review-info {
+}
 .banner .right-area .review-info .point {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 
-    background-image: url(../img/review/Frame.png);
-    background-repeat: no-repeat;
+  background-image: url(../img/review/Frame.png);
+  background-repeat: no-repeat;
 
-    width: 137px;
-    height: 36px;
+  width: 137px;
+  height: 36px;
 
-    font-size: 12px;
-    color: white;
-    line-height: 30px;
+  font-size: 12px;
+  color: white;
+  line-height: 30px;
 
-    /* Animation 연결 */
-    animation-name: point-move;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+  /* Animation 연결 */
+  animation-name: point-move;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 /* Point-area  Animation */
 @keyframes point-move {
-    from {
-        transform: translateY(0);
-    } 
-    50% {
-        transform: translateY(-10px);
-    }
-    to {
-        transform: translateY(0);
-    }
-
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 .banner .right-area .review-info .point span {
-    color: #FF6741;
-    margin-left: 3px;
+  color: #ff6741;
+  margin-left: 3px;
 }
 .banner .right-area .review-info h5 {
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
 }
 .banner .right-area .review-info .login-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 169px;
-    height: 30px;
-    border: 1px solid #FF6741;
+  width: 169px;
+  height: 30px;
+  border: 1px solid #ff6741;
 
-    font-size: 14px;
-    font-weight: 400;
-    color: #FF6741;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ff6741;
 
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .banner .right-area .score-info {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    margin-left: 50px;
+  margin-left: 50px;
 }
 .banner .right-area .score-info .score {
-    margin-right: 50px;
+  margin-right: 50px;
 }
 .banner .right-area .score-info .score .score-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 80px;
-    height: 60px;
-    background-color: #FF6741;
+  width: 80px;
+  height: 60px;
+  background-color: #ff6741;
 
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
 }
 .banner .right-area .score-info .score h5 {
-    font-size: 16px;
-    font-weight: 400;
-    padding-top: 7px;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 7px;
 }
 
 /* Section */
 .review-section {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    width: 100%;
-    /*height: 1080px;*/
-    background: #f5f5f5;
-    padding-top: 80px;
-    /* border: 1px solid teal; */
+  width: 100%;
+  /*height: 1080px;*/
+  background: #f5f5f5;
+  padding-top: 80px;
+  /* border: 1px solid teal; */
 }
-
-/*.review-section .section-inner {*/
-/*    width: 1340px;*/
-
-/*    display: flex;*/
-/*    justify-content: space-evenly;*/
-/*    flex-wrap: wrap;*/
-/*}*/
 
 .review-section .review-items {
-    width: 1340px;
+  width: 1340px;
 
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .review-section .review-items li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    width: 400px;
-    height: 500px;
-    box-shadow: 3px 3px 15px 0 rgba(211, 211, 211, 0.62);
-    /*border: 2px solid crimson;*/
-    padding: 30px;
-    margin-bottom: 30px;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  width: 400px;
+  height: 500px;
+  box-shadow: 3px 3px 15px 0 rgba(211, 211, 211, 0.62);
+  /*border: 2px solid crimson;*/
+  padding: 30px;
+  box-sizing: border-box;
+
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
-/*.review-section .article-inner {*/
-/*    width: 330px;*/
-/*    height: 100%;*/
-/*    !*margin: 30px 0;*!*/
-/*}*/
 .review-section .img-area {
-    width: 330px;
-    height: 220px;
-    object-fit: cover;
+  width: 330px;
+  height: 220px;
+  object-fit: cover;
 }
 .review-section .img-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.review-section .icon-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.review-section .icon-area .i1 {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+.review-section .review-items li .icon-area .i2 {
+  width: 82px;
+  height: 14px;
+  object-fit: cover;
+  margin-top: 5px;
+}
+.review-section .review-items li .desc-area {
+  height: 74px;
+  margin-top: 14px;
+
+  /* text 여러 줄, 말 줄임표 기호 넣기 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.review-section .review-items li .desc-area p {
+  font-size: 16px;
+  font-weight: 300;
+}
+.review-section .review-items li .info-area {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+.review-section .review-items li .info-area h6 {
+  font-size: 12px;
+  font-weight: 300;
+  color: #333;
+}
+.review-section .review-items li .info-area .line {
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  margin: 5px 0;
+}
+.review-section .review-items li .info-area h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ff6741;
+}
+
+/* Responsive Tablet */
+@media (max-width: 771px) {
+  .layout {
+    min-width: 768px;
+    max-width: 768px;
+    height: 100%;
+  }
+
+  /* Main */
+  .main-area {
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    padding: 50px 0;
+  }
+  .main-area .title-box {
+    padding-top: 0;
+  }
+  .main-area .title-box h2 {
+    font-size: 20px;
+  }
+  .main-area .title-box h2 span {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+
+  /* Box Slide Area */
+  .main-area .slide-area {
+    margin-top: 40px;
+  }
+  .main-area .slide-area .slide-box .box {
+    width: 250px;
+    height: 300px;
+    margin-right: 25px;
+  }
+  .main-area .slide-area .slide-box .box img {
+    width: 210px;
+    height: 170px;
+    object-fit: cover;
+    margin-top: 20px;
+  }
+  .main-area .slide-area .slide-box .box .desc-area {
+    width: 210px;
+    height: 100px;
+    margin-top: 10px;
+  }
+  .main-area .slide-area .slide-box .box .desc-area p {
+    height: auto;
+    font-size: 14px;
+    line-height: 1.3;
+    /* 반응형 text 세팅 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+  .main-area .slide-area .slide-box .box .desc-area .user-box {
+    margin-top: 5px;
+  }
+  .main-area .slide-area .slide-box .box .desc-area .user-box .user {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-area .slide-area .slide-box .box .desc-area .user-box .user h5 {
+    font-size: 10px;
+  }
+  .main-area .slide-area .slide-box .box .desc-area .user-box .user h6 {
+    font-size: 10px;
+  }
+
+  /* Section */
+  .review-section {
+    width: auto;
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .review-section .review-items {
+    width: 100%;
+  }
+  .review-section .review-items li {
+    width: 183px;
+    height: 330px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .review-section .img-area {
+    width: 160px;
+    height: 130px;
+    object-fit: cover;
+  }
+  .review-section .img-area img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-.review-section .icon-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-.review-section .icon-area .i1 {
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-}
-.review-section .review-items li .icon-area .i2 {
-    width: 82px;
-    height: 14px;
-    object-fit: cover;
+  }
+  .review-section .icon-area {
+    margin-top: 3px;
+  }
+  .review-section .icon-area .i1 {
+    width: 20px;
+    height: 20px;
+  }
+  .review-section .review-items {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .review-section .review-items li .icon-area .i2 {
+    width: 60px;
+    height: 10px;
+    margin-top: 0;
+  }
+  .review-section .review-items li .desc-area {
+    height: auto;
     margin-top: 5px;
-}
-.review-section .review-items li .desc-area {
-    height: 74px;
-    margin-top: 14px;
-
-    /* text 여러 줄, 말 줄임표 기호 넣기 */
+  }
+  .review-section .review-items li .desc-area p {
+    font-size: 14px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical; 
-}
-.review-section .review-items li .desc-area p {
-    font-size: 16px;
-    font-weight: 300;
-}
-.review-section .review-items li .info-area {
+    -webkit-box-orient: vertical;
+    border: 2px solid teal;
+  }
+  .review-section .review-items li .info-area {
     width: 100%;
     text-align: center;
-    margin-top: 10px;
-}
-.review-section .review-items li .info-area h6 {
+    margin-top: 5px;
+  }
+  .review-section .review-items li .info-area h6 {
+    font-size: 10px;
+  }
+  .review-section .review-items li .info-area .line {
+    margin: 3px 0;
+  }
+  .review-section .review-items li .info-area h5 {
     font-size: 12px;
-    font-weight: 300;
-    color: #333;
+  }
 }
-.review-section .review-items li .info-area .line {
-    width: 100%;
-    height: 1px;
-    background-color: #333;
-    margin: 5px 0;
-}
-.review-section .review-items li .info-area h5 {
-    font-size: 16px;
-    font-weight: 500;
-    color: #FF6741;
+
+/* Responsive Mobile */
+@media (max-width: 400px) {
+  .layout {
+    min-width: 390px;
+    max-width: 390px;
+    height: 100%;
+  }
 }
