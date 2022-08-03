@@ -23,6 +23,10 @@ $(function () {
     nextArrow: $(".right-btn"),
     variableWidth: true,
     slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    infinite: true,
   });
 
   // Section 01 Slide
@@ -34,11 +38,41 @@ $(function () {
     variableWidth: true,
     slidesToShow: 4,
     slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      // 반응형 적용여부
+      {
+        breakpoint: 771, //해상도 브레이크 포인트 설정
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 0,
+        },
+      },
+    ],
   });
 
   // Section 02 Scroll Event
   const s2TitleOffset = $(".sec_02 .title-area h2").offset().top;
   console.log(s2TitleOffset);
+
+  $(window).scroll(function () {
+    const scrollTopLocation = $(this).scrollTop();
+
+    if (scrollTopLocation >= s2TitleOffset) {
+      $(".a5 h3").css({
+        opacity: "1",
+        visibility: "visible",
+        transform: "translateY(0)",
+      });
+
+      $(".a5 .more-review-btn").css({
+        opacity: "1",
+        visibility: "visible",
+        transform: "translateY(0)",
+      });
+    }
+  });
 
   // Section 03 Filter
   $(".filter .f-btn").click(function () {
