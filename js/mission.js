@@ -50,14 +50,10 @@ $(function () {
     const s3LastImgOffset = $(".sec_03 .img-area img:last-child").offset().top;
     if (nowScrollTop >= s3LastImgOffset && nowScrollTop < s5Offset) {
       $(".sec_04 .text-area").addClass("active");
-    } else {
-      $(".sec_04 .text-area").removeClass("active");
-    }
-
-    if (nowScrollTop >= s4Offset && nowScrollTop < s5Offset) {
       $(".sec_04 .img-area .upper-img").addClass("active");
       $(".sec_04 .img-area .lower-img").addClass("active");
     } else {
+      $(".sec_04 .text-area").removeClass("active");
       $(".sec_04 .img-area .upper-img").removeClass("active");
       $(".sec_04 .img-area .lower-img").removeClass("active");
     }

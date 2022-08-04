@@ -5,6 +5,9 @@ header {
 header nav .gnb li a {
   color: #252525;
 }
+.side-navBar {
+  position: fixed;
+}
 
 /* Main */
 .main-area {

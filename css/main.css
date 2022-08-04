@@ -1187,38 +1187,6 @@ main {
     background-color: white;
   }
 
-  /* Fixed navBar */
-  .side-navBar {
-    width: 60px;
-  }
-  .side-navBar .fixed-item.delivery {
-    width: 60px;
-    height: 60px;
-  }
-  .side-navBar .fixed-item.delivery img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-  }
-  .side-navBar .fixed-item.contact {
-    width: 60px;
-    height: 60px;
-  }
-  .side-navBar .fixed-item.contact img {
-    width: 28px;
-    height: 28px;
-  }
-  .side-navBar .fixed-item.top-btn {
-    margin: 0 auto;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #ff6741;
-  }
-  .side-navBar .fixed-item.top-btn h5 {
-    font-size: 10px;
-  }
-
   /* Section 01 */
   .sec_01 .title-area {
     margin-top: 40px;
