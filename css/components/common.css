@@ -54,8 +54,8 @@ button {
 
 /* Fixed Items */
 .side-navBar {
-  position: fixed;
-  /* position: absolute; */
+  /* position: fixed; */
+  position: absolute;
   width: 80px;
   height: 210px;
   right: 20px;

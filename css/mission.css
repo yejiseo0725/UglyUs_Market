@@ -5,6 +5,9 @@ header {
 header nav .gnb li a {
   color: #252525;
 }
+.side-navBar {
+  position: fixed;
+}
 
 /* Main */
 .main-area {
@@ -56,15 +59,48 @@ header nav .gnb li a {
   transform: translateX(-100px);
   transition: 1s;
 }
+.sec_01 img.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
 .sec_01 .title-area {
   padding-top: 30px;
   padding-left: 50px;
 
   opacity: 0;
   visibility: hidden;
-  transform: translateX(80px);
-  transition: 1.5s;
+  transition: 0.8s;
+}
+.sec_01 .title-area h2,
+.sec_01 .title-area h2 span,
+.sec_01 .title-area p {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+.sec_01 .title-area.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sec_01 .title-area.active h2,
+.sec_01 .title-area.active h2 span,
+.sec_01 .title-area.active p {
+  opacity: 1;
+  transition: 0.8s;
+  transform: translateY(0);
+}
+
+.sec_01 .title-area.active h2 span {
+  transition-delay: 0.3s;
+}
+.sec_01 .title-area.active h2 {
   transition-delay: 0.5s;
+}
+.sec_01 .title-area.active p {
+  transition-delay: 0.7s;
 }
 
 .sec_01 .title-area h2 {
@@ -90,8 +126,6 @@ header nav .gnb li a {
   height: auto;
   padding: 100px 50px;
   box-sizing: border-box;
-
-  border: 3px solid blue;
 }
 .sec_02 .farm-img {
   width: auto;
@@ -102,6 +136,11 @@ header nav .gnb li a {
   visibility: hidden;
   transform: translateY(-100px);
   transition: 0.7s;
+}
+.sec_02 .farm-img.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .sec_02 .desc-area {
@@ -170,8 +209,6 @@ header nav .gnb li a {
   height: auto;
   padding: 100px 50px;
   box-sizing: border-box;
-
-  border: 3px solid blue;
 }
 .sec_03 .desc-area {
   font-size: 18px;
@@ -360,12 +397,21 @@ header nav .gnb li a {
   height: auto;
   padding: 100px 50px;
   box-sizing: border-box;
-
-  border: 3px solid green;
 }
 .sec_05 .img-area {
   margin-right: 50px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100px);
+  transition: 1s;
 }
+.sec_05 .img-area.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
 .sec_05 .img-area img {
   width: 310px;
   height: 100%;
@@ -374,8 +420,40 @@ header nav .gnb li a {
 }
 
 .sec_05 .text-area {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.8s;
 }
-.sec_05 .text-area h3 {
+.sec_05 .text-area h2 span,
+.sec_05 .text-area h2,
+.sec_05 .text-area .desc-p {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.sec_05 .text-area.active {
+  opacity: 1;
+  visibility: visible;
+}
+.sec_05 .text-area.active h2 span,
+.sec_05 .text-area.active h2,
+.sec_05 .text-area.active .desc-p {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.8s;
+}
+.sec_05 .text-area.active h2 span {
+  transition-delay: 0.3s;
+}
+.sec_05 .text-area.active h2 {
+  transition-delay: 0.6s;
+}
+.sec_05 .text-area.active .desc-p {
+  transition-delay: 0.9s;
+}
+
+.sec_05 .text-area h2 span {
+  display: block;
   font-size: 28px;
   font-weight: 500;
   color: #ff6741;
@@ -593,7 +671,7 @@ header nav .gnb li a {
   .sec_05 .text-area {
     padding-top: 20px;
   }
-  .sec_05 .text-area h3 {
+  .sec_05 .text-area h2 span {
     font-size: 16px;
   }
   .sec_05 .text-area h2 {

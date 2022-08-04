@@ -1,151 +1,190 @@
 /* header */
 header {
-    background-color: #FFF5F0;
+  background-color: #fff5f0;
 }
 header nav .gnb li a {
-    color: #252525;
+  color: #252525;
 }
 
 /* Contents */
 .login-section {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    padding-top: 80px;
-    width: 100%;
-    height: 1000px;
+  padding-top: 80px;
+  width: 100%;
+  height: 1000px;
 }
 .login-section .section-inner {
-    width: 406px;
+  width: 406px;
 }
 
 .login-section .title-area {
-    padding-top: 90px;
+  padding-top: 90px;
 }
 .login-section .title-area h2 {
-    font-size: 36px;
-    font-weight: 500;
+  font-size: 36px;
+  font-weight: 500;
 }
 
 .login-section .input-area {
-    margin-top: 85px;
+  margin-top: 85px;
 }
-.login-section .input-area input[type="text"], 
+.login-section .input-area input[type="text"],
 .login-section .input-area input[type="password"] {
-    width: 100%;
-    height: 50px;
-    box-sizing: border-box;
-    border: 1px solid #D2D2D2;
-    border-radius: 5px;
-    outline: none;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  outline: none;
 
-    margin-bottom: 25px;
-    font-size: 20px;
-    padding-left: 20px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  padding-left: 20px;
 
-    font-family: "Raleway";
-    color: #252525;
+  font-family: "Raleway";
+  color: #252525;
 
-    transition: 0.5s;
+  transition: 0.5s;
+}
+.login-section .input-area input[type="text"]:last-child {
+  margin: 0;
 }
 .login-section .input-area input[type="password"] {
-    background-image: url(../img/user/eye.png);
-    background-repeat: no-repeat;
-    background-position: 96%;
-    margin: 0;
+  background-image: url(../img/user/eye.png);
+  background-repeat: no-repeat;
+  background-position: 96%;
+  margin: 0;
 }
-.login-section .input-area input[type="text"]::placeholder, 
+.login-section .input-area input[type="text"]::placeholder,
 .login-section .input-area input[type="password"]::placeholder {
-    font-family: "Raleway";
-    font-size: 20px;
-    font-weight: 400;
-    color: #D2D2D2;
+  font-family: "Raleway";
+  font-size: 20px;
+  font-weight: 400;
+  color: #d2d2d2;
 }
-.login-section .input-area input[type="text"]:hover, 
-.login-section .input-area input[type="text"]:focus, 
-.login-section .input-area input[type="password"]:hover, 
+.login-section .input-area input[type="text"]:hover,
+.login-section .input-area input[type="text"]:focus,
+.login-section .input-area input[type="password"]:hover,
 .login-section .input-area input[type="password"]:focus {
-    border: 1px solid #FF6741;
+  border: 1px solid #ff6741;
 }
 .login-section .input-area input[type="text"]:focus::placeholder {
-    color: transparent;
+  color: transparent;
 }
 .login-section .input-area a {
-    display: block;
-    text-align: end;
-    color: #252525;
-    padding-top: 10px;
+  display: block;
+  text-align: end;
+  color: #252525;
+  padding-top: 10px;
 }
 .login-section .input-area a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .login-section .login-btn {
-    display: inline-block;
-    width: 100%;
-    height: 50px;
-    background-color: #FF6741;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  background-color: #ff6741;
 
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
-    line-height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50px;
 
-    margin-top: 45px;
+  margin-top: 45px;
 }
 
 .login-section .or-area {
-    position: relative;
-    margin-top: 50px;
+  position: relative;
+  margin-top: 50px;
 
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
 }
 .login-section .or-area::before,
 .login-section .or-area::after {
-    content: "";
-    position: absolute;
-    width: 165px;
-    height: 1px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #D2D2D2;
+  content: "";
+  position: absolute;
+  width: 165px;
+  height: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #d2d2d2;
 }
 .login-section .or-area::before {
-    left: 0;
+  left: 0;
 }
 .login-section .or-area::after {
-    right: 0;
+  right: 0;
 }
 
 .login-section .otherWay-area {
-    padding-top: 25px;
+  padding-top: 25px;
 }
 .login-section .otherWay-area a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 100%;
-    height: 50px;
+  width: 100%;
+  height: 50px;
 
-    font-size: 20px;
-    font-weight: 500;
-    color: #252525;
-    line-height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #252525;
+  line-height: 50px;
 
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 .login-section .otherWay-area a img {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 .login-section .otherWay-area a:nth-child(1) {
-    background-color: #FFA3A3;
+  background-color: #ffa3a3;
 }
 .login-section .otherWay-area a:nth-child(2) {
-    background-color: #FFE485;
+  background-color: #ffe485;
 }
 .login-section .otherWay-area a:nth-child(3) {
-    background-color: #54D58D;
+  background-color: #54d58d;
+}
+
+/* Responsive */
+@media (max-width: 771px) {
+  .layout {
+    min-width: 768px;
+    max-width: 768px;
+    height: 100%;
+  }
+  .login-section {
+    /* justify-content: flex-start; */
+    padding: 50px 0;
+    width: auto;
+    height: auto;
+  }
+  .login-section .section-inner {
+    width: auto;
+  }
+
+  .login-section .title-area {
+    padding-top: 50px;
+  }
+  .login-section .title-area h2 {
+    font-size: 20px;
+  }
+  .login-section .input-area {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .layout {
+    min-width: auto;
+    max-width: 380px;
+    height: 100%;
+  }
 }
