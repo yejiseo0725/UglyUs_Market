@@ -539,7 +539,6 @@ header nav .gnb li a {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    border: 2px solid teal;
   }
   .review-section .review-items li .info-area {
     width: 100%;

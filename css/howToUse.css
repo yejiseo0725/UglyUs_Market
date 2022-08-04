@@ -262,6 +262,8 @@ header nav .gnb li a {
 }
 
 .sec_02 .notice-area {
+  border: 3px solid teal;
+
   display: flex;
   padding-top: 152px;
 }
@@ -271,11 +273,15 @@ header nav .gnb li a {
   margin-top: 37px;
   margin-left: 60px;
   margin-right: 60px;
+
+  border: 3px solid red;
 }
 .sec_02 .notice-area .notice {
   width: 120px;
   height: 195px;
   text-align: center;
+
+  border: 3px solid blue;
 }
 .sec_02 .notice-area img.right {
   width: 50px;
@@ -315,7 +321,8 @@ header nav .gnb li a {
   font-weight: 400;
   padding-top: 15px;
 }
-.sec_02 .notice-area .notice h6 {
+.sec_02 .notice-area .notice h5 span {
+  display: block;
   font-size: 16px;
   font-weight: 300;
   padding-top: 9px;
@@ -366,6 +373,16 @@ header nav .gnb li a {
 .sec_03 .img-area {
   display: flex;
   padding-top: 114px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-80px);
+  transition: 1s;
+}
+.sec_03 .img-area.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
 .sec_03 .img-area .left-img {
   width: 377px;
@@ -387,7 +404,41 @@ header nav .gnb li a {
 
 .sec_03 .text-area {
   padding: 185px 0 0 86px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.8s;
 }
+.sec_03 .text-area h2,
+.sec_03 .text-area h2 span,
+.sec_03 .text-area p {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+}
+
+.sec_03 .text-area.active {
+  opacity: 1;
+  visibility: visible;
+}
+.sec_03 .text-area.active h2,
+.sec_03 .text-area.active h2 span,
+.sec_03 .text-area.active p {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 0.8s;
+}
+.sec_03 .text-area.active h2 {
+  transition-delay: 0.3s;
+}
+.sec_03 .text-area.active h2 span {
+  transition-delay: 0.5s;
+}
+.sec_03 .text-area.active p {
+  transition-delay: 0.7s;
+}
+
 .sec_03 .text-area h2 {
   font-size: 36px;
   font-weight: 500;
@@ -395,15 +446,12 @@ header nav .gnb li a {
 .sec_03 .text-area h2 span {
   color: #ff6741;
 }
-.sec_03 .text-area .desc-area {
-  padding-top: 50px;
-}
-.sec_03 .text-area .desc-area p {
+.sec_03 .text-area p {
   font-size: 18px;
   font-weight: 300;
   padding-top: 58px;
 }
-.sec_03 .text-area .desc-area p span {
+.sec_03 .text-area p span {
   font-weight: 400;
   color: #ff6741;
 }
@@ -430,6 +478,16 @@ header nav .gnb li a {
   width: 865px;
   height: 400px;
   margin-top: 115px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(80px);
+  transition: 1s;
+}
+.sec_04 .small-img.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 .sec_04 .small-img img {
   width: 420px;
@@ -438,7 +496,42 @@ header nav .gnb li a {
 
 .sec_04 .text-area {
   padding-top: 90px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.8s;
 }
+.sec_04 .text-area h2,
+.sec_04 .text-area p,
+.sec_04 .text-area a {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+}
+
+.sec_04 .text-area.active {
+  opacity: 1;
+  visibility: visible;
+}
+.sec_04 .text-area.active h2,
+.sec_04 .text-area.active p,
+.sec_04 .text-area.active a {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 0.8s;
+}
+
+.sec_04 .text-area.active h2 {
+  transition-delay: 0.3s;
+}
+.sec_04 .text-area.active p {
+  transition-delay: 0.5s;
+}
+.sec_04 .text-area.active a {
+  transition-delay: 0.7s;
+}
+
 .sec_04 .text-area h2 {
   font-size: 36px;
   font-weight: 500;
@@ -474,7 +567,18 @@ header nav .gnb li a {
 
   width: 450px;
   height: 800px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(80px);
+  transition: 1s;
 }
+.sec_04 .big-img.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
 .sec_04 .big-img img {
   width: 100%;
 }
@@ -530,11 +634,32 @@ header nav .gnb li a {
   width: 297px;
   height: 365px;
   background-color: white;
-
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
-
   text-align: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-100px);
+  transition: 1s;
 }
+.sec_05 article.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.sec_05 article.active:nth-child(1) {
+  transition-delay: 0.3s;
+}
+.sec_05 article.active:nth-child(2) {
+  transition-delay: 0.5s;
+}
+.sec_05 article.active:nth-child(3) {
+  transition-delay: 0.7s;
+}
+.sec_05 article.active:nth-child(4) {
+  transition-delay: 0.9s;
+}
+
 .sec_05 article img {
   padding-top: 50px;
   width: 55px;
@@ -797,7 +922,7 @@ header nav .gnb li a {
   .sec_02 .notice-area .notice h5 {
     font-size: 18px;
   }
-  .sec_02 .notice-area .notice h6 {
+  .sec_02 .notice-area .notice h5 span {
     font-size: 14px;
     padding-top: 5px;
   }
