@@ -93,6 +93,8 @@
                 <div class="input-area">
                     <input type="text" placeholder="Email Address">
                     <input type="password" placeholder="Password">
+                    <img class="eye" src="../img/user/eye.png" alt="">
+                    <img class="eye-open" src="../img/user/eye-open.png" alt="">
                     <a href="#">비밀번호를 잊으셨다면</a>
                 </div>
 
@@ -158,8 +160,9 @@
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/header.js"></script>
     <script>
-        $(".input-area a").click(function () {
+        $(".input-area .eye").click(function () {
             $(".input-area input[type=password]").prop("type", "text");
+            // $(this).addClass("off");
         });
     </script>
 

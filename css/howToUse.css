@@ -262,8 +262,6 @@ header nav .gnb li a {
 }
 
 .sec_02 .notice-area {
-  border: 3px solid teal;
-
   display: flex;
   padding-top: 152px;
 }
@@ -274,15 +272,37 @@ header nav .gnb li a {
   margin-left: 60px;
   margin-right: 60px;
 
-  border: 3px solid red;
+  animation-name: movingChevron;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
+
+@keyframes movingChevron {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
 .sec_02 .notice-area .notice {
   width: 120px;
   height: 195px;
   text-align: center;
 
-  border: 3px solid blue;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
 }
+.sec_02 .notice-area .notice.on {
+  opacity: 1;
+  visibility: visible;
+}
+
 .sec_02 .notice-area img.right {
   width: 50px;
   height: 48px;
@@ -1158,7 +1178,14 @@ header nav .gnb li a {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 770px) {
+  .layout {
+    width: 768px;
+    min-width: 390px;
+    max-width: 768px;
+    min-height: 100%;
+  }
+
   .sec_05 article img {
     padding-top: 20px;
     width: 35px;
@@ -1175,5 +1202,15 @@ header nav .gnb li a {
   .sec_06 {
     margin-top: 250px;
     padding-top: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .layout {
+    width: 390px;
+    min-width: 390px;
+    max-width: 390px;
+    min-height: 100%;
+    box-sizing: border-box;
   }
 }

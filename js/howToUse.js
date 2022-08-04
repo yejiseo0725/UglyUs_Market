@@ -1,4 +1,16 @@
 $(function () {
+  let noticeIndex = 0;
+  setInterval(function () {
+    $(".sec_02 .notice-area .notice").removeClass("on");
+    $(".sec_02 .notice-area .notice").eq(noticeIndex).addClass("on");
+
+    noticeIndex++;
+
+    if (noticeIndex >= 3) {
+      noticeIndex = 0;
+    }
+  }, 1000);
+
   // Section 03-04 Scroll Event
   const noticeImgOffset = $(".sec_02 .notice-area .notice").offset().top;
   const s3LastImgOffset = $(".sec_03 .img-area .last-img").offset().top;
