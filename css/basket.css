@@ -84,6 +84,8 @@ header nav .gnb li a {
   border-bottom: 1px solid #ededed;
   margin-bottom: 30px;
   padding-bottom: 30px;
+
+  position: relative;
 }
 .contents .item-area .order-item .img-area {
   width: 150px;
@@ -159,10 +161,6 @@ header nav .gnb li a {
   height: 10px;
   object-fit: cover;
 }
-.contents .item-area .order-item .quantity button.minus-btn {
-}
-.contents .item-area .order-item .quantity button.plus-btn {
-}
 .contents .item-area .order-item .quantity h6 {
   font-family: "Raleway";
   width: 25px;
@@ -172,6 +170,14 @@ header nav .gnb li a {
   font-weight: 400;
   text-align: center;
   line-height: 20px;
+}
+
+.contents .item-area .order-item .max-quantity {
+  position: absolute;
+  top: 55%;
+  font-size: 14px;
+
+  display: none;
 }
 
 .contents .item-area .order-item .sum {
@@ -224,11 +230,16 @@ header nav .gnb li a {
   justify-content: space-between;
   padding: 50px 0 15px 0;
 }
-.contents .order-area .calc-box .calc-inner .list-amount h5 {
+.contents .order-area .calc-box .calc-inner .list-amount h5,
+.contents .order-area .calc-box .calc-inner .delivery-amount h5,
+.contents .order-area .calc-box .calc-inner .discount-amount h5 {
   font-size: 16px;
   font-weight: 300;
 }
-.contents .order-area .calc-box .calc-inner .list-amount h5:nth-child(2) {
+.contents .order-area .calc-box .calc-inner .list-amount h6,
+.contents .order-area .calc-box .calc-inner .delivery-amount h6,
+.contents .order-area .calc-box .calc-inner .discount-amount h6 {
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -236,25 +247,11 @@ header nav .gnb li a {
   display: flex;
   justify-content: space-between;
 }
-.contents .order-area .calc-box .calc-inner .delivery-amount h5 {
-  font-size: 16px;
-  font-weight: 300;
-}
-.contents .order-area .calc-box .calc-inner .delivery-amount h5:nth-child(2) {
-  font-weight: 400;
-}
 
 .contents .order-area .calc-box .calc-inner .discount-amount {
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
-}
-.contents .order-area .calc-box .calc-inner .discount-amount h5 {
-  font-size: 16px;
-  font-weight: 300;
-}
-.contents .order-area .calc-box .calc-inner .discount-amount h5:nth-child(2) {
-  font-weight: 400;
 }
 
 .contents .order-area .calc-box .calc-inner .amount-line {
@@ -268,7 +265,8 @@ header nav .gnb li a {
   display: flex;
   justify-content: space-between;
 }
-.contents .order-area .calc-box .calc-inner .total-amount h4 {
+.contents .order-area .calc-box .calc-inner .total-amount h4,
+.contents .order-area .calc-box .calc-inner .total-amount h5 {
   font-size: 20px;
   font-weight: 500;
 }
@@ -360,7 +358,6 @@ header nav .gnb li a {
     display: none;
   }
   .contents .item-area .order-item {
-    /* border: 2px solid red; */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -398,6 +395,12 @@ header nav .gnb li a {
   .contents .item-area .order-item .sum {
     width: auto;
   }
+
+  .contents .item-area .order-item .max-quantity {
+    position: absolute;
+    top: 85%;
+    font-size: 14px;
+  }
   .contents .item-area .order-item .close-area {
     margin: 0 auto;
     margin-top: 10px;
@@ -422,12 +425,5 @@ header nav .gnb li a {
   .contents .order-area .calc-box .calc-inner .list-amount {
     padding: 0;
     padding-bottom: 15px;
-  }
-  .contents .order-area .calc-box .calc-inner .list-amount h5 {
-    font-size: 16px;
-    font-weight: 300;
-  }
-  .contents .order-area .calc-box .calc-inner .list-amount h5:nth-child(2) {
-    font-weight: 400;
   }
 }

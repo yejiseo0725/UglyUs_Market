@@ -1,310 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/components/common.css" />
+    <link rel="stylesheet" href="../css/components/header.css" />
+    <link rel="stylesheet" href="../css/components/footer.css" />
 
-    <link rel="stylesheet" href="../css/components/common.css">
-    <link rel="stylesheet" href="../css/components/header.css">
-    <link rel="stylesheet" href="../css/components/footer.css">
-
-    <link rel="stylesheet" href="../css/basket.css">
+    <link rel="stylesheet" href="../css/basket.css" />
 
     <title>어글리어스 마켓 | 못난이 농산물 정기배송 서비스</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="layout">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-inner">
+          <!-- gnb list -->
+          <nav>
+            <h1>
+              <a href="01_main.html">
+                <img id="logo" src="../img/components/uglyus_logo.png" />
+              </a>
+            </h1>
 
-        <!-- Header -->
-        <header class="header">
-            <div class="header-inner">
-                <!-- gnb list -->
-                <nav>
-                    <h1>
-                        <a href="01_main.html">
-                            <img id="logo" src="../img/components/uglyus_logo.png" />
-                        </a>
-                    </h1>
+            <ul class="gnb">
+              <li><a href="02_mission.html" data-text="미션">미션</a></li>
+              <li>
+                <a href="03_howToUse.html" data-text="이용방법">이용방법</a>
+              </li>
+              <li>
+                <a href="04_uglyStore.html" data-text="못난이상점"
+                  >못난이상점</a
+                >
+              </li>
+              <li id="li-last">
+                <a href="05_review.html" data-text="이용후기">이용후기</a>
+              </li>
+            </ul>
 
-                    <ul class="gnb">
-                        <li><a href="02_mission.html" data-text="미션">미션</a></li>
-                        <li><a href="03_howToUse.html" data-text="이용방법">이용방법</a></li>
-                        <li><a href="04_uglyStore.html" data-text="못난이상점">못난이상점</a></li>
-                        <li id="li-last"><a href="05_review.html" data-text="이용후기">이용후기</a></li>
-                    </ul>
+            <!-- gnb icons -->
+            <ul class="gnb-icons">
+              <li>
+                <a href="06_basket.html">
+                  <img
+                    class="basket_icon"
+                    src="../img/components/bag_btn.png"
+                    alt=""
+                  />
+                </a>
+              </li>
 
-                    <!-- gnb icons -->
-                    <ul class="gnb-icons">
-                        <li>
-                            <a href="06_basket.html">
-                                <img class="basket_icon" src="../img/components/bag_btn.png" alt="" />
-                            </a>
-                        </li>
+              <li>
+                <a href="07_user.html">
+                  <img
+                    class="user_icon"
+                    src="../img/components/user-btn-black.png"
+                    alt=""
+                  />
+                </a>
+              </li>
 
-                        <li>
-                            <a href="07_user.html">
-                                <img class="user_icon" src="../img/components/user-btn-black.png" alt="" />
-                            </a>
-                        </li>
+              <li>
+                <a class="last-h-icon" href="#">
+                  <img
+                    class="hamburger_icon"
+                    src="../img/components/hamburger2.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-                        <li>
-                            <a class="last-h-icon" href="#">
-                                <img class="hamburger_icon" src="../img/components/hamburger2.png" alt="" />
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+      <!-- Responsive Popup -->
+      <div class="hamburger-popup">
+        <div class="hamburger-popup-inner">
+          <div class="popup-close">
+            <img src="../img/components/close.png" alt="" />
+          </div>
+
+          <ul class="hidden-nav">
+            <li><a href="../html/02_mission.html">미션</a></li>
+            <li><a href="../html/03_howToUse.html">이용방법</a></li>
+            <li><a href="../html/04_uglyStore.html">못난이상점</a></li>
+            <li><a href="../html/05_review.html">이용후기</a></li>
+          </ul>
+
+          <div class="hidden-btns">
+            <a class="hidden-btn" href="../html/07_user.html">로그인</a>
+            <a class="hidden-btn" href="#">구독하기</a>
+          </div>
+        </div>
+      </div>
+
+      <main>
+        <!-- Contents -->
+        <section class="contents">
+          <div class="contents-inner">
+            <div class="title-area">
+              <h2>당신의 장바구니</h2>
             </div>
-        </header>
 
-        <!-- Responsive Popup -->
-        <div class="hamburger-popup">
-            <div class="hamburger-popup-inner">
-                <div class="popup-close">
-                    <img src="../img/components/close.png" alt="">
-                </div>
-
-                <ul class="hidden-nav">
-                    <li><a href="../html/02_mission.html">미션</a></li>
-                    <li><a href="../html/03_howToUse.html">이용방법</a></li>
-                    <li><a href="../html/04_uglyStore.html">못난이상점</a></li>
-                    <li><a href="../html/05_review.html">이용후기</a></li>
+            <div class="wrap">
+              <!-- Left Area -->
+              <div class="item-area">
+                <ul class="orderList-title">
+                  <li>제품</li>
+                  <li><input type="checkbox" /></li>
+                  <li>가격</li>
+                  <li>수량</li>
+                  <li>합계</li>
                 </ul>
 
-                <div class="hidden-btns">
-                    <a class="hidden-btn" href="../html/07_user.html">로그인</a>
-                    <a class="hidden-btn" href="#">구독하기</a>
+                <div class="list-line"></div>
+
+                <div class="order-item order-item1">
+                  <div class="img-area">
+                    <img src="../img/basket/corn.png" alt="" />
+                  </div>
+
+                  <div class="item-info">
+                    <input id="item-check1" type="checkbox" checked />
+                    <h5>친환경 초당옥수수 - 10개/20개</h5>
+                    <h6>무농약 초당옥수수 10개</h6>
+                  </div>
+
+                  <div class="price">
+                    <h5>22,700원</h5>
+                    <h6>배송비 무료</h6>
+                  </div>
+
+                  <div class="sum-part-wrap">
+                    <div class="quantity">
+                      <button class="minus-btn" value="-">
+                        <img src="../img/basket/minus-outlined.png" alt="" />
+                      </button>
+                      <h6>2</h6>
+                      <button class="plus-btn">
+                        <img src="../img/basket/plus-outlined.png" alt="" />
+                      </button>
+                    </div>
+
+                    <span class="max-quantity">최대수량 5개</span>
+
+                    <div class="sum">
+                      <h5>45,400원</h5>
+                    </div>
+                  </div>
+
+                  <div class="close-area">
+                    <button class="close-btn">
+                      <img src="../img/basket/close.png" alt="" />
+                    </button>
+                  </div>
                 </div>
+
+                <div class="order-item order-item2">
+                  <div class="img-area">
+                    <img src="../img/basket/gap.png" alt="" />
+                  </div>
+
+                  <div class="item-info">
+                    <input id="item-check2" type="checkbox" checked />
+                    <h5>GAP 복숭아</h5>
+                    <h6>제철 복숭아 1.8kg</h6>
+                  </div>
+
+                  <div class="price">
+                    <h5>27,900원</h5>
+                    <h6>배송비 무료</h6>
+                  </div>
+
+                  <div class="sum-part-wrap">
+                    <div class="quantity">
+                      <button class="minus-btn" value="-">
+                        <img src="../img/basket/minus-outlined.png" alt="" />
+                      </button>
+                      <h6>1</h6>
+                      <button class="plus-btn">
+                        <img src="../img/basket/plus-outlined.png" alt="" />
+                      </button>
+                    </div>
+
+                    <span class="max-quantity">최대수량 5개</span>
+
+                    <div class="sum">
+                      <h5>27,900원</h5>
+                    </div>
+                  </div>
+
+                  <div class="close-area">
+                    <button class="close-btn">
+                      <img src="../img/basket/close.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+
+                <div class="order-item order-item3">
+                  <div class="img-area">
+                    <img src="../img/basket/lettuce.png" alt="" />
+                  </div>
+
+                  <div class="item-info">
+                    <input id="item-check3" type="checkbox" />
+                    <h5>무농약 유럽상추 1kg (버터헤드, 카이피라, 이자벨)</h5>
+                    <h6>유럽상추 3종 1kg</h6>
+                  </div>
+
+                  <div class="price">
+                    <h5>16,200원</h5>
+                    <h6></h6>
+                  </div>
+
+                  <div class="sum-part-wrap">
+                    <div class="quantity">
+                      <button class="minus-btn" value="-">
+                        <img src="../img/basket/minus-outlined.png" alt="" />
+                      </button>
+                      <h6>1</h6>
+                      <button class="plus-btn">
+                        <img src="../img/basket/plus-outlined.png" alt="" />
+                      </button>
+                    </div>
+
+                    <span class="max-quantity">최대수량 5개</span>
+
+                    <div class="sum">
+                      <h5>16,200원</h5>
+                    </div>
+                  </div>
+
+                  <div class="close-area">
+                    <button class="close-btn">
+                      <img src="../img/basket/close.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Area -->
+              <div class="order-area">
+                <div class="calc-box">
+                  <div class="calc-inner">
+                    <div class="list-amount">
+                      <h5>총 상품금액</h5>
+                      <h6>73,300원</h6>
+                    </div>
+                    <div class="delivery-amount">
+                      <h5>총 배송비</h5>
+                      <h6>0원</h6>
+                    </div>
+                    <div class="discount-amount">
+                      <h5>첫구매 할인 (10%)</h5>
+                      <h6>7,330원</h6>
+                    </div>
+
+                    <div class="amount-line"></div>
+
+                    <div class="total-amount">
+                      <h4>총 주문금액</h4>
+                      <h5>65,970원</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="order-btn" href="#">주문하기</a>
+              </div>
             </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="section-inner">
+          <div class="company-info-area">
+            <img src="../img/components/uglyus_logo.png" alt="" />
+
+            <p>
+              상호명 : 주식회사 캐비지 | 대표 : 최현주 | 사업자등록번호 :
+              572-81-02287<br />
+              소재지 : 경기도 화성시 만년로 915번길 39-1(안녕동) | 통신판매업
+              신고번호 : 2021-화성동부-0302<br />
+              <strong
+                >제휴 및 납품 문의 : biz@uglyus.co.kr | 농산물 납품 및 긴급구출
+                제보 : farm@uglyus.co.kr</strong
+              >
+            </p>
+
+            <div class="info-btns">
+              <a href="#">
+                <div class="info-btn btn1">서비스 이용약관</div>
+              </a>
+              <a href="#">
+                <div class="info-btn">개인정보 처리방침</div>
+              </a>
+            </div>
+
+            <h6>Copyright ⓒ 2022 주식회사 캐비지 All rights reserved.</h6>
+          </div>
+
+          <div class="cs-area">
+            <h5>어글리어스 고객센터 <span>02.6408.0202</span></h5>
+
+            <p>
+              월-목요일 11:00 ~ 18:00 (점심시간 12:00 ~ 13:00)<br />
+              금요일 09:00 ~ 18:00 (점심시간 12:00 ~ 13:00)<br />
+              토·일·공휴일 휴무
+            </p>
+
+            <div class="cs-btns">
+              <a href="#">
+                <div class="cs-btn">문의하기</div>
+              </a>
+              <a href="#">
+                <div class="cs-btn btn2">자주 묻는 질문</div>
+              </a>
+            </div>
+          </div>
         </div>
-
-        <main>
-            <!-- Contents -->
-            <section class="contents">
-                <div class="contents-inner">
-                    <div class="title-area">
-                        <h2>당신의 장바구니</h2>
-                    </div>
-
-                    <div class="wrap">
-                        <!-- Left Area -->
-                        <div class="item-area">
-                            <ul class="orderList-title">
-                                <li>제품</li>
-                                <li><input type="checkbox"></li>
-                                <li>가격</li>
-                                <li>수량</li>
-                                <li>합계</li>
-                            </ul>
-
-                            <div class="list-line"></div>
-
-                            <div class="order-item">
-                                <div class="img-area">
-                                    <img src="../img/basket/corn.png" alt="">
-                                </div>
-
-                                <div class="item-info">
-                                    <input id="item-check" type="checkbox" checked>
-                                    <h5>친환경 초당옥수수 - 10개/20개</h5>
-                                    <h6>무농약 초당옥수수 10개</h6>
-                                </div>
-
-                                <div class="price">
-                                    <h5>22,700원</h5>
-                                    <h6>배송비 무료</h6>
-                                </div>
-
-                                <div class="sum-part-wrap">
-                                    <div class="quantity">
-                                        <button class="minus-btn">
-                                            <img src="../img/basket/minus-outlined.png" alt="">
-                                        </button>
-                                        <h6>2</h6>
-                                        <button class="plus-btn">
-                                            <img src="../img/basket/plus-outlined.png" alt="">
-                                        </button>
-                                    </div>
-
-                                    <div class="sum">
-                                        <h5>45,400원</h5>
-                                    </div>
-                                </div>
-
-                                <div class="close-area">
-                                    <button class="close-btn">
-                                        <img src="../img/basket/close.png" alt="">
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="order-item">
-                                <div class="img-area">
-                                    <img src="../img/basket/gap.png" alt="">
-                                </div>
-
-                                <div class="item-info">
-                                    <input id="item-check" type="checkbox" checked>
-                                    <h5>GAP 복숭아</h5>
-                                    <h6>제철 복숭아 1.8kg</h6>
-                                </div>
-
-                                <div class="price">
-                                    <h5>27,900원</h5>
-                                    <h6>배송비 무료</h6>
-                                </div>
-
-                                <div class="sum-part-wrap">
-                                    <div class="quantity">
-                                        <button class="minus-btn">
-                                            <img src="../img/basket/minus-outlined.png" alt="">
-                                        </button>
-                                        <h6>1</h6>
-                                        <button class="plus-btn">
-                                            <img src="../img/basket/plus-outlined.png" alt="">
-                                        </button>
-                                    </div>
-
-                                    <div class="sum">
-                                        <h5>27,900원</h5>
-                                    </div>
-                                </div>
-
-                                <div class="close-area">
-                                    <button class="close-btn">
-                                        <img src="../img/basket/close.png" alt="">
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="order-item">
-                                <div class="img-area">
-                                    <img src="../img/basket/lettuce.png" alt="">
-                                </div>
-
-                                <div class="item-info">
-                                    <input id="item-check" type="checkbox">
-                                    <h5>무농약 유럽상추 1kg (버터헤드, 카이피라,
-                                        이자벨)</h5>
-                                    <h6>유럽상추 3종 1kg</h6>
-                                </div>
-
-                                <div class="price">
-                                    <h5>16,200원</h5>
-                                    <h6></h6>
-                                </div>
-
-                                <div class="sum-part-wrap">
-                                    <div class="quantity">
-                                        <button class="minus-btn">
-                                            <img src="../img/basket/minus-outlined.png" alt="">
-                                        </button>
-                                        <h6>1</h6>
-                                        <button class="plus-btn">
-                                            <img src="../img/basket/plus-outlined.png" alt="">
-                                        </button>
-                                    </div>
-
-                                    <div class="sum">
-                                        <h5>16,200원</h5>
-                                    </div>
-                                </div>
-
-                                <div class="close-area">
-                                    <button class="close-btn">
-                                        <img src="../img/basket/close.png" alt="">
-                                    </button>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- Right Area -->
-                        <div class="order-area">
-                            <div class="calc-box">
-                                <div class="calc-inner">
-                                    <div class="list-amount">
-                                        <h5>총 상품금액</h5>
-                                        <h5>73,300원</h5>
-                                    </div>
-                                    <div class="delivery-amount">
-                                        <h5>총 배송비</h5>
-                                        <h5>무료</h5>
-                                    </div>
-                                    <div class="discount-amount">
-                                        <h5>첫구매 할인</h5>
-                                        <h5>10%</h5>
-                                    </div>
-
-                                    <div class="amount-line"></div>
-
-                                    <div class="total-amount">
-                                        <h4>총 주문금액</h4>
-                                        <h4>65,790원</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <a class="order-btn" href="#">주문하기</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="section-inner">
-                <div class="company-info-area">
-                    <img src="../img/components/uglyus_logo.png" alt="">
-
-                    <p>상호명 : 주식회사 캐비지 | 대표 : 최현주 | 사업자등록번호 : 572-81-02287<br>
-                        소재지 : 경기도 화성시 만년로 915번길 39-1(안녕동) | 통신판매업 신고번호 : 2021-화성동부-0302<br>
-                        <strong>제휴 및 납품 문의 : biz@uglyus.co.kr | 농산물 납품 및 긴급구출 제보 : farm@uglyus.co.kr</strong>
-                    </p>
-
-                    <div class="info-btns">
-                        <a href="#">
-                            <div class="info-btn btn1">서비스 이용약관</div>
-                        </a>
-                        <a href="#">
-                            <div class="info-btn">개인정보 처리방침</div>
-                        </a>
-                    </div>
-
-                    <h6>Copyright ⓒ 2022 주식회사 캐비지 All rights reserved.</h6>
-                </div>
-
-                <div class="cs-area">
-                    <h5>어글리어스 고객센터 <span>02.6408.0202</span></h5>
-
-                    <p>월-목요일 11:00 ~ 18:00 (점심시간 12:00 ~ 13:00)<br>
-                        금요일 09:00 ~ 18:00 (점심시간 12:00 ~ 13:00)<br>
-                        토·일·공휴일 휴무
-                    </p>
-
-                    <div class="cs-btns">
-                        <a href="#">
-                            <div class="cs-btn">문의하기</div>
-                        </a>
-                        <a href="#">
-                            <div class="cs-btn btn2">자주 묻는 질문</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
+      </footer>
     </div>
 
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/header.js"></script>
-</body>
-
+    <script src="../js/basket.js"></script>
+  </body>
 </html>
