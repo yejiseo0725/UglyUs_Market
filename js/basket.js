@@ -1,11 +1,56 @@
 $(function () {
   // Checkbox 의 상태에 따라 달라지는 값
-  // const $checkbox = $(".order-item").find("input[type=checkbox]");
+  $(".orderList-title").find("input[type=checkbox]").click(function () {
+    
+    const $checkAll = $(this);
+    const $check = $(".order-item").find("input[type=checkbox]");
 
-  // if ($checkbox.is(":checked") === true) {
-  // }
+    if ( $checkAll.is(":checked") === true ) {
+      $check.prop("checked", true);
+    } else {
+      $check.prop("checked", false);
+    }
 
-  function name(params) {}
+  });
+
+
+  $(".order-item").find("input[type=checkbox]").click(function () {
+
+    const $check = $(".order-item").find("input[type=checkbox]");
+    const $checkAll = $(".orderList-title").find("input[type=checkbox]");
+
+    let itemSum = 0;
+    let bCheckedAll = true;
+    // isCheckedAll
+
+    // console.log($check.length);
+
+    for (let i = 0; i < $check.length; ++i) {
+      // console.log($check.eq(i).is(":checked"));
+      if ($check.eq(i).is(":checked") === true ) {
+        
+        let curItemSum = $check.eq(i).parent().siblings(".sum-part-wrap").find(".sum h5").text();
+        let curItemSumInt = parseInt(curItemSum.replace(/[^0-9]/g, ""));
+        // console.log(curItemSumInt);
+
+        itemSum = itemSum + curItemSumInt;
+      } else {
+        bCheckedAll = false;
+      }
+    }
+
+    if (bCheckedAll === true) {
+      $checkAll.prop("checked", true);
+    } else {
+      $checkAll.prop("checked", false);
+    }
+    console.log(itemSum);
+
+    const totalLocation = $(".calc-box .list-amount h6");
+    totalLocation.text(itemSum.toLocaleString() + "원");
+
+  });
+  
 
   // Button -, + 에 따라 변화하는 수량
   $(".item-area .order-item .quantity button").click(function () {
