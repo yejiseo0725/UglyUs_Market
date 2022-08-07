@@ -87,6 +87,14 @@ header nav .gnb li a {
 
   position: relative;
 }
+
+.contents .item-area .order-item1 {
+}
+.contents .item-area .order-item2 {
+}
+.contents .item-area .order-item3 {
+}
+
 .contents .item-area .order-item .img-area {
   width: 150px;
   height: 150px;

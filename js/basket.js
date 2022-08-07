@@ -1,54 +1,49 @@
 $(function () {
+  // Checkbox 의 상태에 따라 달라지는 값
+  // const $checkbox = $(".order-item").find("input[type=checkbox]");
+
+  // if ($checkbox.is(":checked") === true) {
+  // }
+
+  function name(params) {}
+
   // Button -, + 에 따라 변화하는 수량
   $(".item-area .order-item .quantity button").click(function () {
+    const MAX_COUNT = 5;
+    const MIN_COUNT = 1;
+
     const $this = $(this);
     const $object = $(this).siblings("h6");
+    const $objectCssLocation = $object.parent().siblings(".max-quantity");
 
     let $value = parseInt($object.text());
-    const $value1 = parseInt($(".order-item1").find(".quantity h6").text());
-    const $value2 = parseInt($(".order-item2").find(".quantity h6").text());
-    const $value3 = parseInt($(".order-item3").find(".quantity h6").text());
-    console.log($value1, $value2, $value3);
 
     if ($this.val() === "-") {
-      if ($value > 1) {
-        $object.text(--$value);
-      }
+      $value = Math.max(--$value, 1);
+      // if ($value > 1) {
+      // $object.text(--$value);
     } else {
-      if ($value < 5) {
-        $object.text(++$value);
-      }
+      $value = Math.min(++$value, 5);
+      // if ($value < 5) {
+      // $object.text(++$value);
     }
+    $object.text($value);
 
-    if ($value1 === 5) {
-      $(".order-item1 .max-quantity").css({
+    if ($value === 5) {
+      $objectCssLocation.css({
         display: "block",
       });
     } else {
-      $(".order-item1 .max-quantity").css({
+      $objectCssLocation.css({
         display: "",
       });
     }
 
-    if ($value2 === 5) {
-      $(".order-item2 .max-quantity").css({
-        display: "block",
-      });
-    } else {
-      $(".order-item2 .max-quantity").css({
-        display: "",
-      });
-    }
+    // $value = Math.min($value, MIN_COUNT);
+    // $value = Math.max($value, MAX_COUNT);
 
-    if ($value3 === 5) {
-      $(".order-item3 .max-quantity").css({
-        display: "block",
-      });
-    } else {
-      $(".order-item3 .max-quantity").css({
-        display: "",
-      });
-    }
+    console.log($value);
+
     amountPrice();
   });
 
@@ -83,15 +78,6 @@ $(function () {
     const $sum3 = $price3 * $value3; // item 3 합계: 상품 가격 * 수량
     $orderItem3.find(".sum h5").text($sum3.toLocaleString() + "원");
 
-    // Checkbox 의 상태에 따라 달라지는 값
-    // const $checkbox1 = $(".order-item1").find("input[type=checkbox]");
-    // const $checkbox2 = $(".order-item2").find("input[type=checkbox]");
-    // const $checkbox3 = $(".order-item3").find("input[type=checkbox]");
-    const $checkbox = $(".order-item").find("input[type=checkbox]");
-
-    if ($checkbox.is(":checked") === true) {
-    }
-
     totalPrice($sum1, $sum2, $sum3);
   }
 
@@ -118,4 +104,10 @@ $(function () {
       .text($discountCalc.toLocaleString() + "원");
     $totalBox.find(".total-amount h5").text($calc.toLocaleString() + "원");
   }
+
+  $(".close-area .close-btn").click(function () {
+    $(this).parent().parent().css({
+      display: "none",
+    });
+  });
 });
