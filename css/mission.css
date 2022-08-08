@@ -298,7 +298,7 @@ header nav .gnb li a {
 .sec_04 .text-area {
   opacity: 0;
   visibility: hidden;
-  transition: 0.8s;
+  transition: 0.5s;
 }
 .sec_04 .text-area h2,
 .sec_04 .text-area h2 span,
@@ -316,16 +316,16 @@ header nav .gnb li a {
 .sec_04 .text-area.active p {
   opacity: 1;
   transform: translateY(0);
-  transition: 0.8s;
+  transition: 0.5s;
 }
 .sec_04 .text-area.active h2 span {
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
 }
 .sec_04 .text-area.active h2 {
-  transition-delay: 0.5s;
+  transition-delay: 0.4s;
 }
 .sec_04 .text-area.active p {
-  transition-delay: 0.7s;
+  transition-delay: 0.6s;
 }
 
 .sec_04 .text-area h2 {
@@ -479,7 +479,6 @@ header nav .gnb li a {
 /* Tablet Responsive */
 @media (max-width: 770px) {
   .layout {
-    width: 768px;
     min-width: 390px;
     max-width: 768px;
     min-height: 100%;
@@ -692,13 +691,11 @@ header nav .gnb li a {
 }
 
 /* Mobile Responsive */
-@media (max-width: 420px) {
+@media (max-width: 400px) {
   .layout {
-    width: 390px;
-    min-width: 390px;
+    min-width: 375px;
     max-width: 390px;
     min-height: 100%;
-    box-sizing: border-box;
   }
   .main-area {
     width: auto;

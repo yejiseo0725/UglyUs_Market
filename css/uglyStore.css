@@ -1018,6 +1018,12 @@ header nav .gnb li a {
   .sec_03 .filter {
     margin-top: 40px;
   }
+  .sec_03 .filter .f-btn {
+    width: 60px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+  }
 
   .sec_03 .boxes {
     display: flex;
@@ -1032,7 +1038,7 @@ header nav .gnb li a {
 
   /* Filtering 될 boxes */
   .sec_03 .boxes section {
-    margin: 5px 10px;
+    margin: 0 auto;
     overflow: hidden;
     display: block;
   }
@@ -1111,8 +1117,8 @@ header nav .gnb li a {
 /* Responsive Mobile */
 @media (max-width: 400px) {
   .layout {
-    min-width: 391px;
-    max-width: 391px;
+    min-width: 375px;
+    max-width: 390px;
     height: 100%;
   }
 

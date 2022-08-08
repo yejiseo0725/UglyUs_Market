@@ -10,6 +10,7 @@ main {
 /* Main --- video-area */
 .visual .video-area {
   position: relative;
+  width: 100%;
   height: 100vh;
   max-height: 1080px;
 }
@@ -23,7 +24,6 @@ main {
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
 }
-
 .visual .video-area video {
   position: absolute;
   left: 50%;
@@ -35,6 +35,18 @@ main {
   min-height: 100%;
   object-fit: cover;
 }
+
+/* .visual .video-area .video-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.visual .video-area .slick-slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  border: 2px solid red;
+} */
 
 /* Main --- title area */
 .visual .video-area .title-area {
@@ -101,7 +113,6 @@ main {
   height: 120px;
 
   cursor: pointer;
-  /* border: 2px solid royalblue; */
 }
 
 /* point-box characters */
@@ -183,13 +194,13 @@ main {
   justify-content: center;
 
   height: auto;
+  margin-top: 50px;
 }
 
 .sec_01 .section-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   width: 1240px;
 }
 
@@ -1114,10 +1125,6 @@ main {
 @media (max-width: 771px) {
   .layout {
     min-width: auto;
-  }
-  /* Main Video */
-  .visual .video-area {
-    height: 844px;
   }
   .visual .video-area video {
     left: 0;

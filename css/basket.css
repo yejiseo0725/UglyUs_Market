@@ -295,8 +295,8 @@ header nav .gnb li a {
 /* Responsive */
 @media (max-width: 771px) {
   .layout {
-    max-width: 768px;
     min-width: 768px;
+    max-width: 768px;
     height: 100%;
   }
   .contents {
@@ -358,8 +358,8 @@ header nav .gnb li a {
 }
 @media (max-width: 400px) {
   .layout {
+    min-width: 375px;
     max-width: 390px;
-    min-width: 390px;
     height: 100%;
   }
   .contents .item-area ul {
@@ -424,14 +424,19 @@ header nav .gnb li a {
     margin-left: 0;
   }
   .contents .order-area .calc-box {
-    width: auto;
-    height: auto;
+    padding: 30px;
   }
   .contents .order-area .calc-box .calc-inner {
-    padding: 30px;
   }
   .contents .order-area .calc-box .calc-inner .list-amount {
     padding: 0;
     padding-bottom: 15px;
+  }
+
+  .contents .order-area .order-btn {
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    margin: 0 auto;
   }
 }

@@ -4,15 +4,36 @@ $(function () {
   //     $("#visualVideo").get(0).pause();
   // });
 
-  let a = 0;
+  let colorIndex = 0;
   setInterval(function () {
     $(".solution-box article").removeClass("color");
-    $(".solution-box article").eq(a).addClass("color");
-    a++;
-    if (a >= 3) {
-      a = 0;
+    $(".solution-box article").eq(colorIndex).addClass("color");
+    colorIndex++;
+    if (colorIndex >= 3) {
+      colorIndex = 0;
     }
   }, 1000);
+
+  let aniIndex = 1;
+  setInterval(function () {
+    $(".point-box-btn").removeClass("active");
+    $(".point-box-btn").eq(aniIndex).addClass("active");
+
+    aniIndex++;
+    if (aniIndex >= 3) {
+      aniIndex = 0;
+    }
+  }, 15000);
+
+  // Main Visual Video-slide
+  $(".video-slide").slick({
+    arrows: false,
+    // dots: true,
+    variableWidth: true,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 15000,
+  });
 
   // Section2 이들이 못난이가 된 사연
   $(".slide-con").slick({

@@ -167,8 +167,7 @@ header nav .gnb li a {
     height: 100%;
   }
   .login-section {
-    /* justify-content: flex-start; */
-    padding: 50px 0;
+    padding: 50px 10px;
     width: auto;
     height: auto;
   }
@@ -190,7 +189,7 @@ header nav .gnb li a {
 @media (max-width: 400px) {
   .layout {
     min-width: auto;
-    max-width: 380px;
+    max-width: auto;
     height: 100%;
   }
 }

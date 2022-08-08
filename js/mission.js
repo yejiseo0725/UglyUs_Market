@@ -11,7 +11,7 @@ $(function () {
     const nowScrollTop = $(this).scrollTop();
 
     // section 01
-    if (nowScrollTop >= mainOffset && nowScrollTop < s2Offset) {
+    if (nowScrollTop >= mainOffset) {
       $(".sec_01 img").addClass("active");
       $(".sec_01 .title-area").addClass("active");
     } else {
@@ -20,13 +20,13 @@ $(function () {
     }
 
     // section 02
-    if (nowScrollTop >= s1Offset && nowScrollTop < s3Offset) {
+    if (nowScrollTop >= s1Offset) {
       $(".sec_02 .farm-img").addClass("active");
     } else {
       $(".sec_02 .farm-img").removeClass("active");
     }
 
-    if (nowScrollTop >= s2Offset && nowScrollTop < s3Offset) {
+    if (nowScrollTop >= s2Offset) {
       $(".sec_02 .desc-area .desc").addClass("active");
     } else {
       $(".sec_02 .desc-area .desc").removeClass("active");
@@ -35,12 +35,12 @@ $(function () {
     // section 03
     const s2DescOffset = $(".sec_02 .desc-area .desc").offset().top;
     const s2DescPOffset = $(".sec_02 .desc-area .desc p").offset().top;
-    if (nowScrollTop >= s2DescOffset && nowScrollTop < s4Offset) {
+    if (nowScrollTop >= s2DescOffset) {
       $(".sec_03 .desc-area").addClass("active");
     } else {
       $(".sec_03 .desc-area").removeClass("active");
     }
-    if (nowScrollTop >= s2DescPOffset && nowScrollTop < s4Offset) {
+    if (nowScrollTop >= s2DescPOffset) {
       $(".sec_03 .img-area").addClass("active");
     } else {
       $(".sec_03 .img-area").removeClass("active");
@@ -48,7 +48,7 @@ $(function () {
 
     // section 04
     const s3LastImgOffset = $(".sec_03 .img-area img:last-child").offset().top;
-    if (nowScrollTop >= s3LastImgOffset && nowScrollTop < s5Offset) {
+    if (nowScrollTop >= s3LastImgOffset) {
       $(".sec_04 .text-area").addClass("active");
       $(".sec_04 .img-area .upper-img").addClass("active");
       $(".sec_04 .img-area .lower-img").addClass("active");
