@@ -36,8 +36,6 @@ main {
   transform: translate(-50%, -50%);
   width: 100%;
   height: 1080px;
-
-  position: relative;
 }
 .visual .video-area .video-slide .video-sc {
 }
