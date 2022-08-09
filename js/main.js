@@ -25,6 +25,29 @@ $(function () {
     }
   }, 15000);
 
+  const visualSlide = $(".video-slide");
+
+  let $currentSlide;
+  let $totalSlide;
+
+  // visualSlide.on(
+  //   "afterChange",
+  //   function (event, slick, currentSlide, nextSlide) {
+  //     $currentSlide = slick.currentSlide;
+  //     $totalSlide = slick.slideCount;
+  //   }
+  // );
+
+  // Main Visual Video-slide
+  $(".video-slide").slick({
+    arrows: false,
+    variableWidth: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    vertical: false,
+    initialSlide: 0,
+    centerMode: true,
+
   // Main Visual Video-slide
   $(".video-slide").slick({
     arrows: false,
