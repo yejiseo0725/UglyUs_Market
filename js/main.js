@@ -47,13 +47,6 @@ $(function () {
     vertical: false,
     initialSlide: 0,
     centerMode: true,
-
-  // Main Visual Video-slide
-  $(".video-slide").slick({
-    arrows: false,
-    // dots: true,
-    variableWidth: true,
-    slidesToShow: 1,
     autoplay: true,
     autoplaySpeed: 15000,
   });
