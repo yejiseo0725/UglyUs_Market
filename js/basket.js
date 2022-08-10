@@ -1,4 +1,10 @@
 $(function () {
+  // clost btn 누르면 아이템 삭제
+  $(".close-area .close-btn").click(function () {
+    $(this).parent().parent().css({
+      display: "none",
+    });
+  });
   // Checkbox 의 상태에 따라 달라지는 값
   $(".orderList-title")
     .find("input[type=checkbox]")
@@ -21,9 +27,7 @@ $(function () {
 
       let itemSum = 0;
       let isCheckedAll = true;
-      // bCheckedAll
-
-      // console.log($check.length);
+      // Boolean --- CheckedAll
 
       for (let i = 0; i < $check.length; ++i) {
         // console.log($check.eq(i).is(":checked"));
@@ -35,37 +39,47 @@ $(function () {
             .find(".sum h5")
             .text();
           let curItemSumInt = parseInt(curItemSum.replace(/[^0-9]/g, ""));
-          // console.log(curItemSumInt);
 
           itemSum = itemSum + curItemSumInt;
         } else {
           isCheckedAll = false;
         }
       }
+      // itemSum === checked 합계만 계산
+      // console.log(itemSum);
+
+      // 총 상품금액
+      const $checkedAmount = $(".calc-box .list-amount h6");
+      $checkedAmount.text(itemSum.toLocaleString() + "원");
+
+      // 총 배송비
+      const $delivery = $(".delivery-amount h6")
+        .text()
+        .replace(/[^0-9]/g, "");
+
+      // 할인 위치
+      const $discountLocation = $(".discount-amount h6");
+      console.log($discountLocation);
+
+      // 10% 할인 계산
+      const $discountCalc =
+        parseInt($checkedAmount.text().replace(/[^0-9]/g, "")) * 0.1;
+
+      // 할인 위치에 10% 할인 계산 대입
+      $discountLocation.text($discountCalc.toLocaleString() + "원");
 
       if (isCheckedAll === true) {
         $checkAll.prop("checked", true);
       } else {
         $checkAll.prop("checked", false);
       }
-      // console.log(itemSum);
-
-      const totalLocation = $(".calc-box .list-amount h6");
-      totalLocation.text(itemSum.toLocaleString() + "원");
-
-      const $deliveryLocation = $(".calc-box .delivery-amount h6").text();
-      const $discountLocation = $(".calc-box .discount-amount h6");
-      const $deliveryInt = parseInt($deliveryLocation.replace(/[^0-9]/g, ""));
-
-      let discountCalc = itemSum * 0.1;
-      $discountLocation.text(discountCalc.toLocaleString() + "원");
     });
 
   // Button -, + 에 따라 변화하는 수량
   $(".item-area .order-item .quantity button").click(function () {
     const $this = $(this);
     const $object = $this.siblings("h6");
-    const $parLocation = $this.parent().parent().parent();
+    const $parLocation = $this.parent().parent().parent(); // order-item
     const $objectCssLocation = $object.parent().siblings(".max-quantity");
 
     let $value = parseInt($object.text());
@@ -100,6 +114,8 @@ $(function () {
     // 수량 저장
     let quantity = $value;
 
+    // console.log(unitPrice, quantity);
+
     // order-item, 상품금액, 수량 보내기
     amountPrice($parLocation, unitPrice, quantity);
   });
@@ -129,6 +145,7 @@ $(function () {
     }
 
     const $totalBox = $(".calc-box");
+
     const $total = $totalBox
       .find(".list-amount h6")
       .text()
@@ -137,32 +154,19 @@ $(function () {
       .find(".delivery-amount h6")
       .text()
       .replace(/[^0-9]/g, "");
-    const $discount = $total * 0.1;
-    const $calc;
+    const $discount = parseInt(
+      $totalBox
+        .find(".discount-amount h6")
+        .text()
+        .replace(/[^0-9]/g, "")
+    );
 
-    console.log($total);
+    const $calc = amountTotal - parseInt($discount) + parseInt($delivery);
 
-    // const $totalBox = $(".calc-box");
-    // const $delivery = $totalBox
-    //   .find(".delivery-amount h6")
-    //   .text()
-    //   .replace(/[^0-9]/g, "");
-    // const $choosedItemPrice = $(".list-amount h6")
-    //   .text()
-    //   .replace(/[^0-9]/g, "");
-    // const $discountCalc = $choosedItemPrice * 0.1;
-    // const $calc = totalSum - $discountCalc + parseInt($delivery);
-
-    // $totalBox.find(".list-amount h6").text(totalSum.toLocaleString() + "원");
-    // $totalBox
-    //   .find(".discount-amount h6")
-    //   .text($discountCalc.toLocaleString() + "원");
-    // $totalBox.find(".total-amount h5").text($calc.toLocaleString() + "원");
+    $totalBox
+      .find(".discount-amount h6")
+      .text($discount.toLocaleString() + "원");
+    $totalBox.find(".list-amount h6").text(amountTotal.toLocaleString() + "원");
+    $totalBox.find(".total-amount h5").text($calc.toLocaleString() + "원");
   }
-
-  $(".close-area .close-btn").click(function () {
-    $(this).parent().parent().css({
-      display: "none",
-    });
-  });
 });
