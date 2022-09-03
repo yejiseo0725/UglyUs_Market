@@ -44,6 +44,7 @@ $(function () {
     variableWidth: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    speed: 0,
     vertical: false,
     initialSlide: 0,
     centerMode: true,

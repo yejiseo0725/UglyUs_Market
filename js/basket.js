@@ -5,6 +5,7 @@ $(function () {
       display: "none",
     });
   });
+
   // Checkbox 의 상태에 따라 달라지는 값
   $(".orderList-title")
     .find("input[type=checkbox]")
@@ -28,6 +29,8 @@ $(function () {
       let itemSum = 0;
       let isCheckedAll = true;
       // Boolean --- CheckedAll
+
+      console.log($check.eq(i).parent().parent().find(".price h5").text());
 
       for (let i = 0; i < $check.length; ++i) {
         // console.log($check.eq(i).is(":checked"));
@@ -59,7 +62,7 @@ $(function () {
 
       // 할인 위치
       const $discountLocation = $(".discount-amount h6");
-      console.log($discountLocation);
+      // console.log($discountLocation);
 
       // 10% 할인 계산
       const $discountCalc =
@@ -121,6 +124,7 @@ $(function () {
   });
 
   function amountPrice(a, b, c) {
+    // 가격 * 수량
     // 위에서 가져온 정보들로 계산만 해주기
 
     a.find(".sum h5").text(b * c);
@@ -128,6 +132,8 @@ $(function () {
   }
 
   function totalPrice() {
+    // 총 주문 금액
+
     let $orderItem = $(".order-item");
     let converseUnit = 0;
     let amountTotal = 0;
