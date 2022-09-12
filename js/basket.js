@@ -76,6 +76,8 @@ $(function () {
       } else {
         $checkAll.prop("checked", false);
       }
+
+      SumCheckedItem();
     });
 
   // Button -, + 에 따라 변화하는 수량
@@ -108,19 +110,7 @@ $(function () {
       });
     }
 
-    // 상품의 금액 찾기
-    let unitPrice = $parLocation
-      .find(".price")
-      .text()
-      .replace(/[^0-9]/g, "");
-
-    // 수량 저장
-    let quantity = $value;
-
-    // console.log(unitPrice, quantity);
-
-    // order-item, 상품금액, 수량 보내기
-    amountPrice($parLocation, unitPrice, quantity);
+    SumCheckedItem();
   });
 
   function amountPrice(a, b, c) {
@@ -176,3 +166,61 @@ $(function () {
     $totalBox.find(".total-amount h5").text($calc.toLocaleString() + "원");
   }
 });
+
+// CheckedItemShowCalcBox()
+// CalculateItemTotalPrice()
+
+function SumCheckedItem() {
+  const $check = $(".order-item").find("input[type=checkbox]");
+  const $checkAll = $(".orderList-title").find("input[type=checkbox]");
+
+  let itemSum = 0;
+  let isCheckedAll = true;
+  // Boolean 검사 --- CheckedAll
+
+  for (let i = 0; i < $check.length; ++i) {
+    // console.log($check.eq(i).is(":checked"));
+
+    // 수량 위치
+    const itemCount = $(".item-area .order-item .quantity button").siblings(
+      "h6"
+    );
+    // 합계 위치
+    const itemTotal = $(".order-item .sum h5");
+    // 가격 (text)
+    let sCurItemPrice = $check.eq(i).parent().parent().find(".price h5").text();
+
+    const iCurItemPrice = parseInt(sCurItemPrice.replace(/[^0-9]/g, ""));
+    const iCurItemCount = parseInt(itemCount.eq(i).text());
+    const iCurItemTotalPrice = iCurItemPrice * iCurItemCount;
+
+    itemTotal.eq(i).text(iCurItemTotalPrice.toLocaleString() + "원");
+
+    if ($check.eq(i).is(":checked") === true) {
+      itemSum = itemSum + iCurItemTotalPrice;
+    } else {
+      isCheckedAll = false;
+    }
+  }
+
+  const $checkedAmount = $(".calc-box .list-amount h6");
+  $checkedAmount.text(itemSum.toLocaleString() + "원");
+
+  const $delivery = $(".delivery-amount h6")
+    .text()
+    .replace(/[^0-9]/g, "");
+
+  const $discountLocation = $(".discount-amount h6");
+  console.log($discountLocation);
+
+  const $discountCalc =
+    parseInt($checkedAmount.text().replace(/[^0-9]/g, "")) * 0.1;
+
+  $discountLocation.text($discountCalc.toLocaleString() + "원");
+
+  if (isCheckedAll === true) {
+    $checkAll.prop("checked", true);
+  } else {
+    $checkAll.prop("checked", false);
+  }
+}

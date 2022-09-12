@@ -16,7 +16,7 @@ main {
   height: auto;
   max-height: 1080px;
 }
-.visual .video-area:after {
+.visual .video-area::after {
   content: "";
   display: block;
   position: absolute;
@@ -24,7 +24,7 @@ main {
   height: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .visual .video-area .video-slide {
 }
@@ -666,7 +666,6 @@ main {
   animation-name: show-cards;
   animation-duration: 0.2s;
   animation-timing-function: linear;
-  /* animation-iteration-count: infinite; */
 }
 
 .sec_03 .intro-cards .card.active:nth-child(1) {

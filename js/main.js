@@ -1,9 +1,4 @@
 $(function () {
-  // 비디오 정지
-  // $(".pause-btn").click(function () {
-  //     $("#visualVideo").get(0).pause();
-  // });
-
   let colorIndex = 0;
   setInterval(function () {
     $(".solution-box article").removeClass("color");
@@ -29,14 +24,6 @@ $(function () {
 
   let $currentSlide;
   let $totalSlide;
-
-  // visualSlide.on(
-  //   "afterChange",
-  //   function (event, slick, currentSlide, nextSlide) {
-  //     $currentSlide = slick.currentSlide;
-  //     $totalSlide = slick.slideCount;
-  //   }
-  // );
 
   // Main Visual Video-slide
   $(".video-slide").slick({
