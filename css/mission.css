@@ -26,7 +26,7 @@ header nav .gnb li a {
 
 .main-area .title-area {
   position: absolute;
-  left: 5%;
+  left: 290px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -34,6 +34,41 @@ header nav .gnb li a {
   font-size: 24px;
   font-weight: 300;
   padding-top: 34px;
+}
+
+.main-area .mouse-scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 1%;
+  transform: translateX(-50%);
+}
+.main-area .mouse-scroll .mouse {
+  position: relative;
+  width: 28px;
+  height: 45px;
+  border: 3px solid #fff;
+  border-radius: 20px;
+}
+.main-area .mouse-scroll .mouse .scroll {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+
+  animation: scroll 1s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0) translateX(-50%);
+  }
+  100% {
+    transform: translateY(13px) translateX(-50%);
+  }
 }
 
 /* section */
@@ -498,6 +533,9 @@ header nav .gnb li a {
     height: 100%;
     min-height: 400px;
     object-fit: cover;
+  }
+  .main-area .title-area {
+    left: 10%;
   }
   .main-area .title-area h2 span {
     font-size: 18px;

@@ -57,7 +57,7 @@ main {
   align-items: center;
 }
 
-.visual .video-area .title-area h2.heading span {
+.visual .video-area .title-area h2.heading p {
   font-family: "Noto Sans KR";
   font-size: 28px;
   font-weight: 400;

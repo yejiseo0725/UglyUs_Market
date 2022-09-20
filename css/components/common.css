@@ -23,21 +23,20 @@ a {
   color: #fff;
 }
 
-.title-area h2 {
-  font-size: 36px;
-  font-weight: 500;
-}
-.title-area h2 span {
-  display: block;
-  font-size: 28px;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
 h2.heading {
   font-family: "Leferi";
   font-size: 44px;
   font-weight: 600;
   line-height: 60px;
+}
+.title-area h2 {
+  font-size: 30px;
+}
+.title-area h2 span {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
 button {
